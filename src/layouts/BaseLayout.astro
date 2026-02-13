@@ -8,7 +8,7 @@ interface Props {
 }
 
 const { title, description = 'Aura Global Corporation - The Future of Healthcare Management. HIPAA, GDPR, DPDP Compliant medical inventory management, EMR, and patient portal solutions.' } = Astro.props;
-const currentPath = Astro.url.pathname;
+const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
 ---
 
 <!DOCTYPE html>
@@ -126,11 +126,22 @@ const currentPath = Astro.url.pathname;
               class="absolute top-full left-0 mt-2 w-64 rounded-xl shadow-2xl border overflow-hidden opacity-0 invisible translate-y-2 transition-all duration-200 z-50"
               style="background: var(--bg-primary); border-color: var(--border);"
             >
-              <a href="/why-website" class="block px-4 py-3 text-sm font-display font-semibold transition-colors hover:bg-[var(--surface)]" style="color: var(--accent); border-bottom: 1px solid var(--border);">
+              <span class="block px-4 py-2.5 text-xs font-display font-semibold uppercase tracking-wider" style="color: var(--text-muted); border-bottom: 1px solid var(--border); opacity: 0.6;">
                 All Business Types
+              </span>
+              <a
+                href="/why-website"
+                class:list={[
+                  'flex items-center gap-3 px-4 py-2.5 text-sm font-display font-semibold transition-colors hover:bg-[var(--surface)]',
+                  currentPath === '/why-website'
+                    ? 'text-[var(--accent)] bg-[var(--accent)]/5'
+                    : 'text-[var(--text-primary)]'
+                ]}
+              >
+                <span class="text-base">🩺</span>
+                Doctors / Healthcare
               </a>
               {[
-                { href: '/why-website', label: 'Doctors / Healthcare', icon: '🩺' },
                 { href: '/why-website/yoga-teacher', label: 'Yoga Teacher / Studio', icon: '🧘' },
                 { href: '/why-website/salon', label: 'Hair & Beauty Salon', icon: '💇' },
                 { href: '/why-website/spa', label: 'Spa & Wellness Center', icon: '🧖' },
@@ -249,9 +260,20 @@ const currentPath = Astro.url.pathname;
         </button>
         <div id="mobile-why-submenu" class="overflow-hidden max-h-0 transition-all duration-300">
           <div class="pl-4 pt-1 pb-2 space-y-1">
-            <a href="/why-website" class="block px-4 py-2 rounded-lg text-sm font-display font-semibold transition-colors hover:bg-[var(--surface)]" style="color: var(--accent);">All Business Types</a>
+            <span class="block px-4 py-2 rounded-lg text-xs font-display font-semibold uppercase tracking-wider" style="color: var(--text-muted); opacity: 0.6;">All Business Types</span>
+            <a
+              href="/why-website"
+              class:list={[
+                'flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-display font-semibold transition-colors hover:bg-[var(--surface)]',
+                currentPath === '/why-website'
+                  ? 'text-[var(--accent)]'
+                  : 'text-[var(--text-primary)]'
+              ]}
+            >
+              <span>🩺</span>
+              Doctors / Healthcare
+            </a>
             {[
-              { href: '/why-website', label: 'Doctors / Healthcare', icon: '🩺' },
               { href: '/why-website/yoga-teacher', label: 'Yoga Teacher / Studio', icon: '🧘' },
               { href: '/why-website/salon', label: 'Hair & Beauty Salon', icon: '💇' },
               { href: '/why-website/spa', label: 'Spa & Wellness', icon: '🧖' },
