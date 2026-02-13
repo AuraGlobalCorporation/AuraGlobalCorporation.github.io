@@ -1,0 +1,830 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Claim Your 26% Discount - Aura Global Corporation">
+  <!-- Hero Section -->
+  <section class="section-padding py-20 lg:py-28 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-30 pointer-events-none">
+      <div class="absolute top-20 left-10 w-96 h-96 bg-gradient-to-br from-aura-cyan/20 to-transparent rounded-full blur-3xl animate-pulse" style="animation-duration: 4s;"></div>
+      <div class="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-tl from-aura-cyan/10 to-transparent rounded-full blur-3xl animate-pulse" style="animation-duration: 6s;"></div>
+    </div>
+
+    <div class="max-w-5xl mx-auto text-center relative z-10 animate-in">
+      <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full mb-6 border-2" style="background: rgba(255, 23, 68, 0.05); border-color: rgba(255, 23, 68, 0.3);">
+        <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+        <span class="font-display font-bold text-sm sm:text-base uppercase tracking-wide" style="color: #FF1744;">
+          Limited Time Offer
+        </span>
+      </div>
+
+      <h1 class="text-4xl sm:text-5xl lg:text-7xl font-display font-black mb-6">
+        Claim Your Exclusive <span class="text-gradient">26% Discount</span>
+      </h1>
+      <p class="text-lg sm:text-xl lg:text-2xl mb-6" style="color: var(--text-secondary);">
+        Be among the first 26 customers to receive a one-time 26% discount on any of our products or services.
+      </p>
+      <p class="text-base lg:text-lg max-w-3xl mx-auto mb-8" style="color: var(--text-muted);">
+        Fill out the form below and our team will reach out within 24 hours with your personalized quote.
+      </p>
+
+      <!-- Live Counter -->
+      <div class="glass-card rounded-2xl p-6 sm:p-8 max-w-2xl mx-auto mb-8">
+        <div class="flex items-center justify-between mb-4 flex-wrap gap-4">
+          <span class="font-display font-semibold text-sm sm:text-base" style="color: var(--text-primary);">
+            Spots Remaining:
+          </span>
+          <span class="font-display font-bold text-2xl sm:text-3xl" style="color: #FF1744;">
+            <span id="offer-spots">14</span> of 26 spots left
+          </span>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="w-full h-4 rounded-full overflow-hidden" style="background: var(--surface);">
+          <div id="offer-progress" class="h-full rounded-full bg-gradient-to-r from-red-500 to-aura-cyan transition-all duration-500" style="width: 46%;"></div>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#claim-form" class="btn-primary">
+          Claim Your Discount
+        </a>
+        <a href="#benefits" class="btn-secondary">
+          See What's Included
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What You Get Section -->
+  <section id="benefits" class="section-padding py-16 lg:py-20 relative" style="background: var(--bg-secondary);">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12 animate-in">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-black mb-4" style="color: var(--text-primary);">
+          What You Get with <span class="text-gradient">26% Off</span>
+        </h2>
+        <p class="text-base lg:text-lg" style="color: var(--text-muted);">
+          Choose from our complete range of products and services
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+        <!-- Card 1: Medical Inventory -->
+        <div class="glass-card rounded-2xl p-6 lg:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl animate-in">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: var(--accent)/10;">
+              <svg class="w-6 h-6" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-xl font-display font-bold mb-2" style="color: var(--text-primary);">Medical Inventory Management</h3>
+              <p class="text-sm mb-4" style="color: var(--text-muted);">Comprehensive inventory control for healthcare facilities</p>
+            </div>
+          </div>
+
+          <div class="border-t pt-4 mb-4" style="border-color: var(--border);">
+            <div class="flex items-baseline gap-3 mb-2">
+              <span class="text-xl font-display font-bold line-through" style="color: var(--text-muted);">₹15,000/mo</span>
+              <span class="text-3xl font-display font-black" style="color: var(--accent);">₹11,100/mo</span>
+            </div>
+            <p class="text-xs font-semibold text-green-400">Save ₹3,900/month on any plan</p>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <span class="badge text-[10px]">HIPAA Compliant</span>
+            <span class="badge text-[10px]">GDPR Ready</span>
+          </div>
+        </div>
+
+        <!-- Card 2: GoEMR + Patient Portal -->
+        <div class="glass-card rounded-2xl p-6 lg:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl animate-in">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: var(--accent)/10;">
+              <svg class="w-6 h-6" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-xl font-display font-bold mb-2" style="color: var(--text-primary);">GoEMR + Patient Portal</h3>
+              <p class="text-sm mb-4" style="color: var(--text-muted);">Complete EMR system with integrated patient access</p>
+            </div>
+          </div>
+
+          <div class="border-t pt-4 mb-4" style="border-color: var(--border);">
+            <div class="flex items-baseline gap-3 mb-2">
+              <span class="text-xl font-display font-bold line-through" style="color: var(--text-muted);">₹25,000/mo</span>
+              <span class="text-3xl font-display font-black" style="color: var(--accent);">₹18,500/mo</span>
+            </div>
+            <p class="text-xs font-semibold text-green-400">Save ₹6,500/month on any plan</p>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <span class="badge text-[10px]">Cloud-Based</span>
+            <span class="badge text-[10px]">Mobile Ready</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Website Development -->
+        <div class="glass-card rounded-2xl p-6 lg:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl animate-in">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: var(--accent)/10;">
+              <svg class="w-6 h-6" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-xl font-display font-bold mb-2" style="color: var(--text-primary);">Website Development</h3>
+              <p class="text-sm mb-4" style="color: var(--text-muted);">Professional websites for all business types</p>
+            </div>
+          </div>
+
+          <div class="border-t pt-4 mb-4" style="border-color: var(--border);">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-sm" style="color: var(--text-muted);">Freedom Plan:</span>
+                <div class="flex items-baseline gap-2">
+                  <span class="text-sm line-through" style="color: var(--text-muted);">₹25,000</span>
+                  <span class="text-lg font-display font-bold" style="color: var(--accent);">₹18,500</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-sm" style="color: var(--text-muted);">Business Pro:</span>
+                <div class="flex items-baseline gap-2">
+                  <span class="text-sm line-through" style="color: var(--text-muted);">₹50,000</span>
+                  <span class="text-lg font-display font-bold" style="color: var(--accent);">₹37,000</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-sm" style="color: var(--text-muted);">Enterprise:</span>
+                <div class="flex items-baseline gap-2">
+                  <span class="text-sm line-through" style="color: var(--text-muted);">₹1,00,000</span>
+                  <span class="text-lg font-display font-bold" style="color: var(--accent);">₹74,000</span>
+                </div>
+              </div>
+            </div>
+            <p class="text-xs font-semibold text-green-400 mt-3">26% off any package</p>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <span class="badge text-[10px]">SEO Optimized</span>
+            <span class="badge text-[10px]">Responsive</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Bundle Deal -->
+        <div class="glass-card rounded-2xl p-6 lg:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl animate-in border-2" style="border-color: var(--accent);">
+          <div class="absolute -top-3 -right-3 px-3 py-1.5 rounded-full text-xs font-display font-bold uppercase" style="background: var(--accent); color: var(--bg-primary);">
+            Best Value
+          </div>
+
+          <div class="flex items-start gap-4 mb-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: var(--accent)/10;">
+              <svg class="w-6 h-6" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-xl font-display font-bold mb-2" style="color: var(--text-primary);">Bundle Deal</h3>
+              <p class="text-sm mb-4" style="color: var(--text-muted);">Combine 2+ services and save even more</p>
+            </div>
+          </div>
+
+          <div class="border-t pt-4 mb-4" style="border-color: var(--border);">
+            <div class="flex items-baseline gap-3 mb-2">
+              <span class="text-xl font-display font-bold line-through" style="color: var(--text-muted);">₹65,000/mo</span>
+              <span class="text-3xl font-display font-black" style="color: var(--accent);">₹48,100/mo</span>
+            </div>
+            <p class="text-xs font-semibold text-green-400 mb-2">Save ₹16,900/month (26% OFF)</p>
+            <p class="text-xs" style="color: var(--text-muted);">Example: Inventory + GoEMR + Website</p>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <span class="badge-success text-[10px]">Maximum Savings</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="section-padding py-16 lg:py-20 relative">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12 animate-in">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-black mb-4" style="color: var(--text-primary);">
+          How It <span class="text-gradient">Works</span>
+        </h2>
+        <p class="text-base lg:text-lg" style="color: var(--text-muted);">
+          Three simple steps to claim your exclusive discount
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+        <!-- Step 1 -->
+        <div class="text-center animate-in">
+          <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6" style="background: var(--accent)/10;">
+            <span class="text-3xl font-display font-black" style="color: var(--accent);">1</span>
+          </div>
+          <h3 class="text-xl font-display font-bold mb-3" style="color: var(--text-primary);">Fill Out the Form</h3>
+          <p class="text-sm" style="color: var(--text-muted);">
+            Complete the form below with your business details and service preferences. Takes less than 2 minutes.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="text-center animate-in">
+          <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6" style="background: var(--accent)/10;">
+            <span class="text-3xl font-display font-black" style="color: var(--accent);">2</span>
+          </div>
+          <h3 class="text-xl font-display font-bold mb-3" style="color: var(--text-primary);">We Review & Contact You</h3>
+          <p class="text-sm" style="color: var(--text-muted);">
+            Our team reviews your submission and contacts you within 24 hours to discuss your needs and answer questions.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="text-center animate-in">
+          <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6" style="background: var(--accent)/10;">
+            <span class="text-3xl font-display font-black" style="color: var(--accent);">3</span>
+          </div>
+          <h3 class="text-xl font-display font-bold mb-3" style="color: var(--text-primary);">Get Your Discounted Quote</h3>
+          <p class="text-sm" style="color: var(--text-muted);">
+            Receive a personalized quote with the full 26% discount applied. No hidden fees or surprises.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Claim Form Section -->
+  <section id="claim-form" class="section-padding py-16 lg:py-20 relative" style="background: var(--bg-secondary);">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12 animate-in">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-black mb-4" style="color: var(--text-primary);">
+          Claim Your <span class="text-gradient">26% Discount</span>
+        </h2>
+        <p class="text-base lg:text-lg" style="color: var(--text-muted);">
+          Fill out the form below to reserve your spot
+        </p>
+      </div>
+
+      <!-- Form Container -->
+      <div id="form-container">
+        <form id="discount-form" class="glass-card rounded-2xl p-6 lg:p-10 animate-in" action="#" method="POST">
+          <!-- Name & Email Row -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label for="full-name" class="block text-sm font-display font-semibold mb-2" style="color: var(--text-primary);">
+                Full Name <span style="color: #FF1744;">*</span>
+              </label>
+              <input
+                type="text"
+                id="full-name"
+                name="full-name"
+                required
+                class="w-full px-4 py-3 rounded-xl border transition-all duration-200 focus:outline-none focus:ring-2"
+                style="background: var(--surface); border-color: var(--border); color: var(--text-primary); --tw-ring-color: var(--accent);"
+                placeholder="John Doe"
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-display font-semibold mb-2" style="color: var(--text-primary);">
+                Email Address <span style="color: #FF1744;">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full px-4 py-3 rounded-xl border transition-all duration-200 focus:outline-none focus:ring-2"
+                style="background: var(--surface); border-color: var(--border); color: var(--text-primary); --tw-ring-color: var(--accent);"
+                placeholder="john@example.com"
+              />
+            </div>
+          </div>
+
+          <!-- Phone & Business Name Row -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label for="phone" class="block text-sm font-display font-semibold mb-2" style="color: var(--text-primary);">
+                Phone Number <span style="color: #FF1744;">*</span>
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                class="w-full px-4 py-3 rounded-xl border transition-all duration-200 focus:outline-none focus:ring-2"
+                style="background: var(--surface); border-color: var(--border); color: var(--text-primary); --tw-ring-color: var(--accent);"
+                placeholder="+91-XXXXX-XXXXX"
+              />
+            </div>
+            <div>
+              <label for="business-name" class="block text-sm font-display font-semibold mb-2" style="color: var(--text-primary);">
+                Business/Practice Name
+              </label>
+              <input
+                type="text"
+                id="business-name"
+                name="business-name"
+                class="w-full px-4 py-3 rounded-xl border transition-all duration-200 focus:outline-none focus:ring-2"
+                style="background: var(--surface); border-color: var(--border); color: var(--text-primary); --tw-ring-color: var(--accent);"
+                placeholder="ABC Healthcare Clinic"
+              />
+            </div>
+          </div>
+
+          <!-- Business Type -->
+          <div class="mb-6">
+            <label for="business-type" class="block text-sm font-display font-semibold mb-2" style="color: var(--text-primary);">
+              Business Type
+            </label>
+            <select
+              id="business-type"
+              name="business-type"
+              class="w-full px-4 py-3 rounded-xl border transition-all duration-200 focus:outline-none focus:ring-2"
+              style="background: var(--surface); border-color: var(--border); color: var(--text-primary); --tw-ring-color: var(--accent);"
+            >
+              <option value="">Select your business type</option>
+              <option value="doctor-healthcare">Doctor/Healthcare</option>
+              <option value="yoga-studio">Yoga Studio</option>
+              <option value="salon">Salon</option>
+              <option value="spa">Spa</option>
+              <option value="fitness-gym">Fitness/Gym</option>
+              <option value="restaurant">Restaurant</option>
+              <option value="consultant">Consultant</option>
+              <option value="tutor">Tutor</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <!-- Interested In (Checkboxes) -->
+          <div class="mb-6">
+            <label class="block text-sm font-display font-semibold mb-3" style="color: var(--text-primary);">
+              Interested In <span style="color: #FF1744;">*</span>
+            </label>
+            <div class="space-y-3">
+              <label class="flex items-start gap-3 cursor-pointer group">
+                <input
+                  type="checkbox"
+                  name="interested-in"
+                  value="medical-inventory"
+                  class="mt-0.5 w-5 h-5 rounded border-2 transition-all duration-200 cursor-pointer"
+                  style="border-color: var(--border); accent-color: var(--accent);"
+                />
+                <span class="text-sm group-hover:text-[var(--accent)] transition-colors" style="color: var(--text-secondary);">Medical Inventory Management System</span>
+              </label>
+              <label class="flex items-start gap-3 cursor-pointer group">
+                <input
+                  type="checkbox"
+                  name="interested-in"
+                  value="goemr-patient-portal"
+                  class="mt-0.5 w-5 h-5 rounded border-2 transition-all duration-200 cursor-pointer"
+                  style="border-color: var(--border); accent-color: var(--accent);"
+                />
+                <span class="text-sm group-hover:text-[var(--accent)] transition-colors" style="color: var(--text-secondary);">GoEMR + Patient Portal</span>
+              </label>
+              <label class="flex items-start gap-3 cursor-pointer group">
+                <input
+                  type="checkbox"
+                  name="interested-in"
+                  value="website-freedom"
+                  class="mt-0.5 w-5 h-5 rounded border-2 transition-all duration-200 cursor-pointer"
+                  style="border-color: var(--border); accent-color: var(--accent);"
+                />
+                <span class="text-sm group-hover:text-[var(--accent)] transition-colors" style="color: var(--text-secondary);">Website Development - Freedom</span>
+              </label>
+              <label class="flex items-start gap-3 cursor-pointer group">
+                <input
+                  type="checkbox"
+                  name="interested-in"
+                  value="website-business-pro"
+                  class="mt-0.5 w-5 h-5 rounded border-2 transition-all duration-200 cursor-pointer"
+                  style="border-color: var(--border); accent-color: var(--accent);"
+                />
+                <span class="text-sm group-hover:text-[var(--accent)] transition-colors" style="color: var(--text-secondary);">Website Development - Business Pro</span>
+              </label>
+              <label class="flex items-start gap-3 cursor-pointer group">
+                <input
+                  type="checkbox"
+                  name="interested-in"
+                  value="website-enterprise"
+                  class="mt-0.5 w-5 h-5 rounded border-2 transition-all duration-200 cursor-pointer"
+                  style="border-color: var(--border); accent-color: var(--accent);"
+                />
+                <span class="text-sm group-hover:text-[var(--accent)] transition-colors" style="color: var(--text-secondary);">Website Development - Enterprise</span>
+              </label>
+              <label class="flex items-start gap-3 cursor-pointer group">
+                <input
+                  type="checkbox"
+                  name="interested-in"
+                  value="bundle-deal"
+                  class="mt-0.5 w-5 h-5 rounded border-2 transition-all duration-200 cursor-pointer"
+                  style="border-color: var(--border); accent-color: var(--accent);"
+                />
+                <span class="text-sm group-hover:text-[var(--accent)] transition-colors" style="color: var(--text-secondary);">Bundle Deal (2+ Services)</span>
+              </label>
+            </div>
+            <p id="checkbox-error" class="text-xs mt-2 hidden" style="color: #FF1744;">Please select at least one service</p>
+          </div>
+
+          <!-- Users/Locations & Budget Row -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label for="users" class="block text-sm font-display font-semibold mb-2" style="color: var(--text-primary);">
+                Number of Users/Locations
+              </label>
+              <select
+                id="users"
+                name="users"
+                class="w-full px-4 py-3 rounded-xl border transition-all duration-200 focus:outline-none focus:ring-2"
+                style="background: var(--surface); border-color: var(--border); color: var(--text-primary); --tw-ring-color: var(--accent);"
+              >
+                <option value="">Select range</option>
+                <option value="1-5">1-5</option>
+                <option value="6-15">6-15</option>
+                <option value="16-50">16-50</option>
+                <option value="51-100">51-100</option>
+                <option value="100+">100+</option>
+              </select>
+            </div>
+            <div>
+              <label for="budget" class="block text-sm font-display font-semibold mb-2" style="color: var(--text-primary);">
+                Budget Range
+              </label>
+              <select
+                id="budget"
+                name="budget"
+                class="w-full px-4 py-3 rounded-xl border transition-all duration-200 focus:outline-none focus:ring-2"
+                style="background: var(--surface); border-color: var(--border); color: var(--text-primary); --tw-ring-color: var(--accent);"
+              >
+                <option value="">Select budget range</option>
+                <option value="under-10000">Under ₹10,000</option>
+                <option value="10000-25000">₹10,000 - ₹25,000</option>
+                <option value="25000-50000">₹25,000 - ₹50,000</option>
+                <option value="50000+">₹50,000+</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Additional Message -->
+          <div class="mb-6">
+            <label for="message" class="block text-sm font-display font-semibold mb-2" style="color: var(--text-primary);">
+              Additional Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="w-full px-4 py-3 rounded-xl border transition-all duration-200 focus:outline-none focus:ring-2 resize-none"
+              style="background: var(--surface); border-color: var(--border); color: var(--text-primary); --tw-ring-color: var(--accent);"
+              placeholder="Tell us more about your needs or any questions you have..."
+            ></textarea>
+          </div>
+
+          <!-- Terms Checkbox -->
+          <div class="mb-8">
+            <label class="flex items-start gap-3 cursor-pointer group">
+              <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                required
+                class="mt-0.5 w-5 h-5 rounded border-2 transition-all duration-200 cursor-pointer"
+                style="border-color: var(--border); accent-color: var(--accent);"
+              />
+              <span class="text-sm" style="color: var(--text-secondary);">
+                I agree to the <a href="/terms" class="underline hover:text-[var(--accent)] transition-colors">Terms of Service</a> and <a href="/privacy" class="underline hover:text-[var(--accent)] transition-colors">Privacy Policy</a> <span style="color: #FF1744;">*</span>
+              </span>
+            </label>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn-primary w-full justify-center text-base">
+            Claim My 26% Discount
+          </button>
+
+          <!-- Note Below Form -->
+          <div class="mt-6 p-4 rounded-xl" style="background: var(--surface); border: 1px solid var(--border);">
+            <p class="text-sm text-center" style="color: var(--text-muted);">
+              <strong style="color: var(--text-primary);">No payment required now.</strong> This form reserves your spot. Our team will contact you to finalize your personalized quote with the 26% discount applied.
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <!-- Success Message (Hidden by Default) -->
+      <div id="success-message" class="glass-card rounded-2xl p-8 lg:p-12 text-center hidden animate-in">
+        <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6" style="background: rgba(168, 230, 207, 0.2);">
+          <svg class="w-10 h-10 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M5 13l4 4L19 7"/>
+          </svg>
+        </div>
+        <h3 class="text-2xl sm:text-3xl font-display font-black mb-4" style="color: var(--text-primary);">
+          Thank You for Your Interest!
+        </h3>
+        <p class="text-lg mb-4" style="color: var(--text-secondary);">
+          Your spot has been reserved. We'll contact you within 24 hours.
+        </p>
+        <p class="text-sm mb-6" style="color: var(--text-muted);">
+          Check your email for a confirmation and next steps. Our team is already preparing your personalized quote with the 26% discount applied.
+        </p>
+        <a href="/" class="btn-secondary">
+          Return to Home
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Section -->
+  <section class="section-padding py-12 lg:py-16 relative">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 text-center animate-in">
+        <div class="flex flex-col items-center gap-3">
+          <div class="w-16 h-16 rounded-xl flex items-center justify-center" style="background: var(--accent)/10;">
+            <svg class="w-8 h-8" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-sm font-display font-semibold mb-1" style="color: var(--text-primary);">HIPAA | GDPR | DPDP</p>
+            <p class="text-xs" style="color: var(--text-muted);">Fully Compliant</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center gap-3">
+          <div class="w-16 h-16 rounded-xl flex items-center justify-center" style="background: var(--accent)/10;">
+            <svg class="w-8 h-8" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-sm font-display font-semibold mb-1" style="color: var(--text-primary);">No Credit Card</p>
+            <p class="text-xs" style="color: var(--text-muted);">Required Now</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center gap-3">
+          <div class="w-16 h-16 rounded-xl flex items-center justify-center" style="background: var(--accent)/10;">
+            <svg class="w-8 h-8" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-sm font-display font-semibold mb-1" style="color: var(--text-primary);">30-Day</p>
+            <p class="text-xs" style="color: var(--text-muted);">Money-Back Guarantee</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center gap-3">
+          <div class="w-16 h-16 rounded-xl flex items-center justify-center" style="background: var(--accent)/10;">
+            <svg class="w-8 h-8" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-sm font-display font-semibold mb-1" style="color: var(--text-primary);">24/7 Support</p>
+            <p class="text-xs" style="color: var(--text-muted);">Always Available</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section-padding py-16 lg:py-20 relative" style="background: var(--bg-secondary);">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12 animate-in">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-black mb-4" style="color: var(--text-primary);">
+          Frequently Asked <span class="text-gradient">Questions</span>
+        </h2>
+      </div>
+
+      <div class="space-y-4 animate-in">
+        <!-- FAQ 1 -->
+        <div class="glass-card rounded-xl overflow-hidden faq-item">
+          <button class="faq-question w-full px-6 py-5 flex items-center justify-between text-left transition-colors hover:bg-[var(--surface)]">
+            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">Is this really a one-time discount?</span>
+            <svg class="faq-chevron w-5 h-5 transition-transform duration-200" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+            <div class="px-6 pb-5 pt-2">
+              <p class="text-sm" style="color: var(--text-muted);">
+                Yes, absolutely! This is a one-time 26% discount applied to your first invoice. It's our way of thanking early adopters. While the discount doesn't recur monthly, our regular pricing remains highly competitive and we offer loyalty benefits for long-term customers.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="glass-card rounded-xl overflow-hidden faq-item">
+          <button class="faq-question w-full px-6 py-5 flex items-center justify-between text-left transition-colors hover:bg-[var(--surface)]">
+            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">Can I combine this with other offers?</span>
+            <svg class="faq-chevron w-5 h-5 transition-transform duration-200" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+            <div class="px-6 pb-5 pt-2">
+              <p class="text-sm" style="color: var(--text-muted);">
+                The 26% launch special is our best offer and cannot be combined with other promotions or discounts. However, you can still take advantage of bundle pricing - when you select multiple services, you get the 26% discount applied to the entire bundle price.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="glass-card rounded-xl overflow-hidden faq-item">
+          <button class="faq-question w-full px-6 py-5 flex items-center justify-between text-left transition-colors hover:bg-[var(--surface)]">
+            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">What happens after I submit the form?</span>
+            <svg class="faq-chevron w-5 h-5 transition-transform duration-200" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+            <div class="px-6 pb-5 pt-2">
+              <p class="text-sm" style="color: var(--text-muted);">
+                Our team reviews your submission within 24 hours (usually much faster). We'll contact you via email and phone to discuss your specific needs, answer any questions, and provide a detailed personalized quote with the 26% discount already applied. There's no pressure - we're here to help you make the right decision for your business.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="glass-card rounded-xl overflow-hidden faq-item">
+          <button class="faq-question w-full px-6 py-5 flex items-center justify-between text-left transition-colors hover:bg-[var(--surface)]">
+            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">Is there a deadline for this offer?</span>
+            <svg class="faq-chevron w-5 h-5 transition-transform duration-200" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+            <div class="px-6 pb-5 pt-2">
+              <p class="text-sm" style="color: var(--text-muted);">
+                Yes - this offer is strictly limited to the first 26 customers only. Once all 26 spots are filled, the promotion closes permanently. We're currently down to just a handful of spots remaining, so we recommend submitting your form as soon as possible to secure your discount.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Strip -->
+  <section class="section-padding py-8 relative border-t border-b" style="border-color: var(--border);">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-center gap-x-8 gap-y-3 text-xs" style="color: var(--text-muted);">
+      <span class="flex items-center gap-2">💡 We believe in cooperation, not competition</span>
+      <span class="flex items-center gap-2">🌱 Digital-first for a sustainable future</span>
+      <span class="flex items-center gap-2">✓ HIPAA, GDPR, DPDP Compliant</span>
+      <span class="flex items-center gap-2">🌍 Please consider the environment before printing</span>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script is:inline>
+    // Campaign Data Fetch
+    async function fetchCampaignData() {
+      try {
+        const res = await fetch('/campaign-data.json');
+        const data = await res.json();
+
+        const offerSpots = document.getElementById('offer-spots');
+        const offerProgress = document.getElementById('offer-progress');
+
+        if (offerSpots && data.spotsRemaining !== undefined) {
+          offerSpots.textContent = data.spotsRemaining;
+
+          // Update progress bar
+          const spotsTaken = 26 - data.spotsRemaining;
+          const progressPercent = (spotsTaken / 26) * 100;
+          if (offerProgress) {
+            offerProgress.style.width = progressPercent + '%';
+          }
+        }
+      } catch (e) {
+        console.log('Using fallback campaign data');
+      }
+    }
+    fetchCampaignData();
+
+    // Form Validation & Submission
+    const form = document.getElementById('discount-form');
+    const formContainer = document.getElementById('form-container');
+    const successMessage = document.getElementById('success-message');
+    const checkboxError = document.getElementById('checkbox-error');
+
+    form?.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Validate at least one checkbox is checked
+      const checkboxes = form.querySelectorAll('input[name="interested-in"]:checked');
+      if (checkboxes.length === 0) {
+        checkboxError?.classList.remove('hidden');
+        const firstCheckbox = form.querySelector('input[name="interested-in"]');
+        firstCheckbox?.focus();
+        return;
+      } else {
+        checkboxError?.classList.add('hidden');
+      }
+
+      // Validate email format
+      const emailInput = document.getElementById('email');
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (emailInput && !emailRegex.test(emailInput.value)) {
+        emailInput.focus();
+        emailInput.setCustomValidity('Please enter a valid email address');
+        emailInput.reportValidity();
+        return;
+      }
+
+      // All validation passed - show success message
+      formContainer?.classList.add('hidden');
+      successMessage?.classList.remove('hidden');
+
+      // Smooth scroll to success message
+      successMessage?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      // In a real implementation, you would send the form data to a backend here
+      console.log('Form submitted successfully');
+    });
+
+    // Clear custom validity on email input
+    const emailInput = document.getElementById('email');
+    emailInput?.addEventListener('input', function() {
+      this.setCustomValidity('');
+    });
+
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      const answer = item.querySelector('.faq-answer');
+      const chevron = item.querySelector('.faq-chevron');
+
+      question?.addEventListener('click', () => {
+        const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+
+        // Close all other FAQs
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            const otherAnswer = otherItem.querySelector('.faq-answer');
+            const otherChevron = otherItem.querySelector('.faq-chevron');
+            otherAnswer.style.maxHeight = '0px';
+            otherChevron.style.transform = 'rotate(0deg)';
+          }
+        });
+
+        // Toggle current FAQ
+        if (isOpen) {
+          answer.style.maxHeight = '0px';
+          chevron.style.transform = 'rotate(0deg)';
+        } else {
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          chevron.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+
+    // GSAP Animations
+    if (typeof gsap !== 'undefined') {
+      // Hero animation
+      gsap.from('.animate-in', {
+        opacity: 0,
+        y: 30,
+        duration: 0.8,
+        stagger: 0.1,
+        ease: 'power3.out'
+      });
+    }
+
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+
+          if (typeof gsap !== 'undefined') {
+            gsap.to(entry.target, {
+              opacity: 1,
+              y: 0,
+              duration: 0.6,
+              ease: 'power3.out'
+            });
+          }
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-in').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</BaseLayout>
