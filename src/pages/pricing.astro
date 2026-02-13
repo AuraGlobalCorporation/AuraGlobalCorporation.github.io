@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Pricing - Aura Global Corporation">
+<BaseLayout title="Products & Services - Aura Global Corporation">
   <!-- Hero Section -->
   <section class="section-padding py-20 lg:py-28 relative overflow-hidden">
     <div class="absolute inset-0 opacity-30 pointer-events-none">
@@ -12,443 +12,263 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
     <div class="max-w-5xl mx-auto text-center relative z-10 animate-in">
       <h1 class="text-4xl sm:text-5xl lg:text-7xl font-display font-black mb-6">
-        <span class="text-gradient">Transparent and Scalable</span>
+        <span class="text-gradient">Products & Services</span>
       </h1>
       <p class="text-lg sm:text-xl lg:text-2xl mb-6" style="color: var(--text-secondary);">
-        Simple pricing. No hidden fees. No vendor lock-in.
+        Healthcare technology products and professional services — built for modern practices.
       </p>
       <p class="text-base lg:text-lg max-w-3xl mx-auto" style="color: var(--text-muted);">
-        Pay for what you need. Scale as you grow. Own your data. Switch anytime.
+        From inventory management to electronic medical records to professional websites — everything your practice needs to thrive in the digital age.
       </p>
+
+      <!-- Category Navigation -->
+      <div class="flex items-center justify-center gap-4 mt-10">
+        <a href="#products" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-display font-bold transition-all duration-300 hover:scale-105" style="background: var(--accent); color: #0D1B2A;">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+          Products
+        </a>
+        <a href="#services" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-display font-bold transition-all duration-300 hover:scale-105 border" style="color: var(--accent); border-color: var(--accent);">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          Services
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- Software Products Section -->
-  <section id="software" class="section-padding py-16 lg:py-20 relative" style="background: var(--bg-secondary);">
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PRODUCTS SECTION                            -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section id="products" class="section-padding py-16 lg:py-20 relative" style="background: var(--bg-secondary);">
     <div class="max-w-7xl mx-auto">
-      <!-- Launch Special Header -->
-      <div class="text-center mb-12 animate-in">
-        <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full mb-6 border-2" style="background: rgba(255, 23, 68, 0.05); border-color: rgba(255, 23, 68, 0.3);">
-          <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
-          <span class="font-display font-bold text-sm sm:text-base uppercase tracking-wide" style="color: #FF1744;">
-            LAUNCH SPECIAL: 26% OFF FOR FIRST 26 CUSTOMERS
-          </span>
-        </div>
 
-        <div class="glass-card rounded-2xl p-6 sm:p-8 max-w-3xl mx-auto mb-8">
-          <div class="flex items-center justify-between mb-4">
-            <span class="font-display font-semibold text-sm sm:text-base" style="color: var(--text-primary);">
-              Claimed:
-            </span>
-            <span id="pricing-spots" class="font-display font-bold text-base sm:text-lg" style="color: #FF1744;">
-              Only 18 spots remaining out of 26!
-            </span>
-          </div>
-
-          <!-- Progress Bar -->
-          <div class="w-full h-4 rounded-full overflow-hidden mb-6" style="background: var(--surface);">
-            <div id="progress-bar" class="h-full rounded-full bg-gradient-to-r from-aura-cyan to-blue-500 transition-all duration-500" style="width: 31%;"></div>
-          </div>
-
-          <!-- Savings Example -->
-          <div class="border-t pt-6" style="border-color: var(--border);">
-            <p class="text-sm font-display font-semibold mb-3 uppercase tracking-wide" style="color: var(--text-muted);">Example Savings</p>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-3 text-center sm:text-left">
-              <div class="flex-1">
-                <p class="text-xs mb-1" style="color: var(--text-muted);">Regular Price</p>
-                <p class="text-2xl font-display font-bold line-through" style="color: var(--text-secondary);">₹50,000/month</p>
-              </div>
-              <div class="text-2xl" style="color: var(--accent);">→</div>
-              <div class="flex-1">
-                <p class="text-xs mb-1" style="color: var(--text-muted);">First 26 Pay</p>
-                <p class="text-3xl font-display font-bold" style="color: var(--accent);">₹37,000/month</p>
-              </div>
-              <div class="flex-1">
-                <p class="text-xs mb-1" style="color: var(--text-muted);">Annual Savings</p>
-                <p class="text-2xl font-display font-bold text-green-400">₹1,56,000</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <!-- Section Header -->
+      <div class="flex items-center gap-3 mb-4 animate-in">
+        <div class="w-2 h-2 rounded-full" style="background: var(--accent);"></div>
+        <span class="text-xs font-display font-bold uppercase tracking-widest" style="color: var(--accent);">Products</span>
+        <div class="flex-1 h-px" style="background: var(--border);"></div>
+      </div>
+      <div class="text-center mb-14 animate-in">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-black mb-4" style="color: var(--text-primary);">
+          Healthcare Software Products
+        </h2>
+        <p class="text-base lg:text-lg max-w-3xl mx-auto" style="color: var(--text-muted);">
+          Purpose-built software for hospitals, clinics, and healthcare practices. HIPAA, GDPR & DPDP compliant by design.
+        </p>
       </div>
 
-      <!-- Inventory Management System -->
-      <div class="mb-16 animate-in">
-        <div class="text-center mb-8">
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-black mb-4" style="color: var(--text-primary);">
-            Medical Inventory Management System
-          </h2>
-          <p class="text-base lg:text-lg" style="color: var(--text-muted);">
-            Comprehensive inventory control for hospitals, clinics, and pharmacies
-          </p>
-        </div>
+      <!-- Product Cards -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-          <!-- Starter -->
-          <div class="glass-card rounded-2xl p-6 lg:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-            <div class="mb-6">
-              <h3 class="text-xl font-display font-bold mb-2" style="color: var(--text-primary);">Starter</h3>
-              <p class="text-sm" style="color: var(--text-muted);">Perfect for small clinics</p>
+        <!-- Product 1: Medical Inventory Management System -->
+        <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl animate-in group">
+          <!-- Header -->
+          <div class="relative p-6 lg:p-8" style="background: linear-gradient(135deg, rgba(0,229,255,0.08), rgba(0,229,255,0.02));">
+            <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5" style="background: rgba(0,229,255,0.12); border: 1px solid rgba(0,229,255,0.2);">
+              <svg class="w-7 h-7" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+              </svg>
             </div>
-
-            <div class="mb-6">
-              <div class="flex items-baseline gap-2 mb-2">
-                <span class="text-2xl font-display font-bold line-through" style="color: var(--text-muted);">₹15,000</span>
-              </div>
-              <div class="flex items-baseline gap-2">
-                <span class="text-4xl font-display font-black" style="color: var(--accent);">₹11,100</span>
-                <span class="text-sm" style="color: var(--text-muted);">/month</span>
-              </div>
-              <p class="text-xs mt-2 font-semibold text-green-400">Save ₹3,900/month (26% OFF)</p>
-            </div>
-
-            <div class="border-t pt-6 mb-6" style="border-color: var(--border);">
-              <ul class="space-y-3 text-sm" style="color: var(--text-secondary);">
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>1 location</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Up to 500 items</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>5 user accounts</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Real-time stock tracking</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Expiry alerts</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Basic reporting</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Email support</span>
-                </li>
-              </ul>
-            </div>
-
-            <a href="/contact" class="btn-secondary w-full justify-center">Get Started</a>
+            <h3 class="text-2xl font-display font-black mb-2" style="color: var(--text-primary);">Medical Inventory Management System</h3>
+            <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
+              Comprehensive inventory control for hospitals, clinics, and pharmacies. Track stock, manage expiry, automate reorders.
+            </p>
+            <span class="inline-flex items-center gap-1.5 mt-4 px-3 py-1 rounded-full text-[10px] font-display font-bold uppercase" style="background: rgba(0,229,255,0.1); color: var(--accent); border: 1px solid rgba(0,229,255,0.2);">
+              <span class="w-1.5 h-1.5 rounded-full bg-green-400"></span>
+              Available Now
+            </span>
           </div>
 
-          <!-- Professional (Most Popular) -->
-          <div class="glass-card rounded-2xl p-6 lg:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative border-2" style="border-color: var(--accent);">
-            <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full text-xs font-display font-bold uppercase" style="background: var(--accent); color: var(--bg-primary);">
-              Most Popular
+          <!-- Features -->
+          <div class="p-6 lg:p-8 pt-0 lg:pt-0">
+            <h4 class="text-xs font-display font-bold uppercase tracking-wider mb-4 mt-6" style="color: var(--accent);">Key Features</h4>
+            <ul class="space-y-3 text-sm" style="color: var(--text-secondary);">
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Real-time stock tracking & alerts</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Expiry date management & FEFO tracking</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Automated reorder points & purchase orders</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Barcode & QR code scanning</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Multi-location inventory sync</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Advanced analytics & reporting dashboard</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Vendor management & supplier tracking</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>API access for third-party integrations</span>
+              </li>
+            </ul>
+
+            <!-- Compliance -->
+            <div class="flex flex-wrap gap-2 mt-6">
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-display font-medium" style="background: var(--surface); color: var(--text-muted); border: 1px solid var(--border);">HIPAA</span>
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-display font-medium" style="background: var(--surface); color: var(--text-muted); border: 1px solid var(--border);">GDPR</span>
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-display font-medium" style="background: var(--surface); color: var(--text-muted); border: 1px solid var(--border);">DPDP</span>
             </div>
 
-            <div class="mb-6 mt-2">
-              <h3 class="text-xl font-display font-bold mb-2" style="color: var(--text-primary);">Professional</h3>
-              <p class="text-sm" style="color: var(--text-muted);">For growing practices</p>
-            </div>
-
-            <div class="mb-6">
-              <div class="flex items-baseline gap-2 mb-2">
-                <span class="text-2xl font-display font-bold line-through" style="color: var(--text-muted);">₹35,000</span>
-              </div>
-              <div class="flex items-baseline gap-2">
-                <span class="text-4xl font-display font-black" style="color: var(--accent);">₹25,900</span>
-                <span class="text-sm" style="color: var(--text-muted);">/month</span>
-              </div>
-              <p class="text-xs mt-2 font-semibold text-green-400">Save ₹9,100/month (26% OFF)</p>
-            </div>
-
-            <div class="border-t pt-6 mb-6" style="border-color: var(--border);">
-              <ul class="space-y-3 text-sm" style="color: var(--text-secondary);">
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Up to 3 locations</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Unlimited items</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>15 user accounts</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Advanced analytics</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Barcode scanning</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Automated reorder points</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>API access</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Priority support</span>
-                </li>
-              </ul>
-            </div>
-
-            <a href="/contact" class="btn-primary w-full justify-center">Get Started</a>
-          </div>
-
-          <!-- Enterprise -->
-          <div class="glass-card rounded-2xl p-6 lg:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-            <div class="mb-6">
-              <h3 class="text-xl font-display font-bold mb-2" style="color: var(--text-primary);">Enterprise</h3>
-              <p class="text-sm" style="color: var(--text-muted);">For hospitals & chains</p>
-            </div>
-
-            <div class="mb-6">
-              <div class="flex items-baseline gap-2 mb-2">
-                <span class="text-2xl font-display font-bold line-through" style="color: var(--text-muted);">₹75,000</span>
-              </div>
-              <div class="flex items-baseline gap-2">
-                <span class="text-4xl font-display font-black" style="color: var(--accent);">₹55,500</span>
-                <span class="text-sm" style="color: var(--text-muted);">/month</span>
-              </div>
-              <p class="text-xs mt-2 font-semibold text-green-400">Save ₹19,500/month (26% OFF)</p>
-            </div>
-
-            <div class="border-t pt-6 mb-6" style="border-color: var(--border);">
-              <ul class="space-y-3 text-sm" style="color: var(--text-secondary);">
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Unlimited locations</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Unlimited items & users</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>White-label solution</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Custom integrations</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Dedicated server option</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>SLA guarantee</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>24/7 dedicated support</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>On-site training</span>
-                </li>
-              </ul>
-            </div>
-
-            <a href="/contact" class="btn-secondary w-full justify-center">Contact Sales</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- GoEMR + Patient Portal Bundle -->
-      <div class="mb-12 animate-in">
-        <div class="text-center mb-8">
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-black mb-4" style="color: var(--text-primary);">
-            GoEMR + Patient Portal Bundle
-          </h2>
-          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-4" style="background: rgba(168, 230, 207, 0.1); border: 1px solid rgba(168, 230, 207, 0.2);">
-            <span class="font-display font-semibold text-sm" style="color: #A8E6CF;">Coming Q3-Q4 2026</span>
-          </div>
-          <p class="text-base lg:text-lg" style="color: var(--text-muted);">
-            Complete electronic medical records with patient engagement
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-          <!-- Solo -->
-          <div class="glass-card rounded-2xl p-6 lg:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-            <div class="mb-6">
-              <h3 class="text-xl font-display font-bold mb-2" style="color: var(--text-primary);">Solo</h3>
-              <p class="text-sm" style="color: var(--text-muted);">Individual practitioners</p>
-            </div>
-
-            <div class="mb-6">
-              <div class="flex items-baseline gap-2 mb-2">
-                <span class="text-2xl font-display font-bold line-through" style="color: var(--text-muted);">₹12,000</span>
-              </div>
-              <div class="flex items-baseline gap-2">
-                <span class="text-4xl font-display font-black" style="color: var(--accent);">₹8,880</span>
-                <span class="text-sm" style="color: var(--text-muted);">/month</span>
-              </div>
-              <p class="text-xs mt-2 font-semibold text-green-400">Save ₹3,120/month (26% OFF)</p>
-            </div>
-
-            <div class="border-t pt-6 mb-6" style="border-color: var(--border);">
-              <ul class="space-y-3 text-sm" style="color: var(--text-secondary);">
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>1 provider</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Up to 500 patients</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Digital prescriptions</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Patient portal access</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Appointment scheduling</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>5GB storage</span>
-                </li>
-              </ul>
-            </div>
-
-            <a href="#waitlist" class="btn-secondary w-full justify-center">Join Waitlist</a>
-          </div>
-
-          <!-- Group Practice -->
-          <div class="glass-card rounded-2xl p-6 lg:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-            <div class="mb-6">
-              <h3 class="text-xl font-display font-bold mb-2" style="color: var(--text-primary);">Group Practice</h3>
-              <p class="text-sm" style="color: var(--text-muted);">Multi-provider clinics</p>
-            </div>
-
-            <div class="mb-6">
-              <div class="flex items-baseline gap-2 mb-2">
-                <span class="text-2xl font-display font-bold line-through" style="color: var(--text-muted);">₹40,000</span>
-              </div>
-              <div class="flex items-baseline gap-2">
-                <span class="text-4xl font-display font-black" style="color: var(--accent);">₹29,600</span>
-                <span class="text-sm" style="color: var(--text-muted);">/month</span>
-              </div>
-              <p class="text-xs mt-2 font-semibold text-green-400">Save ₹10,400/month (26% OFF)</p>
-            </div>
-
-            <div class="border-t pt-6 mb-6" style="border-color: var(--border);">
-              <ul class="space-y-3 text-sm" style="color: var(--text-secondary);">
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Up to 10 providers</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Up to 5,000 patients</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Lab integration</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Billing & claims</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Telemedicine support</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>50GB storage</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Advanced reporting</span>
-                </li>
-              </ul>
-            </div>
-
-            <a href="#waitlist" class="btn-secondary w-full justify-center">Join Waitlist</a>
-          </div>
-
-          <!-- Hospital -->
-          <div class="glass-card rounded-2xl p-6 lg:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-            <div class="mb-6">
-              <h3 class="text-xl font-display font-bold mb-2" style="color: var(--text-primary);">Hospital</h3>
-              <p class="text-sm" style="color: var(--text-muted);">Large healthcare facilities</p>
-            </div>
-
-            <div class="mb-6">
-              <div class="flex items-baseline gap-2 mb-2">
-                <span class="text-2xl font-display font-bold line-through" style="color: var(--text-muted);">₹1,00,000</span>
-              </div>
-              <div class="flex items-baseline gap-2">
-                <span class="text-4xl font-display font-black" style="color: var(--accent);">₹74,000</span>
-                <span class="text-sm" style="color: var(--text-muted);">/month</span>
-              </div>
-              <p class="text-xs mt-2 font-semibold text-green-400">Save ₹26,000/month (26% OFF)</p>
-            </div>
-
-            <div class="border-t pt-6 mb-6" style="border-color: var(--border);">
-              <ul class="space-y-3 text-sm" style="color: var(--text-secondary);">
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Unlimited providers</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Unlimited patients</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Multi-department management</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>PACS integration</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Insurance management</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>500GB storage</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Dedicated account manager</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span>Custom workflows</span>
-                </li>
-              </ul>
-            </div>
-
-            <a href="#waitlist" class="btn-secondary w-full justify-center">Join Waitlist</a>
+            <a href="/contact" class="btn-primary w-full justify-center mt-6">Get Started</a>
           </div>
         </div>
 
-        <div class="mt-8 text-center">
-          <p class="text-sm" style="color: var(--text-muted);">
-            <span class="font-semibold">Note:</span> Prices are estimates. 26% discount guaranteed for first 26 customers. Annual plans get additional 10% off.
-          </p>
+        <!-- Product 2: GoEMR -->
+        <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl animate-in group">
+          <!-- Header -->
+          <div class="relative p-6 lg:p-8" style="background: linear-gradient(135deg, rgba(168,230,207,0.08), rgba(168,230,207,0.02));">
+            <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5" style="background: rgba(168,230,207,0.12); border: 1px solid rgba(168,230,207,0.2);">
+              <svg class="w-7 h-7" style="color: #A8E6CF;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-black mb-2" style="color: var(--text-primary);">GoEMR</h3>
+            <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
+              Next-generation Electronic Medical Records system. Digital prescriptions, patient history, lab integration, and telemedicine — all in one platform.
+            </p>
+            <span class="inline-flex items-center gap-1.5 mt-4 px-3 py-1 rounded-full text-[10px] font-display font-bold uppercase" style="background: rgba(168,230,207,0.1); color: #A8E6CF; border: 1px solid rgba(168,230,207,0.2);">
+              <span class="w-1.5 h-1.5 rounded-full" style="background: #A8E6CF;"></span>
+              Coming Q3-Q4 2026
+            </span>
+          </div>
+
+          <!-- Features -->
+          <div class="p-6 lg:p-8 pt-0 lg:pt-0">
+            <h4 class="text-xs font-display font-bold uppercase tracking-wider mb-4 mt-6" style="color: #A8E6CF;">Key Features</h4>
+            <ul class="space-y-3 text-sm" style="color: var(--text-secondary);">
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: #A8E6CF;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Digital prescriptions & e-signatures</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: #A8E6CF;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Complete patient history & records</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: #A8E6CF;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Lab & diagnostic integration</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: #A8E6CF;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Appointment scheduling & calendar</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: #A8E6CF;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Billing, claims & insurance management</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: #A8E6CF;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Telemedicine & video consultations</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: #A8E6CF;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Multi-department management</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: #A8E6CF;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>PACS & imaging integration</span>
+              </li>
+            </ul>
+
+            <!-- Compliance -->
+            <div class="flex flex-wrap gap-2 mt-6">
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-display font-medium" style="background: var(--surface); color: var(--text-muted); border: 1px solid var(--border);">HIPAA</span>
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-display font-medium" style="background: var(--surface); color: var(--text-muted); border: 1px solid var(--border);">GDPR</span>
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-display font-medium" style="background: var(--surface); color: var(--text-muted); border: 1px solid var(--border);">DPDP</span>
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-display font-medium" style="background: var(--surface); color: var(--text-muted); border: 1px solid var(--border);">HL7 FHIR</span>
+            </div>
+
+            <a href="#waitlist" class="btn-secondary w-full justify-center mt-6">Join Waitlist</a>
+          </div>
+        </div>
+
+        <!-- Product 3: Patient Portal -->
+        <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl animate-in group">
+          <!-- Header -->
+          <div class="relative p-6 lg:p-8" style="background: linear-gradient(135deg, rgba(255,183,77,0.08), rgba(255,183,77,0.02));">
+            <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5" style="background: rgba(255,183,77,0.12); border: 1px solid rgba(255,183,77,0.2);">
+              <svg class="w-7 h-7" style="color: #FFB74D;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-black mb-2" style="color: var(--text-primary);">Patient Portal</h3>
+            <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
+              Empower patients with self-service access to their health records, appointment booking, prescriptions, and secure messaging with providers.
+            </p>
+            <span class="inline-flex items-center gap-1.5 mt-4 px-3 py-1 rounded-full text-[10px] font-display font-bold uppercase" style="background: rgba(255,183,77,0.1); color: #FFB74D; border: 1px solid rgba(255,183,77,0.2);">
+              <span class="w-1.5 h-1.5 rounded-full" style="background: #FFB74D;"></span>
+              Coming Q3-Q4 2026
+            </span>
+          </div>
+
+          <!-- Features -->
+          <div class="p-6 lg:p-8 pt-0 lg:pt-0">
+            <h4 class="text-xs font-display font-bold uppercase tracking-wider mb-4 mt-6" style="color: #FFB74D;">Key Features</h4>
+            <ul class="space-y-3 text-sm" style="color: var(--text-secondary);">
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: #FFB74D;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Online appointment booking & management</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: #FFB74D;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>View medical records & lab results</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: #FFB74D;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Prescription history & refill requests</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: #FFB74D;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Secure messaging with healthcare providers</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: #FFB74D;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Bill payments & insurance claims tracking</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: #FFB74D;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Health reminders & medication alerts</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: #FFB74D;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Family member account linking</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: #FFB74D;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Seamless integration with GoEMR</span>
+              </li>
+            </ul>
+
+            <!-- Compliance -->
+            <div class="flex flex-wrap gap-2 mt-6">
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-display font-medium" style="background: var(--surface); color: var(--text-muted); border: 1px solid var(--border);">HIPAA</span>
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-display font-medium" style="background: var(--surface); color: var(--text-muted); border: 1px solid var(--border);">GDPR</span>
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-display font-medium" style="background: var(--surface); color: var(--text-muted); border: 1px solid var(--border);">DPDP</span>
+            </div>
+
+            <a href="#waitlist" class="btn-secondary w-full justify-center mt-6">Join Waitlist</a>
+          </div>
         </div>
       </div>
 
       <!-- Waitlist Form -->
-      <div id="waitlist" class="glass-card rounded-2xl p-8 lg:p-12 max-w-3xl mx-auto animate-in">
+      <div id="waitlist" class="glass-card rounded-2xl p-8 lg:p-12 max-w-3xl mx-auto mt-16 animate-in">
         <div class="text-center mb-8">
-          <h3 class="text-2xl sm:text-3xl font-display font-black mb-3" style="color: var(--text-primary);">Join the GoEMR Waitlist</h3>
+          <h3 class="text-2xl sm:text-3xl font-display font-black mb-3" style="color: var(--text-primary);">Join the Product Waitlist</h3>
           <p class="text-base" style="color: var(--text-muted);">Be among the first to experience next-gen healthcare software</p>
         </div>
 
@@ -477,7 +297,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
           <div>
             <label class="block text-sm font-display font-semibold mb-3" style="color: var(--text-primary);">Product Interest *</label>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <label class="flex items-center gap-3 p-3 rounded-lg border cursor-pointer transition-all hover:border-[var(--accent)]" style="background: var(--surface); border-color: var(--border);">
                 <input type="checkbox" name="product-interest" value="inventory" class="w-4 h-4 rounded accent-[var(--accent)]">
                 <span class="text-sm" style="color: var(--text-primary);">Inventory Management</span>
@@ -490,10 +310,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                 <input type="checkbox" name="product-interest" value="patient-portal" class="w-4 h-4 rounded accent-[var(--accent)]">
                 <span class="text-sm" style="color: var(--text-primary);">Patient Portal</span>
               </label>
-              <label class="flex items-center gap-3 p-3 rounded-lg border cursor-pointer transition-all hover:border-[var(--accent)]" style="background: var(--surface); border-color: var(--border);">
-                <input type="checkbox" name="product-interest" value="website" class="w-4 h-4 rounded accent-[var(--accent)]">
-                <span class="text-sm" style="color: var(--text-primary);">Website Development</span>
-              </label>
             </div>
           </div>
 
@@ -505,271 +321,125 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </section>
 
-  <!-- Website Development Services -->
-  <section id="websites" class="section-padding py-16 lg:py-20">
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SERVICES SECTION                            -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section id="services" class="section-padding py-16 lg:py-20">
     <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-12 animate-in">
+
+      <!-- Section Header -->
+      <div class="flex items-center gap-3 mb-4 animate-in">
+        <div class="w-2 h-2 rounded-full" style="background: var(--accent);"></div>
+        <span class="text-xs font-display font-bold uppercase tracking-widest" style="color: var(--accent);">Services</span>
+        <div class="flex-1 h-px" style="background: var(--border);"></div>
+      </div>
+      <div class="text-center mb-14 animate-in">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-black mb-4" style="color: var(--text-primary);">
-          Professional Websites That Grow Your Practice
+          Website Development Services
         </h2>
         <p class="text-xl sm:text-2xl mb-4 text-gradient font-display font-bold">
-          No Recurring Fees
+          No Recurring Fees. FREE Hosting Forever.
         </p>
         <p class="text-base lg:text-lg max-w-3xl mx-auto" style="color: var(--text-muted);">
-          Unlike traditional agencies charging ₹50,000+ with hefty monthly fees, we offer transparent one-time pricing with FREE hosting forever.
+          Professional, modern websites built for healthcare practices, businesses, and professionals. One-time investment, lifetime value.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-16">
-        <!-- Freedom Plan -->
-        <div class="glass-card rounded-2xl p-6 lg:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl animate-in">
-          <div class="text-3xl mb-4">🎯</div>
-          <div class="mb-6">
-            <h3 class="text-xl font-display font-bold mb-2" style="color: var(--text-primary);">Freedom Plan</h3>
-            <p class="text-sm" style="color: var(--text-muted);">Perfect for individual doctors</p>
-          </div>
+      <!-- Website Service: What's Included -->
+      <div class="glass-card rounded-2xl overflow-hidden animate-in border" style="border-color: rgba(0,229,255,0.2);">
+        <div class="grid lg:grid-cols-2 gap-0">
 
-          <div class="mb-6">
-            <div class="flex items-baseline gap-2">
-              <span class="text-4xl font-display font-black" style="color: var(--accent);">₹9,999</span>
-              <span class="text-sm" style="color: var(--text-muted);">one-time</span>
+          <!-- Left: Service Overview -->
+          <div class="p-8 lg:p-10" style="background: linear-gradient(135deg, rgba(0,229,255,0.05), transparent);">
+            <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-6" style="background: rgba(0,229,255,0.12); border: 1px solid rgba(0,229,255,0.2);">
+              <svg class="w-7 h-7" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+              </svg>
             </div>
-            <p class="text-xs mt-2" style="color: var(--text-muted);">Year 2 onwards: ₹2,999/year</p>
-          </div>
 
-          <div class="border-t pt-6 mb-6" style="border-color: var(--border);">
-            <ul class="space-y-3 text-sm" style="color: var(--text-secondary);">
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>Up to 7 pages</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>Free domain (.com/.in)</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span><strong>FREE hosting forever</strong></span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>5 professional email IDs</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>Mobile responsive design</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>Contact form</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>Google Maps integration</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>Basic SEO</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>SSL certificate</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>Dark/Light mode</span>
-              </li>
-            </ul>
-          </div>
+            <h3 class="text-2xl lg:text-3xl font-display font-black mb-4" style="color: var(--text-primary);">Professional Website Development</h3>
+            <p class="text-sm leading-relaxed mb-6" style="color: var(--text-muted);">
+              We build fast, modern, mobile-responsive websites tailored to your practice. Every website includes free hosting, SSL certificate, SEO optimization, and a professional domain — no hidden costs.
+            </p>
 
-          <a href="/contact" class="btn-secondary w-full justify-center">Get Started</a>
-        </div>
-
-        <!-- Business Pro -->
-        <div class="glass-card rounded-2xl p-6 lg:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl animate-in border-2" style="border-color: var(--accent);">
-          <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full text-xs font-display font-bold uppercase" style="background: var(--accent); color: var(--bg-primary);">
-            Most Popular
-          </div>
-
-          <div class="text-3xl mb-4 mt-2">🚀</div>
-          <div class="mb-6">
-            <h3 class="text-xl font-display font-bold mb-2" style="color: var(--text-primary);">Business Pro</h3>
-            <p class="text-sm" style="color: var(--text-muted);">For clinics & small hospitals</p>
-          </div>
-
-          <div class="mb-6">
-            <div class="flex items-baseline gap-2">
-              <span class="text-4xl font-display font-black" style="color: var(--accent);">₹14,999</span>
-              <span class="text-sm" style="color: var(--text-muted);">one-time</span>
+            <!-- Who It's For -->
+            <h4 class="text-xs font-display font-bold uppercase tracking-wider mb-3" style="color: var(--accent);">Built For</h4>
+            <div class="flex flex-wrap gap-2 mb-6">
+              {['Doctors & Clinics', 'Hospitals', 'Yoga Studios', 'Salons & Spas', 'Restaurants', 'Fitness Trainers', 'Consultants', 'Tutors', 'Any Business'].map(item => (
+                <span class="px-3 py-1.5 rounded-lg text-[10px] font-display font-medium" style="background: var(--surface); color: var(--text-secondary); border: 1px solid var(--border);">{item}</span>
+              ))}
             </div>
-            <p class="text-xs mt-2" style="color: var(--text-muted);">Year 2 onwards: ₹3,499/year</p>
-          </div>
 
-          <div class="border-t pt-6 mb-6" style="border-color: var(--border);">
-            <p class="text-xs font-semibold mb-3 uppercase tracking-wide" style="color: var(--text-muted);">Everything in Freedom, plus:</p>
-            <ul class="space-y-3 text-sm" style="color: var(--text-secondary);">
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>Up to 12 pages</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>Advanced SEO optimization</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>Google Analytics setup</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>WhatsApp integration</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>Social media links</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>Blog section with 5 articles</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>Up to 3 revisions</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>Priority support</span>
-              </li>
-            </ul>
-          </div>
-
-          <a href="/contact" class="btn-primary w-full justify-center">Get Started</a>
-        </div>
-
-        <!-- Enterprise -->
-        <div class="glass-card rounded-2xl p-6 lg:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl animate-in">
-          <div class="text-3xl mb-4">💼</div>
-          <div class="mb-6">
-            <h3 class="text-xl font-display font-bold mb-2" style="color: var(--text-primary);">Enterprise</h3>
-            <p class="text-sm" style="color: var(--text-muted);">For large hospitals & chains</p>
-          </div>
-
-          <div class="mb-6">
-            <div class="flex items-baseline gap-2">
-              <span class="text-4xl font-display font-black" style="color: var(--accent);">₹24,999</span>
-              <span class="text-sm" style="color: var(--text-muted);">one-time</span>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="/offers" class="btn-primary justify-center">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                Claim 26% Discount
+              </a>
+              <a href="/portfolio" class="btn-secondary justify-center">View Portfolio</a>
             </div>
-            <p class="text-xs mt-2" style="color: var(--text-muted);">Year 2 onwards: ₹4,999/year</p>
           </div>
 
-          <div class="border-t pt-6 mb-6" style="border-color: var(--border);">
-            <p class="text-xs font-semibold mb-3 uppercase tracking-wide" style="color: var(--text-muted);">Everything in Business Pro, plus:</p>
-            <ul class="space-y-3 text-sm" style="color: var(--text-secondary);">
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>Up to 20 pages</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>E-commerce/Booking system</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>Custom GSAP animations</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>Advanced forms & automations</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>Monthly content updates</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>10 email IDs</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>Custom features & integrations</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span>Dedicated project manager</span>
-              </li>
-            </ul>
-          </div>
+          <!-- Right: Feature Lists -->
+          <div class="p-8 lg:p-10 border-t lg:border-t-0 lg:border-l" style="border-color: var(--border);">
+            <h4 class="text-xs font-display font-bold uppercase tracking-wider mb-5" style="color: var(--accent);">What Every Website Includes</h4>
 
-          <a href="/contact" class="btn-secondary w-full justify-center">Contact Sales</a>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {[
+                'Custom responsive design',
+                'Mobile-first development',
+                'Free domain (.com/.in)',
+                'FREE hosting forever',
+                'SSL certificate included',
+                'Professional email IDs',
+                'SEO optimization',
+                'Contact form integration',
+                'Google Maps integration',
+                'WhatsApp integration',
+                'Dark/Light mode toggle',
+                'Fast page load speeds',
+                'Social media links',
+                'Google Analytics setup',
+                'Blog section',
+                'Revisions included',
+              ].map(item => (
+                <div class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span class="text-xs" style="color: var(--text-secondary);">{item}</span>
+                </div>
+              ))}
+            </div>
+
+            <!-- Add-ons -->
+            <div class="mt-8 pt-6 border-t" style="border-color: var(--border);">
+              <h4 class="text-xs font-display font-bold uppercase tracking-wider mb-4" style="color: var(--accent);">Available Add-Ons</h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {[
+                  'E-commerce / booking system',
+                  'Custom GSAP animations',
+                  'Multi-language support',
+                  'Video integration & hosting',
+                  'Monthly content updates',
+                  'Social media management',
+                  'Blog article writing',
+                  'Advanced forms & automations',
+                ].map(item => (
+                  <div class="flex items-start gap-2.5">
+                    <svg class="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);"><path d="M12 4v16m8-8H4"/></svg>
+                    <span class="text-xs" style="color: var(--text-muted);">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Add-On Services Table -->
-      <div class="glass-card rounded-2xl p-6 lg:p-8 mb-16 animate-in">
-        <h3 class="text-2xl font-display font-bold mb-6" style="color: var(--text-primary);">Add-On Services</h3>
-
-        <div class="overflow-x-auto">
-          <table class="w-full text-sm">
-            <thead>
-              <tr class="border-b" style="border-color: var(--border);">
-                <th class="text-left py-3 px-4 font-display font-semibold" style="color: var(--text-primary);">Service</th>
-                <th class="text-left py-3 px-4 font-display font-semibold" style="color: var(--text-primary);">Type</th>
-                <th class="text-right py-3 px-4 font-display font-semibold" style="color: var(--text-primary);">Price</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="border-b" style="border-color: var(--border);">
-                <td class="py-3 px-4" style="color: var(--text-secondary);">Additional pages (beyond plan)</td>
-                <td class="py-3 px-4"><span class="badge">One-Time</span></td>
-                <td class="text-right py-3 px-4 font-semibold" style="color: var(--accent);">₹500/page</td>
-              </tr>
-              <tr class="border-b" style="border-color: var(--border);">
-                <td class="py-3 px-4" style="color: var(--text-secondary);">E-commerce functionality</td>
-                <td class="py-3 px-4"><span class="badge">One-Time</span></td>
-                <td class="text-right py-3 px-4 font-semibold" style="color: var(--accent);">₹2,000</td>
-              </tr>
-              <tr class="border-b" style="border-color: var(--border);">
-                <td class="py-3 px-4" style="color: var(--text-secondary);">Custom animations (GSAP)</td>
-                <td class="py-3 px-4"><span class="badge">One-Time</span></td>
-                <td class="text-right py-3 px-4 font-semibold" style="color: var(--accent);">₹3,000</td>
-              </tr>
-              <tr class="border-b" style="border-color: var(--border);">
-                <td class="py-3 px-4" style="color: var(--text-secondary);">Multi-language support</td>
-                <td class="py-3 px-4"><span class="badge">One-Time</span></td>
-                <td class="text-right py-3 px-4 font-semibold" style="color: var(--accent);">₹5,000</td>
-              </tr>
-              <tr class="border-b" style="border-color: var(--border);">
-                <td class="py-3 px-4" style="color: var(--text-secondary);">Video integration & hosting</td>
-                <td class="py-3 px-4"><span class="badge">One-Time</span></td>
-                <td class="text-right py-3 px-4 font-semibold" style="color: var(--accent);">₹2,000</td>
-              </tr>
-              <tr class="border-b" style="border-color: var(--border);">
-                <td class="py-3 px-4" style="color: var(--text-secondary);">Content updates & maintenance</td>
-                <td class="py-3 px-4"><span class="badge-success">Monthly</span></td>
-                <td class="text-right py-3 px-4 font-semibold" style="color: var(--accent);">₹1,999/month</td>
-              </tr>
-              <tr class="border-b" style="border-color: var(--border);">
-                <td class="py-3 px-4" style="color: var(--text-secondary);">Blog article writing</td>
-                <td class="py-3 px-4"><span class="badge-success">Monthly</span></td>
-                <td class="text-right py-3 px-4 font-semibold" style="color: var(--accent);">₹999/article</td>
-              </tr>
-              <tr>
-                <td class="py-3 px-4" style="color: var(--text-secondary);">Social media management</td>
-                <td class="py-3 px-4"><span class="badge-success">Monthly</span></td>
-                <td class="text-right py-3 px-4 font-semibold" style="color: var(--accent);">₹2,499/month</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- Comparison Table -->
-      <div class="glass-card rounded-2xl p-6 lg:p-8 animate-in">
+      <!-- Why Us Comparison -->
+      <div class="glass-card rounded-2xl p-6 lg:p-8 mt-10 animate-in">
         <div class="text-center mb-8">
           <h3 class="text-2xl sm:text-3xl font-display font-black mb-3" style="color: var(--text-primary);">
-            Why Our Pricing Beats Traditional Agencies
+            Why Choose Aura Global Over Traditional Agencies?
           </h3>
-          <p class="text-base" style="color: var(--text-muted);">Real comparison, real savings</p>
         </div>
 
         <div class="overflow-x-auto">
@@ -783,56 +453,42 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </thead>
             <tbody>
               <tr class="border-b" style="border-color: var(--border);">
-                <td class="py-4 px-4 font-semibold" style="color: var(--text-primary);">Initial Setup</td>
-                <td class="text-center py-4 px-4" style="color: var(--text-secondary);">₹50,000+</td>
-                <td class="text-center py-4 px-4 font-semibold" style="color: var(--accent);">₹9,999</td>
+                <td class="py-4 px-4 font-semibold" style="color: var(--text-primary);">Pricing Model</td>
+                <td class="text-center py-4 px-4" style="color: var(--text-secondary);">High upfront + monthly fees</td>
+                <td class="text-center py-4 px-4 font-semibold" style="color: var(--accent);">One-time payment</td>
               </tr>
               <tr class="border-b" style="border-color: var(--border);">
-                <td class="py-4 px-4 font-semibold" style="color: var(--text-primary);">Monthly Hosting</td>
-                <td class="text-center py-4 px-4" style="color: var(--text-secondary);">₹2,000-5,000</td>
+                <td class="py-4 px-4 font-semibold" style="color: var(--text-primary);">Hosting</td>
+                <td class="text-center py-4 px-4" style="color: var(--text-secondary);">Paid monthly</td>
                 <td class="text-center py-4 px-4 font-semibold text-green-400">FREE Forever</td>
               </tr>
               <tr class="border-b" style="border-color: var(--border);">
-                <td class="py-4 px-4 font-semibold" style="color: var(--text-primary);">Yearly Maintenance</td>
-                <td class="text-center py-4 px-4" style="color: var(--text-secondary);">₹15,000+</td>
-                <td class="text-center py-4 px-4 font-semibold" style="color: var(--accent);">₹2,999</td>
-              </tr>
-              <tr class="border-b" style="border-color: var(--border);">
-                <td class="py-4 px-4 font-semibold" style="color: var(--text-primary);">Domain & Email</td>
-                <td class="text-center py-4 px-4" style="color: var(--text-secondary);">Extra charges</td>
+                <td class="py-4 px-4 font-semibold" style="color: var(--text-primary);">SSL Certificate</td>
+                <td class="text-center py-4 px-4" style="color: var(--text-secondary);">Extra charge</td>
                 <td class="text-center py-4 px-4 font-semibold text-green-400">Included</td>
               </tr>
               <tr class="border-b" style="border-color: var(--border);">
-                <td class="py-4 px-4 font-semibold" style="color: var(--text-primary);">SSL Certificate</td>
-                <td class="text-center py-4 px-4" style="color: var(--text-secondary);">₹5,000/year</td>
-                <td class="text-center py-4 px-4 font-semibold text-green-400">FREE</td>
+                <td class="py-4 px-4 font-semibold" style="color: var(--text-primary);">Domain & Email</td>
+                <td class="text-center py-4 px-4" style="color: var(--text-secondary);">Extra charge</td>
+                <td class="text-center py-4 px-4 font-semibold text-green-400">Included</td>
               </tr>
               <tr class="border-b" style="border-color: var(--border);">
-                <td class="py-4 px-4 font-semibold" style="color: var(--text-primary);">Performance Guarantee</td>
-                <td class="text-center py-4 px-4" style="color: var(--text-muted);">❌</td>
-                <td class="text-center py-4 px-4" style="color: var(--accent);">✅</td>
+                <td class="py-4 px-4 font-semibold" style="color: var(--text-primary);">Performance</td>
+                <td class="text-center py-4 px-4" style="color: var(--text-muted);">No guarantee</td>
+                <td class="text-center py-4 px-4" style="color: var(--accent);">Optimized & fast</td>
               </tr>
               <tr class="border-b" style="border-color: var(--border);">
                 <td class="py-4 px-4 font-semibold" style="color: var(--text-primary);">Mobile Optimization</td>
                 <td class="text-center py-4 px-4" style="color: var(--text-secondary);">Sometimes extra</td>
-                <td class="text-center py-4 px-4" style="color: var(--accent);">✅ Standard</td>
+                <td class="text-center py-4 px-4" style="color: var(--accent);">Standard</td>
               </tr>
-              <tr class="border-b" style="border-color: var(--border);">
+              <tr>
                 <td class="py-4 px-4 font-semibold" style="color: var(--text-primary);">Full Ownership</td>
-                <td class="text-center py-4 px-4" style="color: var(--text-muted);">Limited</td>
-                <td class="text-center py-4 px-4" style="color: var(--accent);">✅ Complete</td>
-              </tr>
-              <tr class="bg-gradient-to-r from-transparent via-aura-cyan/5 to-transparent">
-                <td class="py-4 px-4 font-display font-black text-base" style="color: var(--text-primary);">Total 3-Year Cost</td>
-                <td class="text-center py-4 px-4 font-display font-bold text-lg text-red-400">₹1,50,000+</td>
-                <td class="text-center py-4 px-4 font-display font-bold text-xl" style="color: var(--accent);">₹15,997</td>
+                <td class="text-center py-4 px-4" style="color: var(--text-muted);">Limited / locked in</td>
+                <td class="text-center py-4 px-4" style="color: var(--accent);">Complete ownership</td>
               </tr>
             </tbody>
           </table>
-        </div>
-
-        <div class="mt-6 text-center">
-          <p class="text-lg font-display font-bold text-green-400">Save 84% over 3 years!</p>
         </div>
       </div>
     </div>
@@ -845,23 +501,18 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-black mb-4" style="color: var(--text-primary);">
           Frequently Asked Questions
         </h2>
-        <p class="text-base lg:text-lg" style="color: var(--text-muted);">
-          Everything you need to know about our pricing
-        </p>
       </div>
 
       <div class="space-y-4 animate-in">
         <!-- FAQ Item 1 -->
         <div class="glass-card rounded-xl overflow-hidden">
           <button class="faq-trigger w-full text-left px-6 py-5 flex items-center justify-between gap-4 transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
-            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">What happens if I don't renew after Year 1?</span>
-            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path d="M19 9l-7 7-7-7"/>
-            </svg>
+            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">What's the difference between Products and Services?</span>
+            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
             <div class="px-6 pb-5 pt-2" style="color: var(--text-secondary);">
-              <p>Your website will continue to work! However, the domain registration and SSL certificate will expire. You can choose to renew with us at the discounted rate, or transfer your domain elsewhere (we'll help with that too).</p>
+              <p><strong>Products</strong> are our SaaS software platforms (Medical Inventory Management, GoEMR, Patient Portal) — subscription-based tools you use to manage your practice digitally. <strong>Services</strong> refers to our website development offering — a one-time project where we build and deploy a professional website for your practice.</p>
             </div>
           </div>
         </div>
@@ -869,14 +520,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <!-- FAQ Item 2 -->
         <div class="glass-card rounded-xl overflow-hidden">
           <button class="faq-trigger w-full text-left px-6 py-5 flex items-center justify-between gap-4 transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
-            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">Can I upgrade my plan later?</span>
-            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path d="M19 9l-7 7-7-7"/>
-            </svg>
+            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">When will GoEMR and Patient Portal be available?</span>
+            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
             <div class="px-6 pb-5 pt-2" style="color: var(--text-secondary);">
-              <p>Absolutely! You can upgrade from Freedom to Business Pro or Enterprise at any time. You'll only pay the difference, and we'll credit what you've already paid.</p>
+              <p>Both GoEMR and Patient Portal are currently in development and expected to launch Q3-Q4 2026. Join the waitlist to get early access and be notified as soon as they're ready.</p>
             </div>
           </div>
         </div>
@@ -884,55 +533,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <!-- FAQ Item 3 -->
         <div class="glass-card rounded-xl overflow-hidden">
           <button class="faq-trigger w-full text-left px-6 py-5 flex items-center justify-between gap-4 transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
-            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">Do you offer refunds?</span>
-            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path d="M19 9l-7 7-7-7"/>
-            </svg>
-          </button>
-          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
-            <div class="px-6 pb-5 pt-2" style="color: var(--text-secondary);">
-              <p>Yes! We offer a 30-day money-back guarantee. If you're not satisfied with our work within the first 30 days, we'll refund your payment in full, no questions asked.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ Item 4 -->
-        <div class="glass-card rounded-xl overflow-hidden">
-          <button class="faq-trigger w-full text-left px-6 py-5 flex items-center justify-between gap-4 transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
-            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">How long does it take to build my website?</span>
-            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path d="M19 9l-7 7-7-7"/>
-            </svg>
-          </button>
-          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
-            <div class="px-6 pb-5 pt-2" style="color: var(--text-secondary);">
-              <p>Freedom Plan: 7-10 days. Business Pro: 14-21 days. Enterprise: 30-45 days. Timeline starts after we receive all content and assets from you.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ Item 5 -->
-        <div class="glass-card rounded-xl overflow-hidden">
-          <button class="faq-trigger w-full text-left px-6 py-5 flex items-center justify-between gap-4 transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
-            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">Do I need to know coding or technical stuff?</span>
-            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path d="M19 9l-7 7-7-7"/>
-            </svg>
-          </button>
-          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
-            <div class="px-6 pb-5 pt-2" style="color: var(--text-secondary);">
-              <p>Not at all! We handle everything technical. You just provide your content, photos, and preferences. We'll guide you through the entire process step by step.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ Item 6 -->
-        <div class="glass-card rounded-xl overflow-hidden">
-          <button class="faq-trigger w-full text-left px-6 py-5 flex items-center justify-between gap-4 transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
-            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">Is hosting really free forever?</span>
-            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path d="M19 9l-7 7-7-7"/>
-            </svg>
+            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">Is website hosting really free forever?</span>
+            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
             <div class="px-6 pb-5 pt-2" style="color: var(--text-secondary);">
@@ -941,92 +543,41 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </div>
         </div>
 
-        <!-- FAQ Item 7 -->
+        <!-- FAQ Item 4 -->
         <div class="glass-card rounded-xl overflow-hidden">
           <button class="faq-trigger w-full text-left px-6 py-5 flex items-center justify-between gap-4 transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
-            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">What does "26% off for first 26 customers" mean?</span>
-            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path d="M19 9l-7 7-7-7"/>
-            </svg>
+            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">Do I need any technical knowledge?</span>
+            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
             <div class="px-6 pb-5 pt-2" style="color: var(--text-secondary);">
-              <p>Our software products (Inventory Management and GoEMR) come with an exclusive one-time 26% discount if you're among the first 26 customers. This discount applies to your first payment. Website services are already at final pricing and don't have additional launch discounts.</p>
+              <p>Not at all! Whether it's our software products or website services, we handle everything technical. You just provide your content, photos, and preferences. We'll guide you through the entire process step by step.</p>
             </div>
           </div>
         </div>
 
-        <!-- FAQ Item 8 -->
+        <!-- FAQ Item 5 -->
         <div class="glass-card rounded-xl overflow-hidden">
           <button class="faq-trigger w-full text-left px-6 py-5 flex items-center justify-between gap-4 transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
-            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">How does the counter update in real-time?</span>
-            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path d="M19 9l-7 7-7-7"/>
-            </svg>
+            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">Are your products HIPAA compliant?</span>
+            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
             <div class="px-6 pb-5 pt-2" style="color: var(--text-secondary);">
-              <p>We maintain a live counter that fetches from our campaign database. Every time someone signs up, the counter updates across all instances of our website. You're seeing the real, live count of remaining spots.</p>
+              <p>Yes. All our products are built with compliance at the core — HIPAA, GDPR, and India's DPDP Act. Data encryption, access controls, audit logging, and secure infrastructure are standard across all products.</p>
             </div>
           </div>
         </div>
 
-        <!-- FAQ Item 9 -->
+        <!-- FAQ Item 6 -->
         <div class="glass-card rounded-xl overflow-hidden">
           <button class="faq-trigger w-full text-left px-6 py-5 flex items-center justify-between gap-4 transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
-            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">How do I know if I'm one of the first 26?</span>
-            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path d="M19 9l-7 7-7-7"/>
-            </svg>
+            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">Do you offer refunds?</span>
+            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
             <div class="px-6 pb-5 pt-2" style="color: var(--text-secondary);">
-              <p>When you contact us, we'll immediately reserve your spot and send you a confirmation email with your customer number (e.g., "Customer #12 of 26"). Your discount is locked in once you receive this confirmation.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ Item 10 -->
-        <div class="glass-card rounded-xl overflow-hidden">
-          <button class="faq-trigger w-full text-left px-6 py-5 flex items-center justify-between gap-4 transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
-            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">Does the 26% discount apply to website services too?</span>
-            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path d="M19 9l-7 7-7-7"/>
-            </svg>
-          </button>
-          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
-            <div class="px-6 pb-5 pt-2" style="color: var(--text-secondary);">
-              <p>No, the 26% launch discount only applies to our software products (Inventory Management System and GoEMR). Our website development services are already priced at highly competitive rates with no hidden fees.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ Item 11 -->
-        <div class="glass-card rounded-xl overflow-hidden">
-          <button class="faq-trigger w-full text-left px-6 py-5 flex items-center justify-between gap-4 transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
-            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">Can I transfer my discount to another hospital?</span>
-            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path d="M19 9l-7 7-7-7"/>
-            </svg>
-          </button>
-          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
-            <div class="px-6 pb-5 pt-2" style="color: var(--text-secondary);">
-              <p>The discount is tied to the subscribing organization, not transferable. However, if you move to a different hospital and they want to sign up, they can claim their own spot if available.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ Item 12 -->
-        <div class="glass-card rounded-xl overflow-hidden">
-          <button class="faq-trigger w-full text-left px-6 py-5 flex items-center justify-between gap-4 transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
-            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">What if the software launch is delayed beyond Q4 2026?</span>
-            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path d="M19 9l-7 7-7-7"/>
-            </svg>
-          </button>
-          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
-            <div class="px-6 pb-5 pt-2" style="color: var(--text-secondary);">
-              <p>Your reserved spot and 26% discount remain locked regardless of launch timeline. If you're on the waitlist, you keep your discount even if the product launches in 2027 or later. We'll keep you updated throughout development.</p>
+              <p>Yes! We offer a 30-day money-back guarantee on all our services. If you're not satisfied with our work within the first 30 days, we'll refund your payment in full, no questions asked.</p>
             </div>
           </div>
         </div>
@@ -1042,10 +593,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
     <div class="max-w-4xl mx-auto text-center relative z-10 animate-in">
       <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-black mb-6" style="color: var(--text-primary);">
-        Ready to Establish Your <span class="text-gradient">Professional Online Presence?</span>
+        Ready to <span class="text-gradient">Transform Your Practice?</span>
       </h2>
       <p class="text-lg lg:text-xl mb-10" style="color: var(--text-muted);">
-        Join the first 26 customers and claim your exclusive one-time discount today.
+        Whether you need software products or a professional website — we're here to help your practice grow.
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href="/contact" class="btn-primary">
@@ -1098,34 +649,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       });
     });
 
-    // Campaign counter fetch
-    async function updateCampaignCounter() {
-      try {
-        const res = await fetch('/campaign-data.json');
-        const data = await res.json();
-
-        const spotsElement = document.getElementById('pricing-spots');
-        const progressBar = document.getElementById('progress-bar');
-
-        if (spotsElement && data.spotsRemaining !== undefined) {
-          spotsElement.textContent = `Only ${data.spotsRemaining} spots remaining out of 26!`;
-
-          if (data.spotsRemaining < 10) {
-            spotsElement.style.color = '#FF1744';
-          }
-        }
-
-        if (progressBar && data.spotsClaimed !== undefined) {
-          const percentage = (data.spotsClaimed / 26) * 100;
-          progressBar.style.width = percentage + '%';
-        }
-      } catch (e) {
-        console.log('Campaign data not available yet');
-      }
-    }
-
-    updateCampaignCounter();
-
     // GSAP scroll animations using IntersectionObserver
     const observerOptions = {
       threshold: 0.1,
@@ -1147,36 +670,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </script>
 
   <style>
-    @keyframes fade-up {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes shimmer {
-      0% {
-        background-position: -200% 0;
-      }
-      100% {
-        background-position: 200% 0;
-      }
-    }
-
-    .animate-shimmer {
-      animation: shimmer 8s linear infinite;
-    }
-
-    /* Smooth accordion transitions */
     .faq-content {
       transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    /* Table hover effects */
     tbody tr {
       transition: background-color 0.2s ease;
     }
