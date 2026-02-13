@@ -21,499 +21,273 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <svg class="w-4 h-4" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
           </svg>
-          <span class="text-xs font-display font-medium" style="color: var(--accent);">Real Results, Real Impact</span>
+          <span class="text-xs font-display font-medium" style="color: var(--accent);">Our Work</span>
         </div>
 
         <!-- Heading -->
         <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-[1.05] mb-6 animate-in">
-          <span class="text-gradient">Clinical Success Stories</span><br/>
-          <span style="color: var(--text-primary);">& Website Showcases</span>
+          <span style="color: var(--text-primary);">Real Results for</span><br/>
+          <span class="text-gradient">Real Healthcare Practices</span>
         </h1>
 
         <!-- Subtitle -->
         <p class="text-base lg:text-lg leading-relaxed max-w-2xl mx-auto animate-in" style="color: var(--text-muted);">
-          Transforming healthcare digital presence, one practice at a time. See how our Diagnostic Noir design philosophy delivers measurable results for clinics and hospitals across India.
+          We don't showcase mock-ups. Every project below is a live website built and deployed for a real healthcare practice — delivering measurable impact.
         </p>
       </div>
     </div>
   </section>
 
   <!-- ═══════════════════════════════════════════ -->
-  <!-- PORTFOLIO GRID                              -->
+  <!-- FEATURED CLIENT: JB GUPTA HOSPITAL          -->
   <!-- ═══════════════════════════════════════════ -->
   <section class="relative section-padding max-w-[1440px] mx-auto py-16 lg:py-24">
 
-    <!-- Portfolio Grid - First card full width, then 2 columns -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+    <!-- Featured Label -->
+    <div class="flex items-center gap-3 mb-10 animate-in">
+      <div class="w-2 h-2 rounded-full" style="background: var(--accent);"></div>
+      <span class="text-xs font-display font-bold uppercase tracking-widest" style="color: var(--accent);">Featured Client</span>
+      <div class="flex-1 h-px" style="background: var(--border);"></div>
+    </div>
 
-      <!-- ============================================= -->
-      <!-- CARD 1: DERMATOLOGY CLINIC (FULL WIDTH)      -->
-      <!-- ============================================= -->
-      <div class="lg:col-span-2 glass-card rounded-2xl overflow-hidden portfolio-card animate-in group">
-        <div class="grid lg:grid-cols-2 gap-0">
-          <!-- Image Area -->
-          <div class="relative h-64 lg:h-auto overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-400 opacity-90"></div>
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div class="text-center p-8">
-                <div class="w-20 h-20 mx-auto mb-4 rounded-2xl flex items-center justify-center" style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px);">
-                  <svg class="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                    <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-                  </svg>
+    <!-- Main Card -->
+    <div class="glass-card rounded-3xl overflow-hidden portfolio-card animate-in border" style="border-color: var(--accent);">
+      <div class="grid lg:grid-cols-2 gap-0">
+
+        <!-- Left: Visual Area -->
+        <div class="relative h-72 lg:h-auto overflow-hidden" style="min-height: 400px;">
+          <div class="absolute inset-0 bg-gradient-to-br from-[#0D1B2A] via-[#1B263B] to-[#00E5FF]/20"></div>
+          <div class="absolute inset-0 flex flex-col items-center justify-center p-8">
+
+            <!-- Hospital Identity -->
+            <div class="w-24 h-24 mx-auto mb-6 rounded-3xl flex items-center justify-center" style="background: rgba(0,229,255,0.15); border: 2px solid rgba(0,229,255,0.3); backdrop-filter: blur(10px);">
+              <svg class="w-12 h-12" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+              </svg>
+            </div>
+            <h3 class="font-display font-extrabold text-white text-2xl lg:text-3xl text-center mb-2">JB Gupta Hospital</h3>
+            <p class="text-white/70 text-sm font-display font-medium mb-1">More Than Care... Commitment</p>
+            <p class="text-white/50 text-xs mb-6">Bhiwani, Haryana</p>
+
+            <!-- Live Site Link -->
+            <a href="https://jbguptahospital.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-display font-bold transition-all duration-300 hover:scale-105" style="background: var(--accent); color: #0D1B2A;">
+              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              Visit Live Website
+            </a>
+
+            <!-- Accreditations -->
+            <div class="flex items-center gap-3 mt-6">
+              <span class="px-3 py-1 rounded-full text-[10px] font-display font-bold" style="background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.7);">NABH Accredited</span>
+              <span class="px-3 py-1 rounded-full text-[10px] font-display font-bold" style="background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.7);">Ayushman Bharat</span>
+              <span class="px-3 py-1 rounded-full text-[10px] font-display font-bold" style="background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.7);">ECHS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Content Area -->
+        <div class="p-8 lg:p-10">
+
+          <!-- Plan Badge -->
+          <div class="flex items-center gap-3 mb-5">
+            <span class="badge">Enterprise Plan</span>
+            <span class="px-3 py-1 rounded-full text-[10px] font-display font-bold" style="background: rgba(0,229,255,0.1); color: var(--accent); border: 1px solid rgba(0,229,255,0.2);">First Customer</span>
+          </div>
+
+          <h4 class="font-display font-bold text-xl lg:text-2xl mb-4" style="color: var(--text-primary);">
+            Multi-Specialty Hospital Website with Department Pages & Doctor Directory
+          </h4>
+
+          <!-- About -->
+          <div class="mb-6">
+            <h5 class="text-xs font-display font-bold uppercase tracking-wider mb-2" style="color: var(--accent);">About the Hospital</h5>
+            <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
+              Founded by Late Dr. J.B Gupta, this NABH-accredited multi-specialty hospital in Bhiwani, Haryana has been serving the community for over two decades. The hospital offers advanced ICU (Level II), 24/7 emergency care, dialysis, and a wide range of diagnostic and treatment services.
+            </p>
+          </div>
+
+          <!-- What We Built -->
+          <div class="mb-6">
+            <h5 class="text-xs font-display font-bold uppercase tracking-wider mb-3" style="color: var(--accent);">What We Delivered</h5>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              {[
+                'Full multi-page responsive website',
+                'Department-wise service pages',
+                'Doctor profiles with specialties',
+                'Visiting specialist directory',
+                'Government schemes info (Ayushman Bharat, ECHS)',
+                'Facility & infrastructure showcase',
+                '24/7 emergency contact integration',
+                'Mobile-first responsive design',
+                'SEO optimization for local search',
+                'Google Maps & directions',
+                'Contact forms & WhatsApp integration',
+                'FREE lifetime hosting & SSL',
+              ].map(item => (
+                <div class="flex items-start gap-2">
+                  <svg class="w-4 h-4 mt-0.5 flex-shrink-0" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span class="text-xs" style="color: var(--text-secondary);">{item}</span>
                 </div>
-                <h3 class="font-display font-bold text-white text-2xl">Dr. Sharma's Skin & Laser Clinic</h3>
-                <p class="text-white/80 text-sm mt-2">Dermatology Excellence</p>
+              ))}
+            </div>
+          </div>
+
+          <!-- Key Departments -->
+          <div class="mb-6">
+            <h5 class="text-xs font-display font-bold uppercase tracking-wider mb-3" style="color: var(--accent);">Departments Featured</h5>
+            <div class="flex flex-wrap gap-2">
+              {['Internal Medicine', 'Critical Care', 'Anesthesiology', 'Endocrinology', 'Nephrology', 'Neurology', 'Hemato-Oncology', 'Emergency', 'Dialysis', 'Cardiology'].map(dept => (
+                <span class="px-3 py-1.5 rounded-lg text-[10px] font-display font-medium" style="background: var(--surface); color: var(--text-secondary); border: 1px solid var(--border);">{dept}</span>
+              ))}
+            </div>
+          </div>
+
+          <!-- Doctor Team -->
+          <div class="mb-6">
+            <h5 class="text-xs font-display font-bold uppercase tracking-wider mb-3" style="color: var(--accent);">Core Medical Team</h5>
+            <div class="space-y-2">
+              <div class="flex items-center gap-3 p-3 rounded-xl" style="background: var(--surface); border: 1px solid var(--border);">
+                <div class="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(0,229,255,0.1);">
+                  <span class="text-xs font-display font-bold" style="color: var(--accent);">AG</span>
+                </div>
+                <div>
+                  <p class="text-sm font-display font-semibold" style="color: var(--text-primary);">Dr. Albee Gupta</p>
+                  <p class="text-[10px]" style="color: var(--text-muted);">MD — Internal Medicine</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 p-3 rounded-xl" style="background: var(--surface); border: 1px solid var(--border);">
+                <div class="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(0,229,255,0.1);">
+                  <span class="text-xs font-display font-bold" style="color: var(--accent);">UA</span>
+                </div>
+                <div>
+                  <p class="text-sm font-display font-semibold" style="color: var(--text-primary);">Dr. Udita Anand Gupta</p>
+                  <p class="text-[10px]" style="color: var(--text-muted);">MD — Anesthesiology</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 p-3 rounded-xl" style="background: var(--surface); border: 1px solid var(--border);">
+                <div class="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(0,229,255,0.1);">
+                  <span class="text-xs font-display font-bold" style="color: var(--accent);">M</span>
+                </div>
+                <div>
+                  <p class="text-sm font-display font-semibold" style="color: var(--text-primary);">Dr. Mandeep</p>
+                  <p class="text-[10px]" style="color: var(--text-muted);">DM — Head of Critical Care, Trauma & Critical Care</p>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Content Area -->
-          <div class="p-8 lg:p-10">
-            <div class="mb-6">
-              <span class="badge mb-3">Business Pro Plan</span>
-              <h4 class="font-display font-bold text-xl mb-3" style="color: var(--text-primary);">10-Page Responsive Website with Dark Mode</h4>
-            </div>
-
-            <!-- Challenge -->
-            <div class="mb-5">
-              <h5 class="text-xs font-display font-bold uppercase tracking-wider mb-2" style="color: var(--accent);">Challenge</h5>
-              <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
-                Outdated website with slow load times, low mobile traffic, and poor user engagement. Patients were leaving before booking consultations.
-              </p>
-            </div>
-
-            <!-- Solution -->
-            <div class="mb-5">
-              <h5 class="text-xs font-display font-bold uppercase tracking-wider mb-2" style="color: var(--accent);">Solution</h5>
-              <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
-                Business Pro Plan with responsive design, dark mode toggle, before/after gallery with lazy loading, and WhatsApp integration for instant consultations.
-              </p>
-            </div>
-
-            <!-- Results Grid -->
-            <div class="mb-6">
-              <h5 class="text-xs font-display font-bold uppercase tracking-wider mb-3" style="color: var(--accent);">Results</h5>
-              <div class="grid grid-cols-2 gap-3">
-                <div class="rounded-xl p-4" style="background: var(--surface); border: 1px solid var(--border);">
-                  <p class="text-2xl font-display font-bold mb-1" style="color: var(--accent);">86%</p>
-                  <p class="text-xs" style="color: var(--text-muted);">Load time improvement<br/>(2.8s → 0.4s)</p>
-                </div>
-                <div class="rounded-xl p-4" style="background: var(--surface); border: 1px solid var(--border);">
-                  <p class="text-2xl font-display font-bold mb-1" style="color: var(--accent);">68%</p>
-                  <p class="text-xs" style="color: var(--text-muted);">Mobile traffic<br/>(up from 35%)</p>
-                </div>
-                <div class="rounded-xl p-4" style="background: var(--surface); border: 1px solid var(--border);">
-                  <p class="text-2xl font-display font-bold mb-1" style="color: var(--accent);">+145%</p>
-                  <p class="text-xs" style="color: var(--text-muted);">Increase in<br/>patient inquiries</p>
-                </div>
-                <div class="rounded-xl p-4" style="background: var(--surface); border: 1px solid var(--border);">
-                  <p class="text-2xl font-display font-bold mb-1 text-green-400">Page 1</p>
-                  <p class="text-xs" style="color: var(--text-muted);">Google ranking<br/>(from Page 3)</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Tech Stack -->
+          <!-- Tech Stack -->
+          <div>
+            <h5 class="text-xs font-display font-bold uppercase tracking-wider mb-3" style="color: var(--accent);">Tech Stack</h5>
             <div class="flex flex-wrap gap-2">
               <span class="badge-success text-[10px]">Astro</span>
-              <span class="badge-success text-[10px]">Shadcn UI</span>
               <span class="badge-success text-[10px]">Tailwind CSS</span>
-              <span class="badge-success text-[10px]">WhatsApp API</span>
+              <span class="badge-success text-[10px]">GSAP</span>
+              <span class="badge-success text-[10px]">Responsive</span>
+              <span class="badge-success text-[10px]">SEO Optimized</span>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- ============================================= -->
-      <!-- CARD 2: MULTI-SPECIALTY HOSPITAL             -->
-      <!-- ============================================= -->
-      <div class="glass-card rounded-2xl overflow-hidden portfolio-card animate-in group">
-        <!-- Image Area -->
-        <div class="relative h-56 overflow-hidden">
-          <div class="absolute inset-0 bg-gradient-to-br from-purple-600 via-violet-500 to-indigo-500 opacity-90"></div>
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="text-center p-6">
-              <div class="w-16 h-16 mx-auto mb-3 rounded-2xl flex items-center justify-center" style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px);">
-                <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-                </svg>
-              </div>
-              <h3 class="font-display font-bold text-white text-xl">City Care Hospital</h3>
-              <p class="text-white/80 text-sm mt-1">Multi-Specialty Healthcare</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Content Area -->
-        <div class="p-6">
-          <div class="mb-5">
-            <span class="badge mb-3">Enterprise Plan</span>
-            <h4 class="font-display font-bold text-lg mb-3" style="color: var(--text-primary);">20-Page Hospital Portal with Department Microsites</h4>
-          </div>
-
-          <!-- Challenge -->
-          <div class="mb-4">
-            <h5 class="text-xs font-display font-bold uppercase tracking-wider mb-2" style="color: var(--accent);">Challenge</h5>
-            <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
-              12 departments causing patient confusion, fragmented information, and overwhelming phone call volume for appointments.
-            </p>
-          </div>
-
-          <!-- Solution -->
-          <div class="mb-4">
-            <h5 class="text-xs font-display font-bold uppercase tracking-wider mb-2" style="color: var(--accent);">Solution</h5>
-            <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
-              Enterprise Plan with department microsites, comprehensive doctor directory, multi-step booking system with real-time availability.
-            </p>
-          </div>
-
-          <!-- Results Grid -->
-          <div class="mb-5">
-            <h5 class="text-xs font-display font-bold uppercase tracking-wider mb-3" style="color: var(--accent);">Results</h5>
-            <div class="grid grid-cols-2 gap-3">
-              <div class="rounded-xl p-3" style="background: var(--surface); border: 1px solid var(--border);">
-                <p class="text-xl font-display font-bold mb-1" style="color: var(--accent);">-60%</p>
-                <p class="text-xs" style="color: var(--text-muted);">Phone call volume</p>
-              </div>
-              <div class="rounded-xl p-3" style="background: var(--surface); border: 1px solid var(--border);">
-                <p class="text-xl font-display font-bold mb-1" style="color: var(--accent);">+230%</p>
-                <p class="text-xs" style="color: var(--text-muted);">Online appointments</p>
-              </div>
-              <div class="rounded-xl p-3" style="background: var(--surface); border: 1px solid var(--border);">
-                <p class="text-xl font-display font-bold mb-1 text-green-400">4.6/5</p>
-                <p class="text-xs" style="color: var(--text-muted);">Patient satisfaction</p>
-              </div>
-              <div class="rounded-xl p-3" style="background: var(--surface); border: 1px solid var(--border);">
-                <p class="text-xl font-display font-bold mb-1 text-green-400">Featured</p>
-                <p class="text-xs" style="color: var(--text-muted);">Local news coverage</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tech Stack -->
-          <div class="flex flex-wrap gap-2">
-            <span class="badge-success text-[10px]">Astro</span>
-            <span class="badge-success text-[10px]">GSAP</span>
-            <span class="badge-success text-[10px]">Custom React</span>
-            <span class="badge-success text-[10px]">Calendar API</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- ============================================= -->
-      <!-- CARD 3: MENTAL HEALTH PRACTICE               -->
-      <!-- ============================================= -->
-      <div class="glass-card rounded-2xl overflow-hidden portfolio-card animate-in group">
-        <!-- Image Area -->
-        <div class="relative h-56 overflow-hidden">
-          <div class="absolute inset-0 bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-500 opacity-90"></div>
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="text-center p-6">
-              <div class="w-16 h-16 mx-auto mb-3 rounded-2xl flex items-center justify-center" style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px);">
-                <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-                </svg>
-              </div>
-              <h3 class="font-display font-bold text-white text-xl">Mindful Wellness Center</h3>
-              <p class="text-white/80 text-sm mt-1">Mental Health & Therapy</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Content Area -->
-        <div class="p-6">
-          <div class="mb-5">
-            <span class="badge mb-3">Freedom Plan</span>
-            <h4 class="font-display font-bold text-lg mb-3" style="color: var(--text-primary);">Privacy-First Mental Health Portal</h4>
-          </div>
-
-          <!-- Challenge -->
-          <div class="mb-4">
-            <h5 class="text-xs font-display font-bold uppercase tracking-wider mb-2" style="color: var(--accent);">Challenge</h5>
-            <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
-              Stigma-sensitive practice requiring reassuring, private digital presence that builds trust before first contact.
-            </p>
-          </div>
-
-          <!-- Solution -->
-          <div class="mb-4">
-            <h5 class="text-xs font-display font-bold uppercase tracking-wider mb-2" style="color: var(--accent);">Solution</h5>
-            <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
-              Freedom Plan with Neuro Comfort palette, anonymous inquiry forms, HIPAA-compliant infrastructure, and dark mode by default for comfort.
-            </p>
-          </div>
-
-          <!-- Results Grid -->
-          <div class="mb-5">
-            <h5 class="text-xs font-display font-bold uppercase tracking-wider mb-3" style="color: var(--accent);">Results</h5>
-            <div class="grid grid-cols-2 gap-3">
-              <div class="rounded-xl p-3" style="background: var(--surface); border: 1px solid var(--border);">
-                <p class="text-xl font-display font-bold mb-1" style="color: var(--accent);">89%</p>
-                <p class="text-xs" style="color: var(--text-muted);">Found via website</p>
-              </div>
-              <div class="rounded-xl p-3" style="background: var(--surface); border: 1px solid var(--border);">
-                <p class="text-xl font-display font-bold mb-1" style="color: var(--accent);">4.2min</p>
-                <p class="text-xs" style="color: var(--text-muted);">Session duration</p>
-              </div>
-              <div class="rounded-xl p-3" style="background: var(--surface); border: 1px solid var(--border);">
-                <p class="text-xl font-display font-bold mb-1 text-green-400">28%</p>
-                <p class="text-xs" style="color: var(--text-muted);">Low bounce rate</p>
-              </div>
-              <div class="rounded-xl p-3" style="background: var(--surface); border: 1px solid var(--border);">
-                <p class="text-xl font-display font-bold mb-1 text-green-400">HIPAA</p>
-                <p class="text-xs" style="color: var(--text-muted);">Fully compliant</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tech Stack -->
-          <div class="flex flex-wrap gap-2">
-            <span class="badge-success text-[10px]">Astro</span>
-            <span class="badge-success text-[10px]">Radix UI</span>
-            <span class="badge-success text-[10px]">View Transitions</span>
-            <span class="badge-success text-[10px]">HIPAA</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- ============================================= -->
-      <!-- CARD 4: DENTAL CLINIC E-COMMERCE             -->
-      <!-- ============================================= -->
-      <div class="glass-card rounded-2xl overflow-hidden portfolio-card animate-in group">
-        <!-- Image Area -->
-        <div class="relative h-56 overflow-hidden">
-          <div class="absolute inset-0 bg-gradient-to-br from-rose-500 via-pink-500 to-fuchsia-500 opacity-90"></div>
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="text-center p-6">
-              <div class="w-16 h-16 mx-auto mb-3 rounded-2xl flex items-center justify-center" style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px);">
-                <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
-                </svg>
-              </div>
-              <h3 class="font-display font-bold text-white text-xl">Smile Studio Dental Care</h3>
-              <p class="text-white/80 text-sm mt-1">Dental Clinic + E-Commerce</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Content Area -->
-        <div class="p-6">
-          <div class="mb-5">
-            <span class="badge mb-3">Enterprise Plan</span>
-            <h4 class="font-display font-bold text-lg mb-3" style="color: var(--text-primary);">Dental Clinic with Integrated Product Store</h4>
-          </div>
-
-          <!-- Challenge -->
-          <div class="mb-4">
-            <h5 class="text-xs font-display font-bold uppercase tracking-wider mb-2" style="color: var(--accent);">Challenge</h5>
-            <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
-              Wanted to sell oral care products online without expensive e-commerce platform fees and complex integrations.
-            </p>
-          </div>
-
-          <!-- Solution -->
-          <div class="mb-4">
-            <h5 class="text-xs font-display font-bold uppercase tracking-wider mb-2" style="color: var(--accent);">Solution</h5>
-            <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
-              Enterprise Plan with product catalog (25 items), WhatsApp-based ordering system, and Razorpay payment gateway integration.
-            </p>
-          </div>
-
-          <!-- Results Grid -->
-          <div class="mb-5">
-            <h5 class="text-xs font-display font-bold uppercase tracking-wider mb-3" style="color: var(--accent);">Results</h5>
-            <div class="grid grid-cols-2 gap-3">
-              <div class="rounded-xl p-3" style="background: var(--surface); border: 1px solid var(--border);">
-                <p class="text-xl font-display font-bold mb-1" style="color: var(--accent);">₹1.2L</p>
-                <p class="text-xs" style="color: var(--text-muted);">Monthly sales</p>
-              </div>
-              <div class="rounded-xl p-3" style="background: var(--surface); border: 1px solid var(--border);">
-                <p class="text-xl font-display font-bold mb-1 text-green-400">Zero</p>
-                <p class="text-xs" style="color: var(--text-muted);">Platform fees</p>
-              </div>
-              <div class="rounded-xl p-3" style="background: var(--surface); border: 1px solid var(--border);">
-                <p class="text-xl font-display font-bold mb-1" style="color: var(--accent);">78%</p>
-                <p class="text-xs" style="color: var(--text-muted);">Mobile orders</p>
-              </div>
-              <div class="rounded-xl p-3" style="background: var(--surface); border: 1px solid var(--border);">
-                <p class="text-xl font-display font-bold mb-1" style="color: var(--accent);">42%</p>
-                <p class="text-xs" style="color: var(--text-muted);">Repeat customers</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tech Stack -->
-          <div class="flex flex-wrap gap-2">
-            <span class="badge-success text-[10px]">Astro</span>
-            <span class="badge-success text-[10px]">Snipcart</span>
-            <span class="badge-success text-[10px]">Tailwind CSS</span>
-            <span class="badge-success text-[10px]">Razorpay</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- ============================================= -->
-      <!-- CARD 5: AYURVEDIC WELLNESS CENTER            -->
-      <!-- ============================================= -->
-      <div class="lg:col-span-2 glass-card rounded-2xl overflow-hidden portfolio-card animate-in group">
-        <div class="grid lg:grid-cols-2 gap-0">
-          <!-- Image Area -->
-          <div class="relative h-64 lg:h-auto overflow-hidden lg:order-2">
-            <div class="absolute inset-0 bg-gradient-to-br from-amber-500 via-orange-500 to-yellow-400 opacity-90"></div>
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div class="text-center p-8">
-                <div class="w-20 h-20 mx-auto mb-4 rounded-2xl flex items-center justify-center" style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px);">
-                  <svg class="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                    <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
-                  </svg>
-                </div>
-                <h3 class="font-display font-bold text-white text-2xl">Nature's Cure Ayurveda</h3>
-                <p class="text-white/80 text-sm mt-2">Traditional Wellness & Ayurveda</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Content Area -->
-          <div class="p-8 lg:p-10 lg:order-1">
-            <div class="mb-6">
-              <span class="badge mb-3">Business Pro Plan</span>
-              <h4 class="font-display font-bold text-xl mb-3" style="color: var(--text-primary);">Content-Rich Wellness Portal with Multi-Language Support</h4>
-            </div>
-
-            <!-- Challenge -->
-            <div class="mb-5">
-              <h5 class="text-xs font-display font-bold uppercase tracking-wider mb-2" style="color: var(--accent);">Challenge</h5>
-              <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
-                Needed natural, earthy aesthetics to match Ayurvedic philosophy with strong content marketing focus for organic reach.
-              </p>
-            </div>
-
-            <!-- Solution -->
-            <div class="mb-5">
-              <h5 class="text-xs font-display font-bold uppercase tracking-wider mb-2" style="color: var(--accent);">Solution</h5>
-              <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
-                Business Pro with Calm Bio-Tech palette, 12-page structure, 20 SEO-optimized blog articles, video testimonials, and Hindi/English support.
-              </p>
-            </div>
-
-            <!-- Results Grid -->
-            <div class="mb-6">
-              <h5 class="text-xs font-display font-bold uppercase tracking-wider mb-3" style="color: var(--accent);">Results</h5>
-              <div class="grid grid-cols-2 gap-3">
-                <div class="rounded-xl p-4" style="background: var(--surface); border: 1px solid var(--border);">
-                  <p class="text-2xl font-display font-bold mb-1" style="color: var(--accent);">1,200</p>
-                  <p class="text-xs" style="color: var(--text-muted);">Monthly organic traffic<br/>(in 6 months)</p>
-                </div>
-                <div class="rounded-xl p-4" style="background: var(--surface); border: 1px solid var(--border);">
-                  <p class="text-2xl font-display font-bold mb-1" style="color: var(--accent);">840</p>
-                  <p class="text-xs" style="color: var(--text-muted);">Newsletter<br/>subscribers</p>
-                </div>
-                <div class="rounded-xl p-4" style="background: var(--surface); border: 1px solid var(--border);">
-                  <p class="text-2xl font-display font-bold mb-1" style="color: var(--accent);">65%</p>
-                  <p class="text-xs" style="color: var(--text-muted);">Bookings via<br/>website</p>
-                </div>
-                <div class="rounded-xl p-4" style="background: var(--surface); border: 1px solid var(--border);">
-                  <p class="text-2xl font-display font-bold mb-1 text-green-400">2 Lang</p>
-                  <p class="text-xs" style="color: var(--text-muted);">Hindi & English<br/>support</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Tech Stack -->
-            <div class="flex flex-wrap gap-2">
-              <span class="badge-success text-[10px]">Astro</span>
-              <span class="badge-success text-[10px]">MDX</span>
-              <span class="badge-success text-[10px]">i18n</span>
-              <span class="badge-success text-[10px]">Video Embed</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
+
+    <!-- Client Testimonial -->
+    <div class="mt-10 glass-card rounded-2xl p-8 lg:p-10 animate-in">
+      <div class="flex items-start gap-5">
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0" style="background: rgba(0,229,255,0.1); border: 1px solid rgba(0,229,255,0.2);">
+          <svg class="w-6 h-6" style="color: var(--accent);" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+          </svg>
+        </div>
+        <div>
+          <p class="text-base lg:text-lg leading-relaxed mb-4" style="color: var(--text-secondary);">
+            "Aura Global Corporation delivered exactly what we needed — a professional, modern website that represents our hospital's legacy and commitment to healthcare. The team understood our requirements perfectly and the Enterprise plan gave us everything from department pages to doctor profiles. We're proud to be their first customer."
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background: rgba(0,229,255,0.1);">
+              <span class="text-xs font-display font-bold" style="color: var(--accent);">AG</span>
+            </div>
+            <div>
+              <p class="font-display font-bold text-sm" style="color: var(--text-primary);">Dr. Albee Gupta</p>
+              <p class="text-xs" style="color: var(--text-muted);">JB Gupta Hospital, Bhiwani</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <!-- ═══════════════════════════════════════════ -->
-  <!-- CTA SECTION                                 -->
+  <!-- YOUR PRACTICE NEXT                          -->
   <!-- ═══════════════════════════════════════════ -->
-  <section class="relative section-padding max-w-[1440px] mx-auto py-16 lg:py-20">
-    <div class="relative glass-card rounded-3xl overflow-hidden">
-      <!-- Background Gradient -->
-      <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-cyan-500/10"></div>
-      <div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-cyan-500/20 to-transparent blur-3xl"></div>
-      <div class="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-purple-500/20 to-transparent blur-3xl"></div>
+  <section class="relative py-16 lg:py-20 overflow-hidden" style="background: var(--bg-secondary);">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-cyan-500/10 to-transparent blur-3xl"></div>
 
-      <div class="relative text-center px-8 py-16 lg:py-20">
-        <!-- Badge -->
-        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6" style="background: rgba(0,229,255,0.08); border: 1px solid rgba(0,229,255,0.15);">
-          <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style="background: var(--accent);"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2" style="background: var(--accent);"></span>
-          </span>
-          <span class="text-xs font-display font-medium" style="color: var(--accent);">Limited Time Offer</span>
-        </div>
+    <div class="section-padding max-w-[1440px] mx-auto">
+      <div class="relative glass-card rounded-3xl overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#00E5FF]/5 via-transparent to-[#00E5FF]/5"></div>
 
-        <!-- Heading -->
-        <h2 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl mb-6">
-          <span style="color: var(--text-primary);">Your Practice Could Be</span><br/>
-          <span class="text-gradient">The Next Success Story</span>
-        </h2>
-
-        <!-- Description -->
-        <p class="text-base lg:text-lg max-w-2xl mx-auto mb-10" style="color: var(--text-muted);">
-          Join the clinics and hospitals already transforming their digital presence. Get an exclusive one-time 26% discount as one of our first 26 customers.
-        </p>
-
-        <!-- CTA Buttons -->
-        <div class="flex flex-wrap items-center justify-center gap-4">
-          <a href="/contact" class="btn-primary">
-            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-            </svg>
-            Book Free Consultation
-          </a>
-          <a href="/pricing" class="btn-secondary">
-            View All Plans
-          </a>
-        </div>
-
-        <!-- Trust Indicators -->
-        <div class="mt-10 flex flex-wrap items-center justify-center gap-6 text-sm" style="color: var(--text-muted);">
-          <div class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-            </svg>
-            <span>No Lock-In Contracts</span>
+        <div class="relative text-center px-8 py-16 lg:py-20">
+          <!-- Badge -->
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6" style="background: rgba(0,229,255,0.08); border: 1px solid rgba(0,229,255,0.15);">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style="background: var(--accent);"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2" style="background: var(--accent);"></span>
+            </span>
+            <span class="text-xs font-display font-medium" style="color: var(--accent);">Limited Time Offer</span>
           </div>
-          <div class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-            </svg>
-            <span>HIPAA Compliant</span>
+
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl mb-6">
+            <span style="color: var(--text-primary);">Your Practice Could Be</span><br/>
+            <span class="text-gradient">Our Next Success Story</span>
+          </h2>
+
+          <p class="text-base lg:text-lg max-w-2xl mx-auto mb-10" style="color: var(--text-muted);">
+            Join JB Gupta Hospital and be part of our growing portfolio. Get an exclusive one-time 26% discount as one of our first 26 customers.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap items-center justify-center gap-4">
+            <a href="/offers" class="btn-primary">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+              Claim 26% Discount
+            </a>
+            <a href="/contact" class="btn-secondary">
+              Book Free Consultation
+            </a>
           </div>
-          <div class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-            </svg>
-            <span>30-Day Money Back</span>
+
+          <!-- Trust Indicators -->
+          <div class="mt-10 flex flex-wrap items-center justify-center gap-6 text-sm" style="color: var(--text-muted);">
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>No Lock-In Contracts</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>HIPAA Compliant</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>30-Day Money Back</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- GSAP ANIMATIONS                             -->
-  <!-- ═══════════════════════════════════════════ -->
+  <!-- GSAP ANIMATIONS -->
   <script>
-    // GSAP IntersectionObserver for animate-in elements
     if (typeof IntersectionObserver !== 'undefined') {
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-      };
-
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -521,14 +295,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             observer.unobserve(entry.target);
           }
         });
-      }, observerOptions);
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-      // Observe all .animate-in elements
-      document.querySelectorAll('.animate-in').forEach(el => {
-        observer.observe(el);
-      });
+      document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
 
-      // Portfolio card hover effects
       const portfolioCards = document.querySelectorAll('.portfolio-card');
       portfolioCards.forEach(card => {
         card.addEventListener('mouseenter', () => {
@@ -536,7 +306,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           card.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
           card.style.boxShadow = '0 20px 60px rgba(0,229,255,0.15)';
         });
-
         card.addEventListener('mouseleave', () => {
           card.style.transform = 'translateY(0)';
           card.style.boxShadow = '';
@@ -546,35 +315,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </script>
 
   <style>
-    /* Animation keyframes */
-    @keyframes fade-up {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* Portfolio card transitions */
     .portfolio-card {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-
-    .portfolio-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 60px rgba(0, 229, 255, 0.15);
-    }
-
-    /* Stagger animations for grid items */
-    .animate-in:nth-child(1) { animation-delay: 0.1s; }
-    .animate-in:nth-child(2) { animation-delay: 0.2s; }
-    .animate-in:nth-child(3) { animation-delay: 0.3s; }
-    .animate-in:nth-child(4) { animation-delay: 0.4s; }
-    .animate-in:nth-child(5) { animation-delay: 0.5s; }
-    .animate-in:nth-child(6) { animation-delay: 0.6s; }
   </style>
 
 </BaseLayout>
