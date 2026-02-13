@@ -622,9 +622,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
 
       <!-- Business Type Grid -->
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
 
-        <a href="/why-website/yoga-teacher" class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:border-[var(--accent)] hover:-translate-y-1 animate-in" style="animation-delay: 0s;">
+        <a href="/why-website" class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:border-[var(--accent)] hover:-translate-y-1 animate-in border-2" style="animation-delay: 0s; border-color: var(--accent);">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl transition-transform duration-300 group-hover:scale-110" style="background: rgba(0,229,255,0.1);">🩺</div>
+          <h3 class="font-display font-bold text-sm mb-1.5" style="color: var(--text-primary);">Doctors / Healthcare</h3>
+          <p class="text-xs leading-relaxed mb-3" style="color: var(--text-muted);">Attract patients, build trust, grow your practice online</p>
+          <span class="inline-flex items-center gap-1 text-xs font-display font-semibold transition-colors" style="color: var(--accent);">
+            You're here
+            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+          </span>
+        </a>
+
+        <a href="/why-website/yoga-teacher" class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:border-[var(--accent)] hover:-translate-y-1 animate-in" style="animation-delay: 0.05s;">
           <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl transition-transform duration-300 group-hover:scale-110" style="background: rgba(168,230,207,0.1);">🧘</div>
           <h3 class="font-display font-bold text-sm mb-1.5" style="color: var(--text-primary);">Yoga Teacher / Studio</h3>
           <p class="text-xs leading-relaxed mb-3" style="color: var(--text-muted);">Book classes, sell workshops, grow your community</p>
@@ -634,7 +644,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </span>
         </a>
 
-        <a href="/why-website/salon" class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:border-[var(--accent)] hover:-translate-y-1 animate-in" style="animation-delay: 0.05s;">
+        <a href="/why-website/salon" class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:border-[var(--accent)] hover:-translate-y-1 animate-in" style="animation-delay: 0.1s;">
           <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl transition-transform duration-300 group-hover:scale-110" style="background: rgba(255,23,68,0.08);">💇</div>
           <h3 class="font-display font-bold text-sm mb-1.5" style="color: var(--text-primary);">Hair & Beauty Salon</h3>
           <p class="text-xs leading-relaxed mb-3" style="color: var(--text-muted);">Showcase work, reduce no-shows, fill every chair</p>
@@ -644,7 +654,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </span>
         </a>
 
-        <a href="/why-website/spa" class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:border-[var(--accent)] hover:-translate-y-1 animate-in" style="animation-delay: 0.1s;">
+        <a href="/why-website/spa" class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:border-[var(--accent)] hover:-translate-y-1 animate-in" style="animation-delay: 0.15s;">
           <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl transition-transform duration-300 group-hover:scale-110" style="background: rgba(0,131,143,0.1);">🧖</div>
           <h3 class="font-display font-bold text-sm mb-1.5" style="color: var(--text-primary);">Spa & Wellness Center</h3>
           <p class="text-xs leading-relaxed mb-3" style="color: var(--text-muted);">Sell packages, gift cards, and create a calming presence</p>
@@ -654,7 +664,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </span>
         </a>
 
-        <a href="/why-website/fitness-trainer" class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:border-[var(--accent)] hover:-translate-y-1 animate-in" style="animation-delay: 0.15s;">
+        <a href="/why-website/fitness-trainer" class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:border-[var(--accent)] hover:-translate-y-1 animate-in" style="animation-delay: 0.2s;">
           <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl transition-transform duration-300 group-hover:scale-110" style="background: rgba(0,229,255,0.08);">💪</div>
           <h3 class="font-display font-bold text-sm mb-1.5" style="color: var(--text-primary);">Fitness Trainer / Gym</h3>
           <p class="text-xs leading-relaxed mb-3" style="color: var(--text-muted);">Sell programs, show results, build your brand</p>
@@ -664,7 +674,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </span>
         </a>
 
-        <a href="/why-website/restaurant" class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:border-[var(--accent)] hover:-translate-y-1 animate-in" style="animation-delay: 0.2s;">
+        <a href="/why-website/restaurant" class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:border-[var(--accent)] hover:-translate-y-1 animate-in" style="animation-delay: 0.25s;">
           <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl transition-transform duration-300 group-hover:scale-110" style="background: rgba(255,152,0,0.1);">🍽️</div>
           <h3 class="font-display font-bold text-sm mb-1.5" style="color: var(--text-primary);">Restaurant / Cafe</h3>
           <p class="text-xs leading-relaxed mb-3" style="color: var(--text-muted);">Digital menu, reservations, skip delivery app fees</p>
@@ -674,7 +684,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </span>
         </a>
 
-        <a href="/why-website/consultant" class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:border-[var(--accent)] hover:-translate-y-1 animate-in" style="animation-delay: 0.25s;">
+        <a href="/why-website/consultant" class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:border-[var(--accent)] hover:-translate-y-1 animate-in" style="animation-delay: 0.3s;">
           <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl transition-transform duration-300 group-hover:scale-110" style="background: rgba(76,85,120,0.12);">💼</div>
           <h3 class="font-display font-bold text-sm mb-1.5" style="color: var(--text-primary);">Consultant / Freelancer</h3>
           <p class="text-xs leading-relaxed mb-3" style="color: var(--text-muted);">Establish authority, generate leads 24/7</p>
@@ -684,7 +694,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </span>
         </a>
 
-        <a href="/why-website/tutor" class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:border-[var(--accent)] hover:-translate-y-1 animate-in" style="animation-delay: 0.3s;">
+        <a href="/why-website/tutor" class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:border-[var(--accent)] hover:-translate-y-1 animate-in" style="animation-delay: 0.35s;">
           <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl transition-transform duration-300 group-hover:scale-110" style="background: rgba(66,165,245,0.1);">📚</div>
           <h3 class="font-display font-bold text-sm mb-1.5" style="color: var(--text-primary);">Tutor / Coaching Institute</h3>
           <p class="text-xs leading-relaxed mb-3" style="color: var(--text-muted);">Online enrollment, showcase results, scale reach</p>
@@ -694,7 +704,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </span>
         </a>
 
-        <a href="/why-website/other-services" class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:border-[var(--accent)] hover:-translate-y-1 animate-in" style="animation-delay: 0.35s;">
+        <a href="/why-website/other-services" class="group glass-card rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:border-[var(--accent)] hover:-translate-y-1 animate-in" style="animation-delay: 0.4s;">
           <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl transition-transform duration-300 group-hover:scale-110" style="background: rgba(0,229,255,0.08);">🏪</div>
           <h3 class="font-display font-bold text-sm mb-1.5" style="color: var(--text-primary);">Other Service Businesses</h3>
           <p class="text-xs leading-relaxed mb-3" style="color: var(--text-muted);">Plumbers, photographers, event planners & more</p>

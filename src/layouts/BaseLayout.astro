@@ -126,10 +126,11 @@ const currentPath = Astro.url.pathname;
               class="absolute top-full left-0 mt-2 w-64 rounded-xl shadow-2xl border overflow-hidden opacity-0 invisible translate-y-2 transition-all duration-200 z-50"
               style="background: var(--bg-primary); border-color: var(--border);"
             >
-              <a href="/why-website" class="block px-4 py-3 text-sm font-display font-semibold transition-colors hover:bg-[var(--surface)]" style="color: var(--accent); border-bottom: 1px solid var(--border);">
+              <span class="block px-4 py-3 text-sm font-display font-semibold" style="color: var(--text-muted); border-bottom: 1px solid var(--border);">
                 All Business Types
-              </a>
+              </span>
               {[
+                { href: '/why-website', label: 'Doctors / Healthcare', icon: '🩺' },
                 { href: '/why-website/yoga-teacher', label: 'Yoga Teacher / Studio', icon: '🧘' },
                 { href: '/why-website/salon', label: 'Hair & Beauty Salon', icon: '💇' },
                 { href: '/why-website/spa', label: 'Spa & Wellness Center', icon: '🧖' },
@@ -248,8 +249,9 @@ const currentPath = Astro.url.pathname;
         </button>
         <div id="mobile-why-submenu" class="overflow-hidden max-h-0 transition-all duration-300">
           <div class="pl-4 pt-1 pb-2 space-y-1">
-            <a href="/why-website" class="block px-4 py-2 rounded-lg text-sm font-display font-semibold transition-colors hover:bg-[var(--surface)]" style="color: var(--accent);">All Business Types</a>
+            <span class="block px-4 py-2 rounded-lg text-sm font-display font-semibold" style="color: var(--text-muted);">All Business Types</span>
             {[
+              { href: '/why-website', label: 'Doctors / Healthcare', icon: '🩺' },
               { href: '/why-website/yoga-teacher', label: 'Yoga Teacher / Studio', icon: '🧘' },
               { href: '/why-website/salon', label: 'Hair & Beauty Salon', icon: '💇' },
               { href: '/why-website/spa', label: 'Spa & Wellness', icon: '🧖' },
