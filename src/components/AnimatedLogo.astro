@@ -1,0 +1,254 @@
+---
+interface Props {
+  size?: number;
+  class?: string;
+}
+
+const { size = 36, class: className = '' } = Astro.props;
+---
+
+<div class:list={['aura-logo-wrap', className]} style={`width: ${size}px; height: ${size}px;`}>
+  <svg
+    class="aura-logo"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+    role="img"
+    aria-label="Aura Global logo"
+    width={size}
+    height={size}
+  >
+    <defs>
+      <!-- Main gradient -->
+      <linearGradient id="aura-grad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="var(--accent)" />
+        <stop offset="100%" stop-color="#00B8D4" />
+      </linearGradient>
+
+      <!-- Glow gradient for the orbiting ring -->
+      <linearGradient id="aura-ring-grad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.9" />
+        <stop offset="50%" stop-color="#00B8D4" stop-opacity="0.4" />
+        <stop offset="100%" stop-color="var(--accent)" stop-opacity="0" />
+      </linearGradient>
+
+      <!-- Soft glow filter -->
+      <filter id="aura-glow" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+        <feMerge>
+          <feMergeNode in="blur" />
+          <feMergeNode in="SourceGraphic" />
+        </feMerge>
+      </filter>
+
+      <!-- Pulse glow filter (stronger) -->
+      <filter id="aura-pulse-glow" x="-80%" y="-80%" width="260%" height="260%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="6" />
+      </filter>
+
+      <!-- Clip for rounded rect -->
+      <clipPath id="aura-clip">
+        <rect width="100" height="100" rx="22" />
+      </clipPath>
+    </defs>
+
+    <!-- Background rounded rect -->
+    <rect
+      class="aura-bg"
+      width="100"
+      height="100"
+      rx="22"
+      fill="var(--bg-primary)"
+      stroke="var(--border)"
+      stroke-width="1.5"
+    />
+
+    <!-- Pulsing glow behind the letter (looping) -->
+    <circle class="aura-pulse" cx="50" cy="50" r="28" fill="var(--accent)" filter="url(#aura-pulse-glow)" opacity="0" />
+
+    <!-- Orbiting arc ring -->
+    <g clip-path="url(#aura-clip)">
+      <circle
+        class="aura-orbit"
+        cx="50"
+        cy="50"
+        r="40"
+        fill="none"
+        stroke="url(#aura-ring-grad)"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-dasharray="60 191"
+        opacity="0"
+      />
+    </g>
+
+    <!-- Border draw-on effect -->
+    <rect
+      class="aura-border-draw"
+      width="100"
+      height="100"
+      rx="22"
+      fill="none"
+      stroke="url(#aura-grad)"
+      stroke-width="2"
+      stroke-dasharray="344"
+      stroke-dashoffset="344"
+    />
+
+    <!-- The "A" letterform -->
+    <text
+      class="aura-letter"
+      x="50"
+      y="66"
+      text-anchor="middle"
+      font-family="'Outfit', system-ui, sans-serif"
+      font-weight="900"
+      font-size="52"
+      fill="url(#aura-grad)"
+      filter="url(#aura-glow)"
+      opacity="0"
+    >A</text>
+
+    <!-- Tiny orbiting dot -->
+    <circle class="aura-dot" cx="50" cy="10" r="3" fill="var(--accent)" filter="url(#aura-glow)" opacity="0" />
+  </svg>
+</div>
+
+<style>
+  .aura-logo-wrap {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .aura-logo {
+    overflow: visible;
+  }
+
+  /* === INITIAL LOAD ANIMATION (plays once) === */
+
+  /* Border draws on */
+  .aura-border-draw {
+    animation: draw-border 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
+  }
+
+  @keyframes draw-border {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  /* Letter fades + scales in */
+  .aura-letter {
+    transform-origin: 50px 50px;
+    animation: letter-in 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.6s forwards;
+  }
+
+  @keyframes letter-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* Pulse fires once after letter appears */
+  .aura-pulse {
+    animation: pulse-once 1s ease-out 0.8s forwards;
+  }
+
+  @keyframes pulse-once {
+    0% {
+      opacity: 0.35;
+      r: 20;
+    }
+    100% {
+      opacity: 0;
+      r: 48;
+    }
+  }
+
+  /* === CONTINUOUS HOVER/IDLE ANIMATIONS === */
+
+  /* Orbiting ring — continuous slow spin */
+  .aura-orbit {
+    transform-origin: 50px 50px;
+    animation: orbit-spin 6s linear 1.2s infinite, orbit-fade-in 0.5s ease 1.2s forwards;
+  }
+
+  @keyframes orbit-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes orbit-fade-in {
+    to {
+      opacity: 0.5;
+    }
+  }
+
+  /* Orbiting dot */
+  .aura-dot {
+    transform-origin: 50px 50px;
+    animation: dot-orbit 4s linear 1.4s infinite, dot-fade-in 0.4s ease 1.4s forwards;
+  }
+
+  @keyframes dot-orbit {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes dot-fade-in {
+    to {
+      opacity: 0.7;
+    }
+  }
+
+  /* === HOVER STATE — intensify everything === */
+
+  .aura-logo-wrap:hover .aura-border-draw {
+    stroke: var(--accent);
+    filter: drop-shadow(0 0 8px var(--accent-glow));
+    transition: filter 0.3s ease;
+  }
+
+  .aura-logo-wrap:hover .aura-letter {
+    filter: url(#aura-glow) drop-shadow(0 0 10px var(--accent-glow));
+    transition: filter 0.3s ease;
+  }
+
+  .aura-logo-wrap:hover .aura-orbit {
+    opacity: 0.8 !important;
+    transition: opacity 0.3s ease;
+  }
+
+  .aura-logo-wrap:hover .aura-dot {
+    opacity: 1 !important;
+    r: 4;
+    transition: opacity 0.3s ease;
+  }
+
+  .aura-logo-wrap:hover .aura-bg {
+    filter: brightness(1.1);
+    transition: filter 0.3s ease;
+  }
+
+  /* === REDUCED MOTION === */
+  @media (prefers-reduced-motion: reduce) {
+    .aura-border-draw,
+    .aura-letter,
+    .aura-pulse,
+    .aura-orbit,
+    .aura-dot {
+      animation: none !important;
+      opacity: 1 !important;
+      stroke-dashoffset: 0 !important;
+    }
+  }
+</style>
