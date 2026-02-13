@@ -1,0 +1,892 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Why Restaurants Need a Website - Aura Global Corporation">
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- BREADCRUMB                                  -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="relative py-4 border-b" style="background: var(--bg-primary); border-color: var(--border);">
+    <div class="section-padding max-w-[1440px] mx-auto">
+      <nav class="flex items-center gap-2 text-sm" aria-label="Breadcrumb">
+        <a href="/why-website" class="transition-colors hover:text-[var(--accent)]" style="color: var(--text-muted);">
+          Why a Website?
+        </a>
+        <svg class="w-4 h-4" style="color: var(--text-muted);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path d="M9 5l7 7-7 7"/>
+        </svg>
+        <span style="color: var(--text-primary);">Restaurant / Cafe</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- HERO SECTION                                -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="relative min-h-[85vh] flex items-center overflow-hidden" style="background: var(--bg-primary);">
+    <!-- Background Effects -->
+    <div class="absolute inset-0">
+      <div class="absolute inset-0 bg-grid-pattern bg-grid opacity-40 dark:opacity-100"></div>
+      <div class="absolute top-1/4 right-0 w-[500px] h-[500px] rounded-full opacity-20 blur-[120px]" style="background: var(--accent);"></div>
+      <div class="absolute bottom-1/4 left-0 w-[400px] h-[400px] rounded-full opacity-10 blur-[100px]" style="background: var(--accent);"></div>
+    </div>
+
+    <div class="relative section-padding max-w-[1440px] mx-auto w-full py-20 lg:py-28">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 animate-fade-up" style="background: rgba(0,229,255,0.08); border: 1px solid rgba(0,229,255,0.15);">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style="background: var(--accent);"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2" style="background: var(--accent);"></span>
+          </span>
+          <span class="text-xs font-display font-medium" style="color: var(--accent);">Local Food Search Dominance</span>
+        </div>
+
+        <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] mb-6 hero-title">
+          <span style="color: var(--text-primary);">🍽️ 76% of "Restaurant Near Me"</span><br/>
+          <span class="text-gradient">Searches Lead to a Visit</span><br/>
+          <span style="color: var(--text-primary);">Within 24 Hours</span>
+        </h1>
+
+        <p class="text-lg lg:text-xl leading-relaxed mb-8 max-w-3xl mx-auto hero-subtitle" style="color: var(--text-muted);">
+          Your restaurant deserves more than just a listing on Zomato or Swiggy. <strong style="color: var(--accent);">Get discovered by hungry diners</strong> searching "near me," showcase your ambiance and signature dishes, take direct orders without 20-30% commissions, and fill tables with zero reliance on aggregators.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4 hero-ctas">
+          <a href="/contact" class="btn-primary">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            Get Your Restaurant Website
+          </a>
+          <a href="/pricing" class="btn-secondary">
+            View Pricing & Examples
+          </a>
+        </div>
+
+        <p class="mt-6 text-sm" style="color: var(--text-muted);">
+          Starting at <span style="color: var(--accent);" class="font-bold">₹9,999 one-time</span> · FREE hosting forever · No monthly fees
+        </p>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+      <span class="text-[10px] font-mono tracking-wider uppercase" style="color: var(--text-muted);">Scroll to Learn Why</span>
+      <div class="w-5 h-8 rounded-full border-2 flex items-start justify-center p-1" style="border-color: var(--border);">
+        <div class="w-1 h-2 rounded-full animate-bounce" style="background: var(--accent);"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PROBLEM SECTION                             -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="relative py-20 lg:py-28" style="background: var(--bg-secondary);">
+    <div class="section-padding max-w-[1440px] mx-auto">
+      <div class="max-w-3xl mx-auto text-center mb-16 animate-in">
+        <span class="badge mb-4">The Pain Points</span>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mb-6" style="color: var(--text-primary);">
+          Relying Only on <span class="text-gradient">Delivery Apps?</span>
+        </h2>
+        <p class="text-base lg:text-lg" style="color: var(--text-muted);">
+          Zomato, Swiggy, and food aggregators come with hidden costs that eat into your margins. Here's what restaurant owners face every day.
+        </p>
+      </div>
+
+      <!-- Pain Point Grid 2x2 -->
+      <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <!-- Pain 1 -->
+        <div class="glass-card rounded-2xl p-8 animate-in hover:-translate-y-2 transition-all duration-300 group border-2" style="border-color: rgba(239,68,68,0.3);">
+          <div class="flex items-start gap-5">
+            <div class="flex-shrink-0 w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300" style="background: rgba(239,68,68,0.1);">
+              <svg class="w-8 h-8 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-display font-bold text-xl mb-3" style="color: var(--text-primary);">20-30% Commission Fees</h3>
+              <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
+                Food aggregators take a massive cut from every order. On a ₹500 order, you lose ₹100-150 just in commission — that's your entire profit margin gone.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pain 2 -->
+        <div class="glass-card rounded-2xl p-8 animate-in hover:-translate-y-2 transition-all duration-300 group border-2" style="border-color: rgba(239,68,68,0.3); animation-delay: 0.1s;">
+          <div class="flex items-start gap-5">
+            <div class="flex-shrink-0 w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300" style="background: rgba(239,68,68,0.1);">
+              <svg class="w-8 h-8 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-display font-bold text-xl mb-3" style="color: var(--text-primary);">No Brand Control</h3>
+              <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
+                Your restaurant looks the same as every other listing. Limited photos, generic descriptions, and no way to showcase what makes your place special. You're just another option in an endless scroll.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pain 3 -->
+        <div class="glass-card rounded-2xl p-8 animate-in hover:-translate-y-2 transition-all duration-300 group border-2" style="border-color: rgba(239,68,68,0.3); animation-delay: 0.2s;">
+          <div class="flex items-start gap-5">
+            <div class="flex-shrink-0 w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300" style="background: rgba(239,68,68,0.1);">
+              <svg class="w-8 h-8 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-display font-bold text-xl mb-3" style="color: var(--text-primary);">Limited Menu Display</h3>
+              <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
+                Customers can't browse your full menu, see ingredient details, or understand your culinary story. They miss chef specials, seasonal items, and the ambiance that makes dining at your place memorable.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pain 4 -->
+        <div class="glass-card rounded-2xl p-8 animate-in hover:-translate-y-2 transition-all duration-300 group border-2" style="border-color: rgba(239,68,68,0.3); animation-delay: 0.3s;">
+          <div class="flex items-start gap-5">
+            <div class="flex-shrink-0 w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300" style="background: rgba(239,68,68,0.1);">
+              <svg class="w-8 h-8 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-display font-bold text-xl mb-3" style="color: var(--text-primary);">Missing High-Value Inquiries</h3>
+              <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
+                Corporate catering orders, birthday parties, wedding receptions, and private events bring in 3-5x more revenue per booking — but aggregators don't capture these inquiries. You're losing lucrative opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Critical Message -->
+      <div class="max-w-3xl mx-auto glass-card rounded-2xl p-8 text-center animate-in border-2 mt-12" style="border-color: var(--accent); animation-delay: 0.4s;">
+        <div class="flex items-center justify-center gap-3 mb-4">
+          <svg class="w-6 h-6" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          </svg>
+          <h3 class="font-display font-bold text-2xl" style="color: var(--accent);">The Solution</h3>
+        </div>
+        <p class="text-lg leading-relaxed" style="color: var(--text-primary);">
+          <strong>Own your digital presence.</strong> A professional website lets you tell your story, showcase your best dishes, rank in Google's "near me" searches, take direct orders, and capture event inquiries — all without paying hefty commissions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SOLUTION SECTION                            -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="relative py-20 lg:py-28" style="background: var(--bg-primary);">
+    <div class="section-padding max-w-[1440px] mx-auto">
+      <div class="max-w-3xl mx-auto text-center mb-16 animate-in">
+        <span class="badge mb-4">Your Digital Restaurant</span>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mb-6" style="color: var(--text-primary);">
+          What Your Restaurant <span class="text-gradient">Website Includes</span>
+        </h2>
+        <p class="text-base lg:text-lg" style="color: var(--text-muted);">
+          Everything you need to get discovered, fill tables, and grow revenue — without relying on expensive aggregators.
+        </p>
+      </div>
+
+      <!-- Feature Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <!-- Feature 1 -->
+        <div class="glass-card rounded-2xl p-7 animate-in hover:-translate-y-2 transition-all duration-300 group">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300" style="background: rgba(0,229,255,0.1);">
+            <svg class="w-7 h-7" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-xl mb-3" style="color: var(--text-primary);">Digital Menu</h3>
+          <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
+            Always up-to-date, no reprint costs. Update prices, add seasonal specials, highlight chef's recommendations. QR code accessible for dine-in guests. Include dish descriptions, ingredients, allergen info, and beautiful food photography.
+          </p>
+          <div class="flex items-center gap-2 mt-4 pt-4 border-t" style="border-color: var(--border);">
+            <svg class="w-4 h-4 text-aura-mint flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M5 13l4 4L19 7"/>
+            </svg>
+            <span class="text-xs font-display font-semibold text-aura-mint">Save ₹5,000+ yearly on menu printing</span>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="glass-card rounded-2xl p-7 animate-in hover:-translate-y-2 transition-all duration-300 group" style="animation-delay: 0.1s;">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300" style="background: rgba(0,229,255,0.1);">
+            <svg class="w-7 h-7" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-xl mb-3" style="color: var(--text-primary);">Table Reservations</h3>
+          <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
+            Let guests book tables 24/7 via WhatsApp integration or simple web form. Reduces phone call volume, prevents double bookings, and captures guest info for follow-up marketing. Confirm bookings automatically.
+          </p>
+          <div class="flex items-center gap-2 mt-4 pt-4 border-t" style="border-color: var(--border);">
+            <svg class="w-4 h-4 text-aura-mint flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M5 13l4 4L19 7"/>
+            </svg>
+            <span class="text-xs font-display font-semibold text-aura-mint">60% prefer online reservations</span>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="glass-card rounded-2xl p-7 animate-in hover:-translate-y-2 transition-all duration-300 group" style="animation-delay: 0.2s;">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300" style="background: rgba(0,229,255,0.1);">
+            <svg class="w-7 h-7" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-xl mb-3" style="color: var(--text-primary);">"Near Me" SEO</h3>
+          <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
+            Rank for "restaurant near me," "best [cuisine] in [city]," and other high-intent local searches. When hungry diners search Google, you appear first — not buried on page 3 of Zomato. Drive walk-ins and phone orders.
+          </p>
+          <div class="flex items-center gap-2 mt-4 pt-4 border-t" style="border-color: var(--border);">
+            <svg class="w-4 h-4 text-aura-mint flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M5 13l4 4L19 7"/>
+            </svg>
+            <span class="text-xs font-display font-semibold text-aura-mint">76% visit within 24 hours</span>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="glass-card rounded-2xl p-7 animate-in hover:-translate-y-2 transition-all duration-300 group" style="animation-delay: 0.3s;">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300" style="background: rgba(0,229,255,0.1);">
+            <svg class="w-7 h-7" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-xl mb-3" style="color: var(--text-primary);">Direct Online Orders</h3>
+          <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
+            Skip the 20-30% commission. Customers order directly from your website, you keep 100% of the profit. Integrated payment gateway, order management, and delivery coordination. Build your own customer database.
+          </p>
+          <div class="flex items-center gap-2 mt-4 pt-4 border-t" style="border-color: var(--border);">
+            <svg class="w-4 h-4 text-aura-mint flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M5 13l4 4L19 7"/>
+            </svg>
+            <span class="text-xs font-display font-semibold text-aura-mint">Save ₹30,000+ monthly on commissions</span>
+          </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="glass-card rounded-2xl p-7 animate-in hover:-translate-y-2 transition-all duration-300 group" style="animation-delay: 0.4s;">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300" style="background: rgba(0,229,255,0.1);">
+            <svg class="w-7 h-7" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-xl mb-3" style="color: var(--text-primary);">Photo Gallery</h3>
+          <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
+            Showcase your ambiance, signature dishes, plating artistry, and happy diners. High-quality photos build trust and appetite. Highlight interior design, outdoor seating, bar area, chef at work, and special events.
+          </p>
+          <div class="flex items-center gap-2 mt-4 pt-4 border-t" style="border-color: var(--border);">
+            <svg class="w-4 h-4 text-aura-mint flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M5 13l4 4L19 7"/>
+            </svg>
+            <span class="text-xs font-display font-semibold text-aura-mint">Visual storytelling = emotional connection</span>
+          </div>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="glass-card rounded-2xl p-7 animate-in hover:-translate-y-2 transition-all duration-300 group" style="animation-delay: 0.5s;">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300" style="background: rgba(0,229,255,0.1);">
+            <svg class="w-7 h-7" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-xl mb-3" style="color: var(--text-primary);">Catering & Events Page</h3>
+          <p class="text-sm leading-relaxed" style="color: var(--text-muted);">
+            Capture lucrative corporate catering, birthday parties, wedding receptions, and private dining events. Dedicated inquiry form, custom menu options, pricing tiers. These bookings generate 3-5x more revenue than single dine-in guests.
+          </p>
+          <div class="flex items-center gap-2 mt-4 pt-4 border-t" style="border-color: var(--border);">
+            <svg class="w-4 h-4 text-aura-mint flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M5 13l4 4L19 7"/>
+            </svg>
+            <span class="text-xs font-display font-semibold text-aura-mint">High-ticket revenue stream</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key Differentiator -->
+      <div class="max-w-3xl mx-auto glass-card rounded-2xl p-8 text-center animate-in border-2" style="border-color: var(--accent); animation-delay: 0.6s;">
+        <p class="text-lg leading-relaxed mb-4" style="color: var(--text-primary);">
+          <strong>All of this costs less than paying Zomato/Swiggy commissions for just 2 months.</strong>
+        </p>
+        <p class="text-sm" style="color: var(--text-muted);">
+          One-time payment of ₹9,999. No monthly fees. Free hosting forever. You own the website and all customer data.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- IMPACT NUMBERS                              -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="relative py-20 lg:py-28" style="background: var(--bg-secondary);">
+    <div class="section-padding max-w-[1440px] mx-auto">
+      <div class="max-w-3xl mx-auto text-center mb-16 animate-in">
+        <span class="badge mb-4">Real Results</span>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mb-6" style="color: var(--text-primary);">
+          The <span class="text-gradient">Impact</span> of Your Website
+        </h2>
+        <p class="text-base lg:text-lg" style="color: var(--text-muted);">
+          Data from restaurants and cafes who made the switch from aggregator-only to owned digital presence.
+        </p>
+      </div>
+
+      <!-- Stats Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <!-- Stat 1 -->
+        <div class="glass-card rounded-2xl p-8 text-center animate-in hover:-translate-y-2 transition-all duration-300 group">
+          <div class="relative mb-5">
+            <div class="absolute inset-0 rounded-full opacity-20 blur-xl" style="background: var(--accent);"></div>
+            <p class="relative text-5xl lg:text-6xl font-display font-bold text-gradient stat-counter" data-target="20">0</p>
+          </div>
+          <p class="text-lg font-display font-semibold mb-2" style="color: var(--text-primary);">20-30%</p>
+          <p class="text-sm" style="color: var(--text-muted);">Delivery App Commissions Saved</p>
+          <div class="mt-4 pt-4 border-t" style="border-color: var(--border);">
+            <p class="text-xs font-display font-semibold text-aura-mint">Reclaim your profit margin</p>
+          </div>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="glass-card rounded-2xl p-8 text-center animate-in hover:-translate-y-2 transition-all duration-300 group" style="animation-delay: 0.1s;">
+          <div class="relative mb-5">
+            <div class="absolute inset-0 rounded-full opacity-20 blur-xl" style="background: var(--accent);"></div>
+            <p class="relative text-5xl lg:text-6xl font-display font-bold text-gradient">+<span class="stat-counter" data-target="35">0</span>%</p>
+          </div>
+          <p class="text-lg font-display font-semibold mb-2" style="color: var(--text-primary);">Walk-In Increase</p>
+          <p class="text-sm" style="color: var(--text-muted);">From Local SEO & Google Maps</p>
+          <div class="mt-4 pt-4 border-t" style="border-color: var(--border);">
+            <p class="text-xs font-display font-semibold text-aura-mint">Discovered by "near me" searches</p>
+          </div>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="glass-card rounded-2xl p-8 text-center animate-in hover:-translate-y-2 transition-all duration-300 group" style="animation-delay: 0.2s;">
+          <div class="relative mb-5">
+            <div class="absolute inset-0 rounded-full opacity-20 blur-xl" style="background: var(--accent);"></div>
+            <p class="relative text-5xl lg:text-6xl font-display font-bold text-gradient">+<span class="stat-counter" data-target="60">0</span>%</p>
+          </div>
+          <p class="text-lg font-display font-semibold mb-2" style="color: var(--text-primary);">Event Inquiries</p>
+          <p class="text-sm" style="color: var(--text-muted);">Catering, Parties, Corporate Orders</p>
+          <div class="mt-4 pt-4 border-t" style="border-color: var(--border);">
+            <p class="text-xs font-display font-semibold text-aura-mint">3-5x revenue per booking</p>
+          </div>
+        </div>
+
+        <!-- Stat 4 -->
+        <div class="glass-card rounded-2xl p-8 text-center animate-in hover:-translate-y-2 transition-all duration-300 group" style="animation-delay: 0.3s;">
+          <div class="relative mb-5">
+            <div class="absolute inset-0 rounded-full opacity-20 blur-xl" style="background: var(--accent);"></div>
+            <p class="relative text-5xl lg:text-6xl font-display font-bold text-gradient stat-counter" data-target="76">0</p>
+          </div>
+          <p class="text-lg font-display font-semibold mb-2" style="color: var(--text-primary);">76%</p>
+          <p class="text-sm" style="color: var(--text-muted);">Of Local Searches = Visit in 24hrs</p>
+          <div class="mt-4 pt-4 border-t" style="border-color: var(--border);">
+            <p class="text-xs font-display font-semibold text-aura-mint">High purchase intent</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROI Callout -->
+      <div class="max-w-4xl mx-auto mt-12 glass-card rounded-2xl p-8 lg:p-10 animate-in border-2" style="border-color: var(--accent); animation-delay: 0.4s;">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 class="font-display font-bold text-2xl lg:text-3xl mb-4" style="color: var(--text-primary);">
+              ROI: <span class="text-gradient">Under 60 Days</span>
+            </h3>
+            <p class="text-sm lg:text-base leading-relaxed" style="color: var(--text-muted);">
+              If you're doing ₹2,00,000 monthly revenue through Zomato/Swiggy and paying 25% commission, you lose <strong style="color: var(--accent);">₹50,000 per month.</strong> Your website costs ₹9,999 one-time. You break even in <strong style="color: var(--accent);">just 6 days.</strong>
+            </p>
+          </div>
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center justify-between p-4 rounded-xl" style="background: rgba(0,229,255,0.05); border: 1px solid rgba(0,229,255,0.1);">
+              <span class="text-sm font-display font-medium" style="color: var(--text-muted);">Aggregator Commissions (Monthly)</span>
+              <span class="text-lg font-display font-bold" style="color: var(--accent);">-₹50,000</span>
+            </div>
+            <div class="flex items-center justify-between p-4 rounded-xl" style="background: rgba(168,230,207,0.1); border: 1px solid rgba(168,230,207,0.2);">
+              <span class="text-sm font-display font-medium" style="color: var(--text-muted);">Website Cost (One-Time)</span>
+              <span class="text-lg font-display font-bold text-aura-mint">₹9,999</span>
+            </div>
+            <div class="flex items-center justify-between p-4 rounded-xl border-2" style="border-color: var(--accent); background: rgba(0,229,255,0.08);">
+              <span class="text-sm font-display font-semibold" style="color: var(--text-primary);">Break Even</span>
+              <span class="text-xl font-display font-bold" style="color: var(--accent);">6 Days</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- WHAT'S INCLUDED                             -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="relative py-20 lg:py-28" style="background: var(--bg-primary);">
+    <div class="section-padding max-w-[1440px] mx-auto">
+      <div class="max-w-3xl mx-auto text-center mb-16 animate-in">
+        <span class="badge mb-4">₹9,999 Package</span>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mb-6" style="color: var(--text-primary);">
+          Everything You Need, <span class="text-gradient">Included</span>
+        </h2>
+        <p class="text-base lg:text-lg" style="color: var(--text-muted);">
+          No hidden costs. No monthly fees. One flat price for a complete, professional restaurant website.
+        </p>
+      </div>
+
+      <!-- Checklist Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto mb-12">
+        <div class="flex items-start gap-3 glass-card rounded-xl p-5 animate-in hover:-translate-y-1 transition-all duration-300">
+          <svg class="w-5 h-5 text-aura-mint flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M5 13l4 4L19 7"/>
+          </svg>
+          <div>
+            <p class="font-display font-semibold text-sm" style="color: var(--text-primary);">5-8 Page Professional Website</p>
+            <p class="text-xs mt-1" style="color: var(--text-muted);">Home, Menu, About, Gallery, Events, Contact, Reservations</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 glass-card rounded-xl p-5 animate-in hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.05s;">
+          <svg class="w-5 h-5 text-aura-mint flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M5 13l4 4L19 7"/>
+          </svg>
+          <div>
+            <p class="font-display font-semibold text-sm" style="color: var(--text-primary);">Digital Menu with QR Code</p>
+            <p class="text-xs mt-1" style="color: var(--text-muted);">Easy updates, categorized, dish images, descriptions</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 glass-card rounded-xl p-5 animate-in hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.1s;">
+          <svg class="w-5 h-5 text-aura-mint flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M5 13l4 4L19 7"/>
+          </svg>
+          <div>
+            <p class="font-display font-semibold text-sm" style="color: var(--text-primary);">Table Reservation System</p>
+            <p class="text-xs mt-1" style="color: var(--text-muted);">WhatsApp integration, form booking, confirmation emails</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 glass-card rounded-xl p-5 animate-in hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.15s;">
+          <svg class="w-5 h-5 text-aura-mint flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M5 13l4 4L19 7"/>
+          </svg>
+          <div>
+            <p class="font-display font-semibold text-sm" style="color: var(--text-primary);">Online Ordering Setup</p>
+            <p class="text-xs mt-1" style="color: var(--text-muted);">Direct orders, payment gateway, order management</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 glass-card rounded-xl p-5 animate-in hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.2s;">
+          <svg class="w-5 h-5 text-aura-mint flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M5 13l4 4L19 7"/>
+          </svg>
+          <div>
+            <p class="font-display font-semibold text-sm" style="color: var(--text-primary);">Photo Gallery</p>
+            <p class="text-xs mt-1" style="color: var(--text-muted);">Ambiance, food, chef, events — showcase your brand</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 glass-card rounded-xl p-5 animate-in hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.25s;">
+          <svg class="w-5 h-5 text-aura-mint flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M5 13l4 4L19 7"/>
+          </svg>
+          <div>
+            <p class="font-display font-semibold text-sm" style="color: var(--text-primary);">Catering & Events Page</p>
+            <p class="text-xs mt-1" style="color: var(--text-muted);">Dedicated inquiry form, custom menus, pricing tiers</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 glass-card rounded-xl p-5 animate-in hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.3s;">
+          <svg class="w-5 h-5 text-aura-mint flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M5 13l4 4L19 7"/>
+          </svg>
+          <div>
+            <p class="font-display font-semibold text-sm" style="color: var(--text-primary);">Local SEO Optimization</p>
+            <p class="text-xs mt-1" style="color: var(--text-muted);">Google Maps, "near me" keywords, schema markup</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 glass-card rounded-xl p-5 animate-in hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.35s;">
+          <svg class="w-5 h-5 text-aura-mint flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M5 13l4 4L19 7"/>
+          </svg>
+          <div>
+            <p class="font-display font-semibold text-sm" style="color: var(--text-primary);">Mobile-First Responsive Design</p>
+            <p class="text-xs mt-1" style="color: var(--text-muted);">Looks perfect on all devices, fast loading</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 glass-card rounded-xl p-5 animate-in hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.4s;">
+          <svg class="w-5 h-5 text-aura-mint flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M5 13l4 4L19 7"/>
+          </svg>
+          <div>
+            <p class="font-display font-semibold text-sm" style="color: var(--text-primary);">FREE Hosting Forever</p>
+            <p class="text-xs mt-1" style="color: var(--text-muted);">No monthly server costs, ever</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 glass-card rounded-xl p-5 animate-in hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.45s;">
+          <svg class="w-5 h-5 text-aura-mint flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M5 13l4 4L19 7"/>
+          </svg>
+          <div>
+            <p class="font-display font-semibold text-sm" style="color: var(--text-primary);">SSL Certificate (HTTPS)</p>
+            <p class="text-xs mt-1" style="color: var(--text-muted);">Secure, trusted by Google, boosts SEO</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 glass-card rounded-xl p-5 animate-in hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.5s;">
+          <svg class="w-5 h-5 text-aura-mint flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M5 13l4 4L19 7"/>
+          </svg>
+          <div>
+            <p class="font-display font-semibold text-sm" style="color: var(--text-primary);">Custom Email Addresses</p>
+            <p class="text-xs mt-1" style="color: var(--text-muted);">yourname@yourrestaurant.com — professional branding</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 glass-card rounded-xl p-5 animate-in hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.55s;">
+          <svg class="w-5 h-5 text-aura-mint flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M5 13l4 4L19 7"/>
+          </svg>
+          <div>
+            <p class="font-display font-semibold text-sm" style="color: var(--text-primary);">Contact Form & WhatsApp Integration</p>
+            <p class="text-xs mt-1" style="color: var(--text-muted);">Instant inquiry notifications</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 glass-card rounded-xl p-5 animate-in hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.6s;">
+          <svg class="w-5 h-5 text-aura-mint flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M5 13l4 4L19 7"/>
+          </svg>
+          <div>
+            <p class="font-display font-semibold text-sm" style="color: var(--text-primary);">Google Analytics Setup</p>
+            <p class="text-xs mt-1" style="color: var(--text-muted);">Track visitors, orders, popular menu items</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 glass-card rounded-xl p-5 animate-in hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.65s;">
+          <svg class="w-5 h-5 text-aura-mint flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M5 13l4 4L19 7"/>
+          </svg>
+          <div>
+            <p class="font-display font-semibold text-sm" style="color: var(--text-primary);">Social Media Integration</p>
+            <p class="text-xs mt-1" style="color: var(--text-muted);">Instagram feed, Facebook reviews, YouTube videos</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 glass-card rounded-xl p-5 animate-in hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.7s;">
+          <svg class="w-5 h-5 text-aura-mint flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M5 13l4 4L19 7"/>
+          </svg>
+          <div>
+            <p class="font-display font-semibold text-sm" style="color: var(--text-primary);">Blog/News Section (Optional)</p>
+            <p class="text-xs mt-1" style="color: var(--text-muted);">Share recipes, events, chef stories</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 glass-card rounded-xl p-5 animate-in hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.75s;">
+          <svg class="w-5 h-5 text-aura-mint flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M5 13l4 4L19 7"/>
+          </svg>
+          <div>
+            <p class="font-display font-semibold text-sm" style="color: var(--text-primary);">Training & Documentation</p>
+            <p class="text-xs mt-1" style="color: var(--text-muted);">Learn to update menu, photos, specials yourself</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 glass-card rounded-xl p-5 animate-in hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.8s;">
+          <svg class="w-5 h-5 text-aura-mint flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M5 13l4 4L19 7"/>
+          </svg>
+          <div>
+            <p class="font-display font-semibold text-sm" style="color: var(--text-primary);">30-Day Support</p>
+            <p class="text-xs mt-1" style="color: var(--text-muted);">Post-launch assistance, bug fixes, minor tweaks</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 glass-card rounded-xl p-5 animate-in hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.85s;">
+          <svg class="w-5 h-5 text-aura-mint flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M5 13l4 4L19 7"/>
+          </svg>
+          <div>
+            <p class="font-display font-semibold text-sm" style="color: var(--text-primary);">Ownership & Source Code</p>
+            <p class="text-xs mt-1" style="color: var(--text-muted);">You own the website, no vendor lock-in</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bonus Callout -->
+      <div class="max-w-3xl mx-auto glass-card rounded-2xl p-8 text-center animate-in border-2" style="border-color: var(--accent); animation-delay: 0.9s;">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-4" style="background: rgba(168,230,207,0.15);">
+          <svg class="w-5 h-5 text-aura-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/>
+          </svg>
+          <span class="text-xs font-display font-semibold text-aura-mint">BONUS: FIRST 26 CUSTOMERS</span>
+        </div>
+        <h3 class="font-display font-bold text-2xl mb-3" style="color: var(--text-primary);">
+          Get <span class="text-gradient">26% OFF</span> Launch Discount
+        </h3>
+        <p class="text-sm" style="color: var(--text-muted);">
+          Pay just <strong style="color: var(--accent);">₹7,399</strong> instead of ₹9,999. Limited to the first 26 customers. 18 spots remaining.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PRICING CTA                                 -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="relative py-20 lg:py-28" style="background: var(--bg-secondary);">
+    <div class="section-padding max-w-[1440px] mx-auto">
+      <div class="max-w-4xl mx-auto">
+        <!-- Pricing Card -->
+        <div class="glass-card rounded-3xl p-10 lg:p-12 animate-in border-2" style="border-color: var(--accent);">
+          <div class="text-center mb-8">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-4" style="background: rgba(0,229,255,0.08); border: 1px solid rgba(0,229,255,0.15);">
+              <svg class="w-4 h-4" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-xs font-display font-medium" style="color: var(--accent);">One-Time Payment · No Monthly Fees</span>
+            </div>
+            <p class="text-sm mb-2" style="color: var(--text-muted);">Complete Restaurant Website</p>
+            <div class="flex items-end justify-center gap-2 mb-2">
+              <span class="text-5xl lg:text-6xl font-display font-bold text-gradient">₹9,999</span>
+              <span class="text-lg pb-2" style="color: var(--text-muted);">one-time</span>
+            </div>
+            <p class="text-xs" style="color: var(--text-muted);">26% Launch Discount: <span class="line-through">₹13,512</span> <strong style="color: var(--accent);">Save ₹3,513</strong></p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6 mb-8 pb-8 border-b" style="border-color: var(--border);">
+            <div class="text-center">
+              <div class="w-12 h-12 rounded-xl mx-auto mb-3 flex items-center justify-center" style="background: rgba(0,229,255,0.1);">
+                <svg class="w-6 h-6" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path d="M5 13l4 4L19 7"/>
+                </svg>
+              </div>
+              <p class="text-sm font-display font-semibold mb-1" style="color: var(--text-primary);">FREE Hosting Forever</p>
+              <p class="text-xs" style="color: var(--text-muted);">No server costs</p>
+            </div>
+            <div class="text-center">
+              <div class="w-12 h-12 rounded-xl mx-auto mb-3 flex items-center justify-center" style="background: rgba(0,229,255,0.1);">
+                <svg class="w-6 h-6" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <p class="text-sm font-display font-semibold mb-1" style="color: var(--text-primary);">Ready in 10 Days</p>
+              <p class="text-xs" style="color: var(--text-muted);">Fast turnaround</p>
+            </div>
+            <div class="text-center">
+              <div class="w-12 h-12 rounded-xl mx-auto mb-3 flex items-center justify-center" style="background: rgba(0,229,255,0.1);">
+                <svg class="w-6 h-6" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                </svg>
+              </div>
+              <p class="text-sm font-display font-semibold mb-1" style="color: var(--text-primary);">30-Day Guarantee</p>
+              <p class="text-xs" style="color: var(--text-muted);">Not happy? Full refund</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/contact" class="btn-primary text-center justify-center">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+              Get Started Now
+            </a>
+            <a href="/pricing" class="btn-secondary text-center justify-center">
+              View Full Pricing Details
+            </a>
+          </div>
+
+          <p class="text-center text-xs mt-6" style="color: var(--text-muted);">
+            💳 Flexible payment plans available · 🌍 Serving restaurants across India · ✓ 100% satisfaction guaranteed
+          </p>
+        </div>
+
+        <!-- Trust Signals -->
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-xs" style="color: var(--text-muted);">
+          <span class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-aura-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M5 13l4 4L19 7"/>
+            </svg>
+            No Hidden Fees
+          </span>
+          <span class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-aura-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M5 13l4 4L19 7"/>
+            </svg>
+            You Own the Website
+          </span>
+          <span class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-aura-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M5 13l4 4L19 7"/>
+            </svg>
+            No Vendor Lock-In
+          </span>
+          <span class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-aura-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M5 13l4 4L19 7"/>
+            </svg>
+            Lifetime Updates Available
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- VALUES STRIP                                -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="relative py-8 border-t" style="background: var(--bg-primary); border-color: var(--border);">
+    <div class="section-padding max-w-[1440px] mx-auto">
+      <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-xs" style="color: var(--text-muted);">
+        <span class="flex items-center gap-2">💡 We believe in cooperation, not competition</span>
+        <span class="flex items-center gap-2">🌱 Digital-first for a sustainable future</span>
+        <span class="flex items-center gap-2">🍽️ Empowering restaurants to thrive independently</span>
+        <span class="flex items-center gap-2">🌍 Please consider the environment before printing</span>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- GSAP + INTERSECTION OBSERVER SCRIPTS        -->
+<!-- ═══════════════════════════════════════════ -->
+<script>
+  // Import GSAP for animations
+  import gsap from 'gsap';
+  import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Intersection Observer for .animate-in elements
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.animate-in').forEach((el) => {
+    observer.observe(el);
+  });
+
+  // Hero title and subtitle stagger
+  gsap.from('.hero-title', {
+    opacity: 0,
+    y: 30,
+    duration: 1,
+    delay: 0.2,
+    ease: 'power3.out',
+  });
+
+  gsap.from('.hero-subtitle', {
+    opacity: 0,
+    y: 20,
+    duration: 0.8,
+    delay: 0.5,
+    ease: 'power2.out',
+  });
+
+  gsap.from('.hero-ctas', {
+    opacity: 0,
+    y: 20,
+    duration: 0.8,
+    delay: 0.8,
+    ease: 'power2.out',
+  });
+
+  // Animated counter for stats
+  const counters = document.querySelectorAll('.stat-counter');
+  counters.forEach((counter) => {
+    const target = parseInt(counter.getAttribute('data-target') || '0', 10);
+    ScrollTrigger.create({
+      trigger: counter,
+      start: 'top 80%',
+      onEnter: () => {
+        gsap.to(counter, {
+          innerText: target,
+          duration: 2,
+          ease: 'power2.out',
+          snap: { innerText: 1 },
+          onUpdate: function () {
+            counter.innerText = Math.ceil(counter.innerText);
+          },
+        });
+      },
+    });
+  });
+
+  // Parallax effect on background blobs
+  gsap.to('.absolute.blur-\\[120px\\]', {
+    scrollTrigger: {
+      trigger: 'body',
+      start: 'top top',
+      end: 'bottom bottom',
+      scrub: 1,
+    },
+    y: 200,
+    ease: 'none',
+  });
+
+  gsap.to('.absolute.blur-\\[100px\\]', {
+    scrollTrigger: {
+      trigger: 'body',
+      start: 'top top',
+      end: 'bottom bottom',
+      scrub: 1,
+    },
+    y: -150,
+    ease: 'none',
+  });
+</script>
+
+<style>
+  /* Animate-in base state */
+  .animate-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .animate-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Grid background pattern */
+  .bg-grid-pattern {
+    background-image:
+      linear-gradient(rgba(0, 229, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 229, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.25rem;
+      line-height: 1.1;
+    }
+  }
+</style>

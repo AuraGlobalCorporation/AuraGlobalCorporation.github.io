@@ -91,8 +91,6 @@ const currentPath = Astro.url.pathname;
             { href: '/features', label: 'Features' },
             { href: '/pricing', label: 'Pricing' },
             { href: '/portfolio', label: 'Portfolio' },
-            { href: '/why-website', label: 'Why a Website?' },
-            { href: '/contact', label: 'Contact' },
           ].map(link => (
             <a
               href={link.href}
@@ -106,6 +104,68 @@ const currentPath = Astro.url.pathname;
               {link.label}
             </a>
           ))}
+
+          <!-- Why a Website? Dropdown -->
+          <div class="relative" id="why-dropdown-wrap">
+            <button
+              id="why-dropdown-btn"
+              class:list={[
+                'px-4 py-2 rounded-lg text-sm font-display font-medium transition-all duration-200 inline-flex items-center gap-1',
+                currentPath.startsWith('/why-website')
+                  ? 'text-[var(--accent)] bg-[var(--accent)]/10'
+                  : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--surface)]'
+              ]}
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              Why a Website?
+              <svg class="w-3.5 h-3.5 transition-transform duration-200" id="why-dropdown-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div
+              id="why-dropdown-menu"
+              class="absolute top-full left-0 mt-2 w-64 rounded-xl shadow-2xl border overflow-hidden opacity-0 invisible translate-y-2 transition-all duration-200 z-50"
+              style="background: var(--bg-primary); border-color: var(--border);"
+            >
+              <a href="/why-website" class="block px-4 py-3 text-sm font-display font-semibold transition-colors hover:bg-[var(--surface)]" style="color: var(--accent); border-bottom: 1px solid var(--border);">
+                All Business Types
+              </a>
+              {[
+                { href: '/why-website/yoga-teacher', label: 'Yoga Teacher / Studio', icon: '🧘' },
+                { href: '/why-website/salon', label: 'Hair & Beauty Salon', icon: '💇' },
+                { href: '/why-website/spa', label: 'Spa & Wellness Center', icon: '🧖' },
+                { href: '/why-website/fitness-trainer', label: 'Fitness Trainer / Gym', icon: '💪' },
+                { href: '/why-website/restaurant', label: 'Restaurant / Cafe', icon: '🍽️' },
+                { href: '/why-website/consultant', label: 'Consultant / Freelancer', icon: '💼' },
+                { href: '/why-website/tutor', label: 'Tutor / Coaching Institute', icon: '📚' },
+                { href: '/why-website/other-services', label: 'Other Service Businesses', icon: '🏪' },
+              ].map(item => (
+                <a
+                  href={item.href}
+                  class:list={[
+                    'flex items-center gap-3 px-4 py-2.5 text-sm transition-colors hover:bg-[var(--surface)]',
+                    currentPath === item.href
+                      ? 'text-[var(--accent)] bg-[var(--accent)]/5'
+                      : 'text-[var(--text-secondary)]'
+                  ]}
+                >
+                  <span class="text-base">{item.icon}</span>
+                  {item.label}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          <a
+            href="/contact"
+            class:list={[
+              'px-4 py-2 rounded-lg text-sm font-display font-medium transition-all duration-200',
+              currentPath === '/contact'
+                ? 'text-[var(--accent)] bg-[var(--accent)]/10'
+                : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--surface)]'
+            ]}
+          >
+            Contact
+          </a>
         </div>
 
         <!-- Right Actions -->
@@ -157,8 +217,6 @@ const currentPath = Astro.url.pathname;
         { href: '/features', label: 'Features' },
         { href: '/pricing', label: 'Pricing' },
         { href: '/portfolio', label: 'Portfolio' },
-        { href: '/why-website', label: 'Why a Website?' },
-        { href: '/contact', label: 'Contact' },
       ].map((link, i) => (
         <a
           href={link.href}
@@ -169,6 +227,67 @@ const currentPath = Astro.url.pathname;
               : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--surface)]'
           ]}
           style={`opacity: 0; transform: translateX(20px); transition-delay: ${i * 50}ms;`}
+        >
+          {link.label}
+        </a>
+      ))}
+
+      <!-- Why a Website? Mobile Expandable -->
+      <div class="mobile-nav-item" style="opacity: 0; transform: translateX(20px); transition-delay: 250ms;">
+        <button
+          id="mobile-why-toggle"
+          class:list={[
+            'w-full px-4 py-3 rounded-xl text-lg font-display font-medium transition-all duration-200 flex items-center justify-between',
+            currentPath.startsWith('/why-website')
+              ? 'text-[var(--accent)] bg-[var(--accent)]/10'
+              : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--surface)]'
+          ]}
+        >
+          Why a Website?
+          <svg class="w-4 h-4 transition-transform duration-200" id="mobile-why-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="mobile-why-submenu" class="overflow-hidden max-h-0 transition-all duration-300">
+          <div class="pl-4 pt-1 pb-2 space-y-1">
+            <a href="/why-website" class="block px-4 py-2 rounded-lg text-sm font-display font-semibold transition-colors hover:bg-[var(--surface)]" style="color: var(--accent);">All Business Types</a>
+            {[
+              { href: '/why-website/yoga-teacher', label: 'Yoga Teacher / Studio', icon: '🧘' },
+              { href: '/why-website/salon', label: 'Hair & Beauty Salon', icon: '💇' },
+              { href: '/why-website/spa', label: 'Spa & Wellness', icon: '🧖' },
+              { href: '/why-website/fitness-trainer', label: 'Fitness / Gym', icon: '💪' },
+              { href: '/why-website/restaurant', label: 'Restaurant / Cafe', icon: '🍽️' },
+              { href: '/why-website/consultant', label: 'Consultant', icon: '💼' },
+              { href: '/why-website/tutor', label: 'Tutor / Coaching', icon: '📚' },
+              { href: '/why-website/other-services', label: 'Other Services', icon: '🏪' },
+            ].map(item => (
+              <a
+                href={item.href}
+                class:list={[
+                  'flex items-center gap-2 px-4 py-2 rounded-lg text-sm transition-colors hover:bg-[var(--surface)]',
+                  currentPath === item.href
+                    ? 'text-[var(--accent)]'
+                    : 'text-[var(--text-muted)]'
+                ]}
+              >
+                <span>{item.icon}</span>
+                {item.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {[
+        { href: '/contact', label: 'Contact' },
+      ].map((link, i) => (
+        <a
+          href={link.href}
+          class:list={[
+            'mobile-nav-item px-4 py-3 rounded-xl text-lg font-display font-medium transition-all duration-200',
+            currentPath === link.href
+              ? 'text-[var(--accent)] bg-[var(--accent)]/10'
+              : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--surface)]'
+          ]}
+          style={`opacity: 0; transform: translateX(20px); transition-delay: 300ms;`}
         >
           {link.label}
         </a>
@@ -367,6 +486,56 @@ const currentPath = Astro.url.pathname;
       }
     }
     fetchCampaignData();
+
+    // Desktop "Why a Website?" dropdown
+    const whyBtn = document.getElementById('why-dropdown-btn');
+    const whyMenu = document.getElementById('why-dropdown-menu');
+    const whyChevron = document.getElementById('why-dropdown-chevron');
+    const whyWrap = document.getElementById('why-dropdown-wrap');
+    let whyOpen = false;
+
+    function toggleWhyDropdown(open) {
+      whyOpen = open;
+      whyBtn?.setAttribute('aria-expanded', String(open));
+      if (open) {
+        whyMenu.style.opacity = '1';
+        whyMenu.style.visibility = 'visible';
+        whyMenu.style.transform = 'translateY(0)';
+        whyChevron.style.transform = 'rotate(180deg)';
+      } else {
+        whyMenu.style.opacity = '0';
+        whyMenu.style.visibility = 'hidden';
+        whyMenu.style.transform = 'translateY(8px)';
+        whyChevron.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    whyBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleWhyDropdown(!whyOpen);
+    });
+
+    document.addEventListener('click', (e) => {
+      if (whyOpen && !whyWrap?.contains(e.target)) {
+        toggleWhyDropdown(false);
+      }
+    });
+
+    // Mobile "Why a Website?" expandable
+    const mobileWhyToggle = document.getElementById('mobile-why-toggle');
+    const mobileWhySubmenu = document.getElementById('mobile-why-submenu');
+    const mobileWhyChevron = document.getElementById('mobile-why-chevron');
+
+    mobileWhyToggle?.addEventListener('click', () => {
+      const isOpen = mobileWhySubmenu.style.maxHeight && mobileWhySubmenu.style.maxHeight !== '0px';
+      if (isOpen) {
+        mobileWhySubmenu.style.maxHeight = '0px';
+        mobileWhyChevron.style.transform = 'rotate(0deg)';
+      } else {
+        mobileWhySubmenu.style.maxHeight = mobileWhySubmenu.scrollHeight + 'px';
+        mobileWhyChevron.style.transform = 'rotate(180deg)';
+      }
+    });
   </script>
 </body>
 </html>
