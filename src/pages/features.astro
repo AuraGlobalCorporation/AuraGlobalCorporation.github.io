@@ -1,0 +1,1106 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Features - The Aura Ecosystem | Aura Global Corporation">
+  <!-- Hero Section -->
+  <section class="relative section-padding py-20 lg:py-32 overflow-hidden">
+    <!-- Background Grid -->
+    <div class="absolute inset-0 bg-grid-pattern bg-grid opacity-40" aria-hidden="true"></div>
+
+    <!-- Glow Effects -->
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-aura-cyan/10 rounded-full blur-[120px] animate-pulse" aria-hidden="true"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-aura-cyan/5 rounded-full blur-[120px] animate-pulse" style="animation-delay: 1s;" aria-hidden="true"></div>
+
+    <div class="relative max-w-5xl mx-auto text-center animate-in">
+      <h1 class="font-display font-bold text-5xl sm:text-6xl lg:text-7xl mb-6 leading-[1.1]">
+        The <span class="text-gradient">Aura Ecosystem</span>
+      </h1>
+      <p class="text-lg sm:text-xl lg:text-2xl mb-4" style="color: var(--text-secondary);">
+        A complete healthcare platform designed for the future
+      </p>
+      <p class="text-base lg:text-lg max-w-3xl mx-auto" style="color: var(--text-muted);">
+        From intelligent medical inventory management to AI-powered EMR and patient engagement tools—all HIPAA, GDPR, and DPDP compliant.
+      </p>
+    </div>
+  </section>
+
+  <!-- Medical Inventory Management System -->
+  <section id="medical-inventory" class="relative section-padding py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto">
+      <!-- Section Header -->
+      <div class="text-center mb-12 lg:mb-16 animate-in">
+        <div class="inline-flex items-center gap-2 mb-4">
+          <span class="badge-urgent animate-pulse">🚀 Launching Soon!</span>
+          <span class="badge">26% OFF for First 26</span>
+        </div>
+        <h2 class="font-display font-bold text-4xl lg:text-5xl mb-4">
+          Aura Medical Inventory Management System
+        </h2>
+        <p class="text-xl lg:text-2xl font-display font-semibold text-gradient mb-3">
+          Never Run Out. Never Over-Order. Always Compliant.
+        </p>
+        <p class="text-base lg:text-lg max-w-3xl mx-auto" style="color: var(--text-muted);">
+          The only inventory system you'll ever need—designed specifically for healthcare with compliance, cost-savings, and efficiency built in.
+        </p>
+      </div>
+
+      <!-- Feature Accordion -->
+      <div class="max-w-5xl mx-auto space-y-4 animate-in">
+        <!-- Feature 1: Cost Savings & Waste Reduction -->
+        <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 feature-accordion">
+          <button class="accordion-trigger w-full flex items-center gap-4 p-6 text-left transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-6 h-6" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-display font-semibold text-lg lg:text-xl" style="color: var(--text-primary);">Cost Savings & Waste Reduction</h3>
+              <p class="text-sm mt-1" style="color: var(--text-muted);">Reduce waste and save money with intelligent tracking</p>
+            </div>
+            <svg class="w-5 h-5 flex-shrink-0 transition-transform duration-300 accordion-icon" style="color: var(--text-muted);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+            <div class="px-6 pb-6 pt-2">
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm" style="color: var(--text-secondary);">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>FIFO (First In, First Out) inventory rotation</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Automated expiration date tracking & alerts</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Comprehensive waste reporting</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Documented discard workflow with audit trail</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2: Intelligent Stock Management -->
+        <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 feature-accordion">
+          <button class="accordion-trigger w-full flex items-center gap-4 p-6 text-left transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-6 h-6" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-display font-semibold text-lg lg:text-xl" style="color: var(--text-primary);">Intelligent Stock Management</h3>
+              <p class="text-sm mt-1" style="color: var(--text-muted);">Real-time monitoring with predictive analytics</p>
+            </div>
+            <svg class="w-5 h-5 flex-shrink-0 transition-transform duration-300 accordion-icon" style="color: var(--text-muted);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+            <div class="px-6 pb-6 pt-2">
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm" style="color: var(--text-secondary);">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Real-time stock level monitoring</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Automated purchase order generation</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Smart reorder point alerts</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Inventory valuation (FIFO, LIFO, Weighted Average)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Usage trend analysis & forecasting</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3: Regulatory Compliance Suite -->
+        <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 feature-accordion">
+          <button class="accordion-trigger w-full flex items-center gap-4 p-6 text-left transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-6 h-6" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-display font-semibold text-lg lg:text-xl" style="color: var(--text-primary);">Regulatory Compliance Suite</h3>
+              <p class="text-sm mt-1" style="color: var(--text-muted);">HIPAA, GDPR, DPDP & ABHA ready out of the box</p>
+            </div>
+            <svg class="w-5 h-5 flex-shrink-0 transition-transform duration-300 accordion-icon" style="color: var(--text-muted);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+            <div class="px-6 pb-6 pt-2">
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm" style="color: var(--text-secondary);">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>HIPAA compliance with encryption & access controls</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>GDPR & DPDP compliance dashboard</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>ABHA (Ayushman Bharat Health Account) integration</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Patient consent management system</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Data Subject Rights automation (access, erasure, portability)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Breach notification & incident management</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 4: Complete Audit Trail -->
+        <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 feature-accordion">
+          <button class="accordion-trigger w-full flex items-center gap-4 p-6 text-left transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-6 h-6" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-display font-semibold text-lg lg:text-xl" style="color: var(--text-primary);">Complete Audit Trail</h3>
+              <p class="text-sm mt-1" style="color: var(--text-muted);">Every action logged and traceable</p>
+            </div>
+            <svg class="w-5 h-5 flex-shrink-0 transition-transform duration-300 accordion-icon" style="color: var(--text-muted);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+            <div class="px-6 pb-6 pt-2">
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm" style="color: var(--text-secondary);">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Timestamped logging of every action</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Before/after change tracking</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Risk classification (low, medium, high, critical)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>IP address & user agent tracking</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Tamper-proof audit logs</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Exportable compliance reports</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 5: Full Asset Lifecycle -->
+        <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 feature-accordion">
+          <button class="accordion-trigger w-full flex items-center gap-4 p-6 text-left transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-6 h-6" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-display font-semibold text-lg lg:text-xl" style="color: var(--text-primary);">Full Asset Lifecycle Management</h3>
+              <p class="text-sm mt-1" style="color: var(--text-muted);">Track from acquisition to disposal</p>
+            </div>
+            <svg class="w-5 h-5 flex-shrink-0 transition-transform duration-300 accordion-icon" style="color: var(--text-muted);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+            <div class="px-6 pb-6 pt-2">
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm" style="color: var(--text-secondary);">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Acquisition to disposal tracking</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Automatic depreciation calculation</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Current book value reporting</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Automated maintenance scheduling</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>MTBF (Mean Time Between Failures) tracking</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 6: Maintenance Cost Optimization -->
+        <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 feature-accordion">
+          <button class="accordion-trigger w-full flex items-center gap-4 p-6 text-left transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-6 h-6" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-display font-semibold text-lg lg:text-xl" style="color: var(--text-primary);">Maintenance Cost Optimization</h3>
+              <p class="text-sm mt-1" style="color: var(--text-muted);">Reduce downtime and control costs</p>
+            </div>
+            <svg class="w-5 h-5 flex-shrink-0 transition-transform duration-300 accordion-icon" style="color: var(--text-muted);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+            <div class="px-6 pb-6 pt-2">
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm" style="color: var(--text-secondary);">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Preventive maintenance scheduling</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Labor & parts cost tracking</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Workload balancing & assignment</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>First-time fix rate monitoring</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 7: Operational Efficiency -->
+        <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 feature-accordion">
+          <button class="accordion-trigger w-full flex items-center gap-4 p-6 text-left transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-6 h-6" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-display font-semibold text-lg lg:text-xl" style="color: var(--text-primary);">Operational Efficiency Tools</h3>
+              <p class="text-sm mt-1" style="color: var(--text-muted);">Streamline daily workflows</p>
+            </div>
+            <svg class="w-5 h-5 flex-shrink-0 transition-transform duration-300 accordion-icon" style="color: var(--text-muted);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+            <div class="px-6 pb-6 pt-2">
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm" style="color: var(--text-secondary);">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Barcode & QR code scanning</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Procedure kit management</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Automated pick list generation</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Equipment check-out system</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Shipment tracking integration</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 8: Vendor Management -->
+        <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 feature-accordion">
+          <button class="accordion-trigger w-full flex items-center gap-4 p-6 text-left transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-6 h-6" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-display font-semibold text-lg lg:text-xl" style="color: var(--text-primary);">Vendor Management & Purchasing</h3>
+              <p class="text-sm mt-1" style="color: var(--text-muted);">Optimize supplier relationships</p>
+            </div>
+            <svg class="w-5 h-5 flex-shrink-0 transition-transform duration-300 accordion-icon" style="color: var(--text-muted);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+            <div class="px-6 pb-6 pt-2">
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm" style="color: var(--text-secondary);">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Vendor performance scorecards</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Multi-vendor price comparison</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Contract renewal alerts</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Purchase order approval workflows</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Budget tracking & forecasting</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 9: Lot Traceability & Recall -->
+        <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 feature-accordion">
+          <button class="accordion-trigger w-full flex items-center gap-4 p-6 text-left transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-6 h-6" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-display font-semibold text-lg lg:text-xl" style="color: var(--text-primary);">Lot Traceability & Recall Management</h3>
+              <p class="text-sm mt-1" style="color: var(--text-muted);">Instant recall response capability</p>
+            </div>
+            <svg class="w-5 h-5 flex-shrink-0 transition-transform duration-300 accordion-icon" style="color: var(--text-muted);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+            <div class="px-6 pb-6 pt-2">
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm" style="color: var(--text-secondary);">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Complete lot & serial number tracking</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>GS1 & NDC barcode support</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>One-click recall identification</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Patient notification automation</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 10: Multi-Facility Architecture -->
+        <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 feature-accordion">
+          <button class="accordion-trigger w-full flex items-center gap-4 p-6 text-left transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-6 h-6" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-display font-semibold text-lg lg:text-xl" style="color: var(--text-primary);">Multi-Facility Architecture</h3>
+              <p class="text-sm mt-1" style="color: var(--text-muted);">Enterprise-ready scalability</p>
+            </div>
+            <svg class="w-5 h-5 flex-shrink-0 transition-transform duration-300 accordion-icon" style="color: var(--text-muted);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+            <div class="px-6 pb-6 pt-2">
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm" style="color: var(--text-secondary);">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Complete tenant data isolation</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Cross-facility administration portal</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Granular RBAC (Role-Based Access Control)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>White-label capability</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 11: Financial Reporting -->
+        <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 feature-accordion">
+          <button class="accordion-trigger w-full flex items-center gap-4 p-6 text-left transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-6 h-6" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-display font-semibold text-lg lg:text-xl" style="color: var(--text-primary);">Financial Reporting & Analytics</h3>
+              <p class="text-sm mt-1" style="color: var(--text-muted);">Actionable financial insights</p>
+            </div>
+            <svg class="w-5 h-5 flex-shrink-0 transition-transform duration-300 accordion-icon" style="color: var(--text-muted);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+            <div class="px-6 pb-6 pt-2">
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm" style="color: var(--text-secondary);">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Total Cost of Ownership (TCO) analysis</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Maintenance ROI reports</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Inventory turnover metrics</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Depreciation schedules & reports</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 12: Integration-Ready -->
+        <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 feature-accordion">
+          <button class="accordion-trigger w-full flex items-center gap-4 p-6 text-left transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-6 h-6" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-display font-semibold text-lg lg:text-xl" style="color: var(--text-primary);">Integration-Ready Platform</h3>
+              <p class="text-sm mt-1" style="color: var(--text-muted);">Connect with your existing systems</p>
+            </div>
+            <svg class="w-5 h-5 flex-shrink-0 transition-transform duration-300 accordion-icon" style="color: var(--text-muted);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+            <div class="px-6 pb-6 pt-2">
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm" style="color: var(--text-secondary);">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Webhook notifications for events</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>RESTful API with documentation</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Bulk import/export (CSV, Excel)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Scheduled report exports</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 13: Alert Engine -->
+        <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 feature-accordion">
+          <button class="accordion-trigger w-full flex items-center gap-4 p-6 text-left transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-6 h-6" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-display font-semibold text-lg lg:text-xl" style="color: var(--text-primary);">Smart Alert Engine</h3>
+              <p class="text-sm mt-1" style="color: var(--text-muted);">Never miss critical notifications</p>
+            </div>
+            <svg class="w-5 h-5 flex-shrink-0 transition-transform duration-300 accordion-icon" style="color: var(--text-muted);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+            <div class="px-6 pb-6 pt-2">
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm" style="color: var(--text-secondary);">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Date-based automated alerts</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Multi-channel delivery (email, SMS, in-app)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Severity-based escalation</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Acknowledgment tracking</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 14: Built-In Help Desk -->
+        <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 feature-accordion">
+          <button class="accordion-trigger w-full flex items-center gap-4 p-6 text-left transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-6 h-6" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-display font-semibold text-lg lg:text-xl" style="color: var(--text-primary);">Built-In Help Desk</h3>
+              <p class="text-sm mt-1" style="color: var(--text-muted);">Streamlined support ticketing</p>
+            </div>
+            <svg class="w-5 h-5 flex-shrink-0 transition-transform duration-300 accordion-icon" style="color: var(--text-muted);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+            <div class="px-6 pb-6 pt-2">
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm" style="color: var(--text-secondary);">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Equipment issue ticketing</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>SLA tracking & compliance</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Priority-based routing</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Resolution time analytics</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 15: Mobile & Offline -->
+        <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 feature-accordion">
+          <button class="accordion-trigger w-full flex items-center gap-4 p-6 text-left transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-6 h-6" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-display font-semibold text-lg lg:text-xl" style="color: var(--text-primary);">Mobile & Offline Support</h3>
+              <p class="text-sm mt-1" style="color: var(--text-muted);">Work anywhere, anytime</p>
+            </div>
+            <svg class="w-5 h-5 flex-shrink-0 transition-transform duration-300 accordion-icon" style="color: var(--text-muted);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+            <div class="px-6 pb-6 pt-2">
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm" style="color: var(--text-secondary);">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Offline transaction queuing</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Automatic sync when online</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Mobile-optimized interface</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Touch-friendly workflows</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="text-center mt-12 animate-in">
+        <a href="/pricing" class="btn-primary">View Pricing & Claim 26% Discount</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GoEMR Section -->
+  <section id="goemr" class="relative section-padding py-16 lg:py-24" style="background: var(--bg-secondary);">
+    <div class="max-w-6xl mx-auto">
+      <div class="glass-card rounded-3xl p-8 lg:p-12 animate-in">
+        <div class="flex items-center justify-center gap-3 mb-6">
+          <span class="badge-success">Coming Q3 2026</span>
+        </div>
+
+        <h2 class="font-display font-bold text-3xl lg:text-4xl text-center mb-4">
+          GoEMR: AI-Powered Electronic Medical Records
+        </h2>
+
+        <p class="text-center text-base lg:text-lg mb-10 max-w-3xl mx-auto" style="color: var(--text-muted);">
+          Next-generation EMR with AI assistance, seamless billing, and telemedicine—all integrated with your inventory system.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+          <!-- Echo AI -->
+          <div class="flex flex-col items-start gap-3 p-5 rounded-xl transition-colors hover:bg-[var(--surface)]">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-5 h-5" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-display font-semibold text-lg mb-1" style="color: var(--text-primary);">Echo AI Charting</h3>
+              <p class="text-sm" style="color: var(--text-muted);">Voice-to-text documentation with intelligent suggestions</p>
+            </div>
+          </div>
+
+          <!-- Medical Billing -->
+          <div class="flex flex-col items-start gap-3 p-5 rounded-xl transition-colors hover:bg-[var(--surface)]">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-5 h-5" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-display font-semibold text-lg mb-1" style="color: var(--text-primary);">Medical Billing</h3>
+              <p class="text-sm" style="color: var(--text-muted);">Automated coding, claims, and insurance management</p>
+            </div>
+          </div>
+
+          <!-- e-Prescribing -->
+          <div class="flex flex-col items-start gap-3 p-5 rounded-xl transition-colors hover:bg-[var(--surface)]">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-5 h-5" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-display font-semibold text-lg mb-1" style="color: var(--text-primary);">e-Prescribing</h3>
+              <p class="text-sm" style="color: var(--text-muted);">Digital prescriptions with drug interaction checks</p>
+            </div>
+          </div>
+
+          <!-- Telemedicine -->
+          <div class="flex flex-col items-start gap-3 p-5 rounded-xl transition-colors hover:bg-[var(--surface)]">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-5 h-5" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-display font-semibold text-lg mb-1" style="color: var(--text-primary);">Telemedicine</h3>
+              <p class="text-sm" style="color: var(--text-muted);">Built-in video consultations with scheduling</p>
+            </div>
+          </div>
+
+          <!-- Clinical Decision Support -->
+          <div class="flex flex-col items-start gap-3 p-5 rounded-xl transition-colors hover:bg-[var(--surface)]">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-5 h-5" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-display font-semibold text-lg mb-1" style="color: var(--text-primary);">Clinical Decision Support</h3>
+              <p class="text-sm" style="color: var(--text-muted);">Evidence-based treatment recommendations</p>
+            </div>
+          </div>
+
+          <!-- Lab Integration -->
+          <div class="flex flex-col items-start gap-3 p-5 rounded-xl transition-colors hover:bg-[var(--surface)]">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-5 h-5" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-display font-semibold text-lg mb-1" style="color: var(--text-primary);">Lab Integration</h3>
+              <p class="text-sm" style="color: var(--text-muted);">Direct lab ordering and results management</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Savings Callout -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 p-6 rounded-2xl mb-8" style="background: rgba(0, 229, 255, 0.05); border: 1px solid rgba(0, 229, 255, 0.1);">
+          <div class="text-center sm:text-left">
+            <p class="text-sm font-display font-medium" style="color: var(--text-muted);">With 26% Lifetime Discount</p>
+            <p class="text-2xl lg:text-3xl font-display font-bold text-gradient">Save ₹10,500/month</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a href="/pricing" class="btn-primary">Lock In Your 26% Discount</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Patient Portal Section -->
+  <section id="patient-portal" class="relative section-padding py-16 lg:py-24">
+    <div class="max-w-6xl mx-auto">
+      <div class="glass-card rounded-3xl p-8 lg:p-12 animate-in">
+        <div class="flex items-center justify-center gap-3 mb-6">
+          <span class="badge-success">Coming Q4 2026</span>
+        </div>
+
+        <h2 class="font-display font-bold text-3xl lg:text-4xl text-center mb-4">
+          Patient Portal: Empower Your Patients
+        </h2>
+
+        <p class="text-center text-base lg:text-lg mb-10 max-w-3xl mx-auto" style="color: var(--text-muted);">
+          Give patients 24/7 access to their health information, appointments, and secure communication with your practice.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+          <!-- 24/7 Appointments -->
+          <div class="flex flex-col items-start gap-3 p-5 rounded-xl transition-colors hover:bg-[var(--surface)]">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-5 h-5" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-display font-semibold text-lg mb-1" style="color: var(--text-primary);">24/7 Appointments</h3>
+              <p class="text-sm" style="color: var(--text-muted);">Online booking and rescheduling anytime</p>
+            </div>
+          </div>
+
+          <!-- Secure Messaging -->
+          <div class="flex flex-col items-start gap-3 p-5 rounded-xl transition-colors hover:bg-[var(--surface)]">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-5 h-5" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-display font-semibold text-lg mb-1" style="color: var(--text-primary);">Secure Messaging</h3>
+              <p class="text-sm" style="color: var(--text-muted);">HIPAA-compliant patient-provider communication</p>
+            </div>
+          </div>
+
+          <!-- Lab Results -->
+          <div class="flex flex-col items-start gap-3 p-5 rounded-xl transition-colors hover:bg-[var(--surface)]">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-5 h-5" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-display font-semibold text-lg mb-1" style="color: var(--text-primary);">Lab Results Access</h3>
+              <p class="text-sm" style="color: var(--text-muted);">Instant access to test results and reports</p>
+            </div>
+          </div>
+
+          <!-- Financial Management -->
+          <div class="flex flex-col items-start gap-3 p-5 rounded-xl transition-colors hover:bg-[var(--surface)]">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-5 h-5" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-display font-semibold text-lg mb-1" style="color: var(--text-primary);">Financial Management</h3>
+              <p class="text-sm" style="color: var(--text-muted);">View bills, make payments, download receipts</p>
+            </div>
+          </div>
+
+          <!-- Health Education -->
+          <div class="flex flex-col items-start gap-3 p-5 rounded-xl transition-colors hover:bg-[var(--surface)]">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-5 h-5" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-display font-semibold text-lg mb-1" style="color: var(--text-primary);">Health Education</h3>
+              <p class="text-sm" style="color: var(--text-muted);">Curated resources and condition-specific info</p>
+            </div>
+          </div>
+
+          <!-- Pre-Visit Forms -->
+          <div class="flex flex-col items-start gap-3 p-5 rounded-xl transition-colors hover:bg-[var(--surface)]">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: var(--accent);">
+              <svg class="w-5 h-5" style="color: var(--bg-primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-display font-semibold text-lg mb-1" style="color: var(--text-primary);">Pre-Visit Forms</h3>
+              <p class="text-sm" style="color: var(--text-muted);">Digital intake forms for streamlined check-in</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Savings Callout -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 p-6 rounded-2xl mb-8" style="background: rgba(0, 229, 255, 0.05); border: 1px solid rgba(0, 229, 255, 0.1);">
+          <div class="text-center sm:text-left">
+            <p class="text-sm font-display font-medium" style="color: var(--text-muted);">With 26% Lifetime Discount</p>
+            <p class="text-2xl lg:text-3xl font-display font-bold text-gradient">Save ₹8,500/month</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a href="/pricing" class="btn-primary">Secure Your 26% Lifetime Discount</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Website Development Services -->
+  <section id="website-services" class="relative section-padding py-16 lg:py-24" style="background: var(--bg-secondary);">
+    <div class="max-w-5xl mx-auto text-center">
+      <div class="animate-in">
+        <h2 class="font-display font-bold text-3xl lg:text-4xl mb-4">
+          Your Practice Deserves a Professional Digital Presence
+        </h2>
+        <p class="text-base lg:text-lg mb-10 max-w-2xl mx-auto" style="color: var(--text-muted);">
+          Modern, mobile-responsive websites designed specifically for healthcare providers. Boost your online credibility and patient acquisition.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+          <!-- Freedom Tier -->
+          <div class="glass-card rounded-2xl p-6 hover:scale-105 transition-transform">
+            <h3 class="font-display font-bold text-xl mb-2" style="color: var(--text-primary);">Freedom</h3>
+            <p class="text-3xl font-display font-bold text-gradient mb-4">₹9,999</p>
+            <p class="text-sm mb-4" style="color: var(--text-muted);">Perfect for solo practitioners</p>
+            <ul class="text-left text-sm space-y-2 mb-6" style="color: var(--text-secondary);">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>5-page website</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Mobile responsive</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Contact form</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Business Pro Tier -->
+          <div class="glass-card rounded-2xl p-6 hover:scale-105 transition-transform" style="border: 2px solid var(--accent);">
+            <span class="badge mb-3">Most Popular</span>
+            <h3 class="font-display font-bold text-xl mb-2" style="color: var(--text-primary);">Business Pro</h3>
+            <p class="text-3xl font-display font-bold text-gradient mb-4">₹14,999</p>
+            <p class="text-sm mb-4" style="color: var(--text-muted);">For growing practices</p>
+            <ul class="text-left text-sm space-y-2 mb-6" style="color: var(--text-secondary);">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>10-page website</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Blog functionality</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>SEO optimization</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Enterprise Tier -->
+          <div class="glass-card rounded-2xl p-6 hover:scale-105 transition-transform">
+            <h3 class="font-display font-bold text-xl mb-2" style="color: var(--text-primary);">Enterprise</h3>
+            <p class="text-3xl font-display font-bold text-gradient mb-4">₹24,999</p>
+            <p class="text-sm mb-4" style="color: var(--text-muted);">For multi-location clinics</p>
+            <ul class="text-left text-sm space-y-2 mb-6" style="color: var(--text-secondary);">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Unlimited pages</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Custom integrations</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Priority support</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="/pricing#websites" class="btn-secondary">View Full Pricing Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="relative section-padding py-20 lg:py-28">
+    <div class="max-w-4xl mx-auto text-center animate-in">
+      <h2 class="font-display font-bold text-4xl lg:text-5xl mb-6">
+        Ready to Transform Your Practice?
+      </h2>
+      <p class="text-lg lg:text-xl mb-8" style="color: var(--text-muted);">
+        Join the first 26 customers and lock in 26% off forever. Limited time offer.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="/pricing" class="btn-primary">View Pricing</a>
+        <a href="/contact" class="btn-secondary">Schedule Demo</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  // Accordion functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const accordions = document.querySelectorAll('.feature-accordion');
+
+    accordions.forEach(accordion => {
+      const trigger = accordion.querySelector('.accordion-trigger');
+      const content = accordion.querySelector('.accordion-content');
+      const icon = accordion.querySelector('.accordion-icon');
+
+      if (!trigger || !content || !icon) return;
+
+      trigger.addEventListener('click', () => {
+        const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+
+        // Close all other accordions
+        accordions.forEach(otherAccordion => {
+          if (otherAccordion !== accordion) {
+            const otherTrigger = otherAccordion.querySelector('.accordion-trigger');
+            const otherContent = otherAccordion.querySelector('.accordion-content');
+            const otherIcon = otherAccordion.querySelector('.accordion-icon');
+
+            if (otherTrigger && otherContent && otherIcon) {
+              otherTrigger.setAttribute('aria-expanded', 'false');
+              otherContent.style.maxHeight = '0';
+              otherIcon.style.transform = 'rotate(0deg)';
+            }
+          }
+        });
+
+        // Toggle current accordion
+        if (isExpanded) {
+          trigger.setAttribute('aria-expanded', 'false');
+          content.style.maxHeight = '0';
+          icon.style.transform = 'rotate(0deg)';
+        } else {
+          trigger.setAttribute('aria-expanded', 'true');
+          content.style.maxHeight = content.scrollHeight + 'px';
+          icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+
+    // Scroll animations using IntersectionObserver
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-in').forEach(el => {
+      observer.observe(el);
+    });
+  });
+</script>
+
+<style>
+  /* Smooth accordion animation */
+  .accordion-content {
+    transition: max-height 0.3s ease;
+  }
+
+  .accordion-icon {
+    transition: transform 0.3s ease;
+  }
+
+  /* Enhanced hover effects */
+  .feature-accordion:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 229, 255, 0.1);
+  }
+
+  /* Fade-up animation */
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-in.visible {
+    animation: fade-up 0.6s ease-out forwards;
+  }
+</style>

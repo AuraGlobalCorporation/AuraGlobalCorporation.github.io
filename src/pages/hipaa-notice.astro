@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="HIPAA Notice of Privacy Practices - Aura Global Corporation">
+  <section class="py-20 lg:py-28" style="background: var(--bg-primary);">
+    <div class="section-padding max-w-[900px] mx-auto">
+      <span class="badge mb-6">Compliance</span>
+      <h1 class="font-display font-extrabold text-4xl sm:text-5xl mb-4" style="color: var(--text-primary);">HIPAA Notice of Privacy Practices</h1>
+      <p class="text-sm mb-12" style="color: var(--text-muted);">Effective Date: February 13, 2026</p>
+
+      <div class="space-y-8">
+        <div class="glass-card rounded-2xl p-6">
+          <h2 class="font-display font-bold text-lg mb-3" style="color: var(--accent);">Important Notice</h2>
+          <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">
+            This marketing website (auraglobal.com) does <strong style="color: var(--text-primary);">NOT</strong> collect, process, store, or transmit any Protected Health Information (PHI). This notice pertains to our software products (Medical Inventory Management System, GoEMR, Patient Portal) when they become operational.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="font-display font-bold text-xl mb-3" style="color: var(--text-primary);">Our Commitment</h2>
+          <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">
+            Aura Global Corporation is committed to maintaining the privacy and security of Protected Health Information (PHI) in accordance with the Health Insurance Portability and Accountability Act (HIPAA) of 1996 and the HITECH Act. When our software products launch, we will execute Business Associate Agreements (BAA) with all clients.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="font-display font-bold text-xl mb-3" style="color: var(--text-primary);">How Our Products Will Protect PHI</h2>
+          <ul class="space-y-3 text-sm" style="color: var(--text-secondary);">
+            <li class="flex items-start gap-3">
+              <svg class="w-4 h-4 mt-0.5 flex-shrink-0" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+              End-to-end encryption (AES-256) for all PHI at rest and in transit
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-4 h-4 mt-0.5 flex-shrink-0" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+              Role-Based Access Control (RBAC) ensuring minimum necessary access
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-4 h-4 mt-0.5 flex-shrink-0" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+              Complete audit trails for all PHI access and modifications
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-4 h-4 mt-0.5 flex-shrink-0" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+              Automatic session timeout and multi-factor authentication
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-4 h-4 mt-0.5 flex-shrink-0" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+              Breach notification procedures compliant with HIPAA and HITECH requirements
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="font-display font-bold text-xl mb-3" style="color: var(--text-primary);">Contact Information</h2>
+          <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">
+            Privacy Officer: <a href="mailto:privacy@auraglobal.com" style="color: var(--accent);">privacy@auraglobal.com</a><br/>
+            To request a Business Associate Agreement or report a privacy concern, please contact us directly.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
