@@ -89,7 +89,8 @@ const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
             { href: '/', label: 'Home' },
             { href: '/about', label: 'About' },
             { href: '/features', label: 'Features' },
-            { href: '/pricing', label: 'Products & Services' },
+            { href: '/products', label: 'Products' },
+            { href: '/services', label: 'Services' },
             { href: '/portfolio', label: 'Portfolio' },
           ].map(link => (
             <a
@@ -227,7 +228,8 @@ const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
         { href: '/', label: 'Home' },
         { href: '/about', label: 'About' },
         { href: '/features', label: 'Features' },
-        { href: '/pricing', label: 'Products & Services' },
+        { href: '/products', label: 'Products' },
+        { href: '/services', label: 'Services' },
         { href: '/portfolio', label: 'Portfolio' },
       ].map((link, i) => (
         <a
@@ -367,7 +369,7 @@ const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
             <li><a href="/features" class="text-sm transition-colors hover:text-[var(--accent)]" style="color: var(--text-muted);">Medical Inventory System</a></li>
             <li><a href="/features#goemr" class="text-sm transition-colors hover:text-[var(--accent)]" style="color: var(--text-muted);">GoEMR</a></li>
             <li><a href="/features#patient-portal" class="text-sm transition-colors hover:text-[var(--accent)]" style="color: var(--text-muted);">Patient Portal</a></li>
-            <li><a href="/pricing#websites" class="text-sm transition-colors hover:text-[var(--accent)]" style="color: var(--text-muted);">Website Development</a></li>
+            <li><a href="/services" class="text-sm transition-colors hover:text-[var(--accent)]" style="color: var(--text-muted);">Website Development</a></li>
           </ul>
         </div>
 

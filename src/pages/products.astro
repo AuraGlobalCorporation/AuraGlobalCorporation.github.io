@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Products & Services - Aura Global Corporation">
+<BaseLayout title="Products - Aura Global Corporation">
   <!-- Hero Section -->
   <section class="section-padding py-20 lg:py-28 relative overflow-hidden">
     <div class="absolute inset-0 opacity-30 pointer-events-none">
@@ -12,32 +12,18 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
     <div class="max-w-5xl mx-auto text-center relative z-10 animate-in">
       <h1 class="text-4xl sm:text-5xl lg:text-7xl font-display font-black mb-6">
-        <span class="text-gradient">Products & Services</span>
+        <span class="text-gradient">Healthcare Software Products</span>
       </h1>
       <p class="text-lg sm:text-xl lg:text-2xl mb-6" style="color: var(--text-secondary);">
-        Healthcare technology products and professional services — built for modern practices.
+        Purpose-built software for hospitals, clinics, and healthcare practices.
       </p>
       <p class="text-base lg:text-lg max-w-3xl mx-auto" style="color: var(--text-muted);">
-        From inventory management to electronic medical records to professional websites — everything your practice needs to thrive in the digital age.
+        From inventory management to electronic medical records to patient portals — HIPAA, GDPR & DPDP compliant by design.
       </p>
-
-      <!-- Category Navigation -->
-      <div class="flex items-center justify-center gap-4 mt-10">
-        <a href="#products" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-display font-bold transition-all duration-300 hover:scale-105" style="background: var(--accent); color: #0D1B2A;">
-          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
-          Products
-        </a>
-        <a href="#services" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-display font-bold transition-all duration-300 hover:scale-105 border" style="color: var(--accent); border-color: var(--accent);">
-          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-          Services
-        </a>
-      </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- PRODUCTS SECTION                            -->
-  <!-- ═══════════════════════════════════════════ -->
+  <!-- Products Section -->
   <section id="products" class="section-padding py-16 lg:py-20 relative" style="background: var(--bg-secondary);">
     <div class="max-w-7xl mx-auto">
 
@@ -321,181 +307,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- SERVICES SECTION                            -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section id="services" class="section-padding py-16 lg:py-20">
-    <div class="max-w-7xl mx-auto">
-
-      <!-- Section Header -->
-      <div class="flex items-center gap-3 mb-4 animate-in">
-        <div class="w-2 h-2 rounded-full" style="background: var(--accent);"></div>
-        <span class="text-xs font-display font-bold uppercase tracking-widest" style="color: var(--accent);">Services</span>
-        <div class="flex-1 h-px" style="background: var(--border);"></div>
-      </div>
-      <div class="text-center mb-14 animate-in">
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-black mb-4" style="color: var(--text-primary);">
-          Website Development Services
-        </h2>
-        <p class="text-xl sm:text-2xl mb-4 text-gradient font-display font-bold">
-          No Recurring Fees. FREE Hosting Forever.
-        </p>
-        <p class="text-base lg:text-lg max-w-3xl mx-auto" style="color: var(--text-muted);">
-          Professional, modern websites built for healthcare practices, businesses, and professionals. One-time investment, lifetime value.
-        </p>
-      </div>
-
-      <!-- Website Service: What's Included -->
-      <div class="glass-card rounded-2xl overflow-hidden animate-in border" style="border-color: rgba(0,229,255,0.2);">
-        <div class="grid lg:grid-cols-2 gap-0">
-
-          <!-- Left: Service Overview -->
-          <div class="p-8 lg:p-10" style="background: linear-gradient(135deg, rgba(0,229,255,0.05), transparent);">
-            <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-6" style="background: rgba(0,229,255,0.12); border: 1px solid rgba(0,229,255,0.2);">
-              <svg class="w-7 h-7" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-              </svg>
-            </div>
-
-            <h3 class="text-2xl lg:text-3xl font-display font-black mb-4" style="color: var(--text-primary);">Professional Website Development</h3>
-            <p class="text-sm leading-relaxed mb-6" style="color: var(--text-muted);">
-              We build fast, modern, mobile-responsive websites tailored to your practice. Every website includes free hosting, SSL certificate, SEO optimization, and a professional domain — no hidden costs.
-            </p>
-
-            <!-- Who It's For -->
-            <h4 class="text-xs font-display font-bold uppercase tracking-wider mb-3" style="color: var(--accent);">Built For</h4>
-            <div class="flex flex-wrap gap-2 mb-6">
-              {['Doctors & Clinics', 'Hospitals', 'Yoga Studios', 'Salons & Spas', 'Restaurants', 'Fitness Trainers', 'Consultants', 'Tutors', 'Any Business'].map(item => (
-                <span class="px-3 py-1.5 rounded-lg text-[10px] font-display font-medium" style="background: var(--surface); color: var(--text-secondary); border: 1px solid var(--border);">{item}</span>
-              ))}
-            </div>
-
-            <div class="flex flex-col sm:flex-row gap-3">
-              <a href="/offers" class="btn-primary justify-center">
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                Claim 26% Discount
-              </a>
-              <a href="/portfolio" class="btn-secondary justify-center">View Portfolio</a>
-            </div>
-          </div>
-
-          <!-- Right: Feature Lists -->
-          <div class="p-8 lg:p-10 border-t lg:border-t-0 lg:border-l" style="border-color: var(--border);">
-            <h4 class="text-xs font-display font-bold uppercase tracking-wider mb-5" style="color: var(--accent);">What Every Website Includes</h4>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {[
-                'Custom responsive design',
-                'Mobile-first development',
-                'Free domain (.com/.in)',
-                'FREE hosting forever',
-                'SSL certificate included',
-                'Professional email IDs',
-                'SEO optimization',
-                'Contact form integration',
-                'Google Maps integration',
-                'WhatsApp integration',
-                'Dark/Light mode toggle',
-                'Fast page load speeds',
-                'Social media links',
-                'Google Analytics setup',
-                'Blog section',
-                'Revisions included',
-              ].map(item => (
-                <div class="flex items-start gap-2.5">
-                  <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                  <span class="text-xs" style="color: var(--text-secondary);">{item}</span>
-                </div>
-              ))}
-            </div>
-
-            <!-- Add-ons -->
-            <div class="mt-8 pt-6 border-t" style="border-color: var(--border);">
-              <h4 class="text-xs font-display font-bold uppercase tracking-wider mb-4" style="color: var(--accent);">Available Add-Ons</h4>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {[
-                  'E-commerce / booking system',
-                  'Custom GSAP animations',
-                  'Multi-language support',
-                  'Video integration & hosting',
-                  'Monthly content updates',
-                  'Social media management',
-                  'Blog article writing',
-                  'Advanced forms & automations',
-                ].map(item => (
-                  <div class="flex items-start gap-2.5">
-                    <svg class="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);"><path d="M12 4v16m8-8H4"/></svg>
-                    <span class="text-xs" style="color: var(--text-muted);">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Why Us Comparison -->
-      <div class="glass-card rounded-2xl p-6 lg:p-8 mt-10 animate-in">
-        <div class="text-center mb-8">
-          <h3 class="text-2xl sm:text-3xl font-display font-black mb-3" style="color: var(--text-primary);">
-            Why Choose Aura Global Over Traditional Agencies?
-          </h3>
-        </div>
-
-        <div class="overflow-x-auto">
-          <table class="w-full text-sm">
-            <thead>
-              <tr class="border-b-2" style="border-color: var(--border);">
-                <th class="text-left py-4 px-4 font-display font-semibold" style="color: var(--text-primary);">Feature</th>
-                <th class="text-center py-4 px-4 font-display font-semibold" style="color: var(--text-muted);">Traditional Agency</th>
-                <th class="text-center py-4 px-4 font-display font-semibold" style="color: var(--accent);">Aura Global</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="border-b" style="border-color: var(--border);">
-                <td class="py-4 px-4 font-semibold" style="color: var(--text-primary);">Pricing Model</td>
-                <td class="text-center py-4 px-4" style="color: var(--text-secondary);">High upfront + monthly fees</td>
-                <td class="text-center py-4 px-4 font-semibold" style="color: var(--accent);">One-time payment</td>
-              </tr>
-              <tr class="border-b" style="border-color: var(--border);">
-                <td class="py-4 px-4 font-semibold" style="color: var(--text-primary);">Hosting</td>
-                <td class="text-center py-4 px-4" style="color: var(--text-secondary);">Paid monthly</td>
-                <td class="text-center py-4 px-4 font-semibold text-green-400">FREE Forever</td>
-              </tr>
-              <tr class="border-b" style="border-color: var(--border);">
-                <td class="py-4 px-4 font-semibold" style="color: var(--text-primary);">SSL Certificate</td>
-                <td class="text-center py-4 px-4" style="color: var(--text-secondary);">Extra charge</td>
-                <td class="text-center py-4 px-4 font-semibold text-green-400">Included</td>
-              </tr>
-              <tr class="border-b" style="border-color: var(--border);">
-                <td class="py-4 px-4 font-semibold" style="color: var(--text-primary);">Domain & Email</td>
-                <td class="text-center py-4 px-4" style="color: var(--text-secondary);">Extra charge</td>
-                <td class="text-center py-4 px-4 font-semibold text-green-400">Included</td>
-              </tr>
-              <tr class="border-b" style="border-color: var(--border);">
-                <td class="py-4 px-4 font-semibold" style="color: var(--text-primary);">Performance</td>
-                <td class="text-center py-4 px-4" style="color: var(--text-muted);">No guarantee</td>
-                <td class="text-center py-4 px-4" style="color: var(--accent);">Optimized & fast</td>
-              </tr>
-              <tr class="border-b" style="border-color: var(--border);">
-                <td class="py-4 px-4 font-semibold" style="color: var(--text-primary);">Mobile Optimization</td>
-                <td class="text-center py-4 px-4" style="color: var(--text-secondary);">Sometimes extra</td>
-                <td class="text-center py-4 px-4" style="color: var(--accent);">Standard</td>
-              </tr>
-              <tr>
-                <td class="py-4 px-4 font-semibold" style="color: var(--text-primary);">Full Ownership</td>
-                <td class="text-center py-4 px-4" style="color: var(--text-muted);">Limited / locked in</td>
-                <td class="text-center py-4 px-4" style="color: var(--accent);">Complete ownership</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- FAQ Section -->
-  <section class="section-padding py-16 lg:py-20" style="background: var(--bg-secondary);">
+  <section class="section-padding py-16 lg:py-20">
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-12 animate-in">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-black mb-4" style="color: var(--text-primary);">
@@ -505,19 +318,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
       <div class="space-y-4 animate-in">
         <!-- FAQ Item 1 -->
-        <div class="glass-card rounded-xl overflow-hidden">
-          <button class="faq-trigger w-full text-left px-6 py-5 flex items-center justify-between gap-4 transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
-            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">What's the difference between Products and Services?</span>
-            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
-          </button>
-          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
-            <div class="px-6 pb-5 pt-2" style="color: var(--text-secondary);">
-              <p><strong>Products</strong> are our SaaS software platforms (Medical Inventory Management, GoEMR, Patient Portal) — subscription-based tools you use to manage your practice digitally. <strong>Services</strong> refers to our website development offering — a one-time project where we build and deploy a professional website for your practice.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ Item 2 -->
         <div class="glass-card rounded-xl overflow-hidden">
           <button class="faq-trigger w-full text-left px-6 py-5 flex items-center justify-between gap-4 transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
             <span class="font-display font-semibold text-base" style="color: var(--text-primary);">When will GoEMR and Patient Portal be available?</span>
@@ -530,33 +330,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </div>
         </div>
 
-        <!-- FAQ Item 3 -->
-        <div class="glass-card rounded-xl overflow-hidden">
-          <button class="faq-trigger w-full text-left px-6 py-5 flex items-center justify-between gap-4 transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
-            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">Is website hosting really free forever?</span>
-            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
-          </button>
-          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
-            <div class="px-6 pb-5 pt-2" style="color: var(--text-secondary);">
-              <p>Yes! We use modern cloud infrastructure (Cloudflare Pages, Vercel, or Netlify) that offers free hosting with excellent performance. As long as your site stays within reasonable bandwidth limits (which 99% of medical websites do), hosting remains free forever.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ Item 4 -->
-        <div class="glass-card rounded-xl overflow-hidden">
-          <button class="faq-trigger w-full text-left px-6 py-5 flex items-center justify-between gap-4 transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
-            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">Do I need any technical knowledge?</span>
-            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
-          </button>
-          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
-            <div class="px-6 pb-5 pt-2" style="color: var(--text-secondary);">
-              <p>Not at all! Whether it's our software products or website services, we handle everything technical. You just provide your content, photos, and preferences. We'll guide you through the entire process step by step.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ Item 5 -->
+        <!-- FAQ Item 2 -->
         <div class="glass-card rounded-xl overflow-hidden">
           <button class="faq-trigger w-full text-left px-6 py-5 flex items-center justify-between gap-4 transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
             <span class="font-display font-semibold text-base" style="color: var(--text-primary);">Are your products HIPAA compliant?</span>
@@ -569,15 +343,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </div>
         </div>
 
-        <!-- FAQ Item 6 -->
+        <!-- FAQ Item 3 -->
         <div class="glass-card rounded-xl overflow-hidden">
           <button class="faq-trigger w-full text-left px-6 py-5 flex items-center justify-between gap-4 transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
-            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">Do you offer refunds?</span>
+            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">Do I need any technical knowledge?</span>
             <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
             <div class="px-6 pb-5 pt-2" style="color: var(--text-secondary);">
-              <p>Yes! We offer a 30-day money-back guarantee on all our services. If you're not satisfied with our work within the first 30 days, we'll refund your payment in full, no questions asked.</p>
+              <p>Not at all! Our software products are designed to be user-friendly and intuitive. We handle everything technical and provide comprehensive training and support. You just focus on your patients — we'll take care of the rest.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="glass-card rounded-xl overflow-hidden">
+          <button class="faq-trigger w-full text-left px-6 py-5 flex items-center justify-between gap-4 transition-colors hover:bg-[var(--surface)]" aria-expanded="false">
+            <span class="font-display font-semibold text-base" style="color: var(--text-primary);">Can I integrate these products with my existing systems?</span>
+            <svg class="faq-icon w-5 h-5 flex-shrink-0 transition-transform duration-300" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+            <div class="px-6 pb-5 pt-2" style="color: var(--text-secondary);">
+              <p>Absolutely. All our products offer API access and support integrations with common healthcare systems, lab equipment, and billing platforms. Our team will work with you to ensure seamless integration with your existing workflow.</p>
             </div>
           </div>
         </div>
@@ -586,7 +373,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </section>
 
   <!-- Final CTA -->
-  <section class="section-padding py-20 lg:py-28 relative overflow-hidden">
+  <section class="section-padding py-20 lg:py-28 relative overflow-hidden" style="background: var(--bg-secondary);">
     <div class="absolute inset-0 opacity-20 pointer-events-none">
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-br from-aura-cyan/30 to-transparent rounded-full blur-3xl"></div>
     </div>
@@ -596,18 +383,18 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         Ready to <span class="text-gradient">Transform Your Practice?</span>
       </h2>
       <p class="text-lg lg:text-xl mb-10" style="color: var(--text-muted);">
-        Whether you need software products or a professional website — we're here to help your practice grow.
+        Join thousands of healthcare providers who trust Aura Global for their digital transformation.
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href="/contact" class="btn-primary">
-          Get Started Now
+          Get Started Today
         </a>
-        <a href="/portfolio" class="btn-secondary">
-          View Portfolio
+        <a href="/services" class="btn-secondary">
+          Explore Services
         </a>
       </div>
       <p class="mt-8 text-sm" style="color: var(--text-muted);">
-        No credit card required. 30-day money-back guarantee.
+        No credit card required. Talk to our team to find the right solution.
       </p>
     </div>
   </section>
@@ -672,14 +459,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <style>
     .faq-content {
       transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    tbody tr {
-      transition: background-color 0.2s ease;
-    }
-
-    tbody tr:hover {
-      background: var(--surface);
     }
   </style>
 </BaseLayout>
