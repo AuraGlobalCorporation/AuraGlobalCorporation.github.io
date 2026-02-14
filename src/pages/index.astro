@@ -594,45 +594,24 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </h2>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-6 mb-16">
-        {[
-          {
-            quote: "We were losing ₹12 lakhs annually in expired inventory. Aura's FIFO automation eliminated that waste completely. The ROI was immediate.",
-            name: "Dr. Meera Joshi",
-            role: "Chief Medical Officer",
-            org: "City Care Hospital, Mumbai"
-          },
-          {
-            quote: "The compliance dashboard is a game-changer. What used to take us 3 weeks of audit prep now takes zero time — we're always audit-ready.",
-            name: "Dr. Arjun Reddy",
-            role: "Hospital Administrator",
-            org: "Reddy Health Network, Hyderabad"
-          },
-          {
-            quote: "Our staff spends 90% less time on manual data entry thanks to barcode scanning. That's real hours returned to patient care every single week.",
-            name: "Dr. Priya Sharma",
-            role: "Director of Operations",
-            org: "Sharma Specialty Clinic, Delhi"
-          }
-        ].map((testimonial, i) => (
-          <div class="glass-card rounded-2xl p-7 animate-in relative" style={`animation-delay: ${i * 0.1}s;`}>
+      <div class="max-w-2xl mx-auto mb-16">
+          <div class="glass-card rounded-2xl p-8 animate-in relative">
             <div class="absolute top-6 right-6">
               <svg class="w-8 h-8 opacity-10" style="color: var(--accent);" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
               </svg>
             </div>
-            <p class="text-sm leading-relaxed mb-6" style="color: var(--text-secondary);">"{testimonial.quote}"</p>
+            <p class="text-base leading-relaxed mb-6" style="color: var(--text-secondary);">"After seeing what Aura is building, I'm fully committed — I've enrolled for the complete bundle including the EMR, Patient Portal, and Medical Inventory Management System. This is the future of healthcare technology, and I want to be on board from day one."</p>
             <div class="flex items-center gap-3">
               <div class="w-10 h-10 rounded-full flex items-center justify-center font-display font-bold text-sm" style="background: var(--accent); color: var(--bg-primary);">
-                {testimonial.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
+                AG
               </div>
               <div>
-                <p class="text-sm font-display font-semibold" style="color: var(--text-primary);">{testimonial.name}</p>
-                <p class="text-xs" style="color: var(--text-muted);">{testimonial.role}, {testimonial.org}</p>
+                <p class="text-sm font-display font-semibold" style="color: var(--text-primary);">Dr. Albee Gupta</p>
+                <p class="text-xs" style="color: var(--text-muted);">JB Gupta Hospital</p>
               </div>
             </div>
           </div>
-        ))}
       </div>
 
       <!-- Trust Badges -->
