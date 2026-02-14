@@ -133,10 +133,10 @@ const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
               <a
                 href="/why-website"
                 class:list={[
-                  'flex items-center gap-3 px-4 py-2.5 text-sm font-display font-semibold transition-colors hover:bg-[var(--surface)]',
+                  'flex items-center gap-3 px-4 py-2.5 text-sm transition-colors hover:bg-[var(--surface)]',
                   currentPath === '/why-website'
                     ? 'text-[var(--accent)] bg-[var(--accent)]/5'
-                    : 'text-[var(--text-primary)]'
+                    : 'text-[var(--text-secondary)]'
                 ]}
               >
                 <span class="text-base">🩺</span>
@@ -266,10 +266,10 @@ const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
             <a
               href="/why-website"
               class:list={[
-                'flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-display font-semibold transition-colors hover:bg-[var(--surface)]',
+                'flex items-center gap-2 px-4 py-2 rounded-lg text-sm transition-colors hover:bg-[var(--surface)]',
                 currentPath === '/why-website'
                   ? 'text-[var(--accent)]'
-                  : 'text-[var(--text-primary)]'
+                  : 'text-[var(--text-muted)]'
               ]}
             >
               <span>🩺</span>
