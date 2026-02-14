@@ -104,12 +104,10 @@
   .glass-card {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
   }
 
   .dark .glass-card {
-    background: rgba(21, 34, 56, 0.6);
+    background: rgba(21, 34, 56, 0.85);
     border: 1px solid rgba(0, 229, 255, 0.08);
   }
 
@@ -194,12 +192,7 @@
   }
 
   .noise-overlay {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 9999;
-    opacity: 0.015;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    display: none;
   }
 }
 
@@ -211,6 +204,12 @@
 
   .animate-in.visible {
     animation: fade-up 0.6s ease-out forwards;
+  }
+
+  /* Promote large blur blobs to GPU layer to avoid expensive repaints */
+  [class*="blur-[1"] {
+    will-change: transform;
+    contain: strict;
   }
 }
 

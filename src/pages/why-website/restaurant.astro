@@ -837,28 +837,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     });
   });
 
-  // Parallax effect on background blobs
-  gsap.to('.absolute.blur-\\[120px\\]', {
-    scrollTrigger: {
-      trigger: 'body',
-      start: 'top top',
-      end: 'bottom bottom',
-      scrub: 1,
-    },
-    y: 200,
-    ease: 'none',
-  });
-
-  gsap.to('.absolute.blur-\\[100px\\]', {
-    scrollTrigger: {
-      trigger: 'body',
-      start: 'top top',
-      end: 'bottom bottom',
-      scrub: 1,
-    },
-    y: -150,
-    ease: 'none',
-  });
+  // Background blobs are static — no parallax to save CPU
 </script>
 
 <style>
