@@ -306,17 +306,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <button type="submit" class="btn-primary w-full justify-center">
             Join Waitlist
           </button>
-
-<!-- Success Message -->
-<div id="waitlist-success" class="hidden text-center py-8">
-  <div class="success-checkmark w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6" style="background: rgba(0,229,255,0.1); border: 2px solid var(--accent);">
-    <svg class="w-10 h-10" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-  </div>
-  <h3 class="success-title font-display font-bold text-2xl mb-3" style="color: var(--text-primary);">You're on the Waitlist!</h3>
-  <p class="success-desc text-sm mb-2" style="color: var(--text-secondary);">Thank you for your interest in our products.</p>
-  <p class="success-desc text-sm" style="color: var(--text-muted);">We'll notify you as soon as early access is available.</p>
-</div>
         </form>
+
+        <!-- Success Message -->
+        <div id="waitlist-success" class="hidden text-center py-8">
+          <div class="success-checkmark w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6" style="background: rgba(0,229,255,0.1); border: 2px solid var(--accent);">
+            <svg class="w-10 h-10" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <h3 class="success-title font-display font-bold text-2xl mb-3" style="color: var(--text-primary);">You're on the Waitlist!</h3>
+          <p class="success-desc text-sm mb-2" style="color: var(--text-secondary);">Thank you for your interest in our products.</p>
+          <p class="success-desc text-sm" style="color: var(--text-muted);">We'll notify you as soon as early access is available.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -440,10 +440,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           const data = await res.json();
 
           if (data.success) {
-            // Hide all form fields and button
-            const formElements = waitlistForm.querySelectorAll('.space-y-6 > div, .grid, button[type="submit"]');
-            formElements.forEach(el => (el as HTMLElement).style.display = 'none');
-            submitBtn.style.display = 'none';
+            waitlistForm.classList.add('hidden');
 
             if (waitlistSuccess) {
               waitlistSuccess.classList.remove('hidden');
