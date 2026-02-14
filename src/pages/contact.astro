@@ -40,6 +40,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </p>
 
             <form id="contact-form" class="space-y-6" novalidate>
+              <input type="hidden" name="access_key" value="465e0be6-22bc-459c-abc6-7627ae7a32b2" />
+              <input type="hidden" name="subject" value="New Contact Form Submission" />
+              <input type="hidden" name="from_name" value="Aura Global Website" />
+              <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
               <div class="grid sm:grid-cols-2 gap-6">
                 <!-- Name -->
                 <div>
@@ -175,12 +179,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </button>
 
               <!-- Success Message (hidden by default) -->
-              <div id="form-success" class="hidden text-center py-8">
-                <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background: rgba(168,230,207,0.1);">
-                  <svg class="w-8 h-8 text-aura-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+              <div id="form-success" class="hidden text-center py-10">
+                <div class="success-checkmark w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6" style="background: rgba(0,229,255,0.1); border: 2px solid var(--accent);">
+                  <svg class="w-10 h-10" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                 </div>
-                <h3 class="font-display font-bold text-xl mb-2" style="color: var(--text-primary);">Message Sent!</h3>
-                <p class="text-sm" style="color: var(--text-muted);">We'll get back to you within 24 hours. Check your email for confirmation.</p>
+                <h3 class="success-title font-display font-bold text-2xl mb-3" style="color: var(--text-primary);">Message Sent Successfully!</h3>
+                <p class="success-desc text-sm mb-2" style="color: var(--text-secondary);">Thank you for reaching out to us.</p>
+                <p class="success-desc text-sm" style="color: var(--text-muted);">We'll get back to you within 24 hours. Check your email for confirmation.</p>
               </div>
             </form>
           </div>
@@ -327,27 +332,55 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       const form = document.getElementById('contact-form') as HTMLFormElement;
       const success = document.getElementById('form-success');
 
-      form?.addEventListener('submit', (e) => {
+      form?.addEventListener('submit', async (e) => {
         e.preventDefault();
 
-        // Basic validation
         const name = (form.querySelector('#name') as HTMLInputElement).value.trim();
         const email = (form.querySelector('#email') as HTMLInputElement).value.trim();
         const message = (form.querySelector('#message') as HTMLTextAreaElement).value.trim();
 
-        if (!name || !email || !message) {
-          return;
-        }
+        if (!name || !email || !message) return;
 
-        // Simulate submission (replace with actual form endpoint)
         const submitBtn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+        const originalBtnHTML = submitBtn.innerHTML;
         submitBtn.disabled = true;
         submitBtn.innerHTML = '<svg class="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg> Sending...';
 
-        setTimeout(() => {
-          form.style.display = 'none';
-          if (success) success.classList.remove('hidden');
-        }, 1500);
+        try {
+          const formData = new FormData(form);
+          const json = JSON.stringify(Object.fromEntries(formData));
+          const res = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: json,
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
+          });
+          const data = await res.json();
+
+          if (data.success) {
+            form.style.display = 'none';
+            if (success) {
+              success.classList.remove('hidden');
+              gsap.fromTo(success.querySelector('.success-checkmark'),
+                { scale: 0, rotation: -180 },
+                { scale: 1, rotation: 0, duration: 0.6, ease: 'back.out(1.7)' }
+              );
+              gsap.fromTo(success.querySelector('.success-title'),
+                { opacity: 0, y: 20 },
+                { opacity: 1, y: 0, duration: 0.5, delay: 0.3, ease: 'power2.out' }
+              );
+              gsap.fromTo(success.querySelectorAll('.success-desc'),
+                { opacity: 0, y: 15 },
+                { opacity: 1, y: 0, duration: 0.5, delay: 0.5, stagger: 0.15, ease: 'power2.out' }
+              );
+            }
+          } else {
+            throw new Error('Form submission failed');
+          }
+        } catch (err) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnHTML;
+          alert('Something went wrong. Please try again or email us directly at hello@auraglobalcorp.com');
+        }
       });
 
       // Campaign counter

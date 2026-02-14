@@ -258,7 +258,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <p class="text-base" style="color: var(--text-muted);">Be among the first to experience next-gen healthcare software</p>
         </div>
 
-        <form class="space-y-6">
+        <form id="waitlist-form" class="space-y-6">
+          <input type="hidden" name="access_key" value="465e0be6-22bc-459c-abc6-7627ae7a32b2" />
+          <input type="hidden" name="subject" value="New Product Waitlist Signup" />
+          <input type="hidden" name="from_name" value="Aura Global Website" />
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
               <label for="waitlist-name" class="block text-sm font-display font-semibold mb-2" style="color: var(--text-primary);">Full Name *</label>
@@ -302,6 +306,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <button type="submit" class="btn-primary w-full justify-center">
             Join Waitlist
           </button>
+
+<!-- Success Message -->
+<div id="waitlist-success" class="hidden text-center py-8">
+  <div class="success-checkmark w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6" style="background: rgba(0,229,255,0.1); border: 2px solid var(--accent);">
+    <svg class="w-10 h-10" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+  </div>
+  <h3 class="success-title font-display font-bold text-2xl mb-3" style="color: var(--text-primary);">You're on the Waitlist!</h3>
+  <p class="success-desc text-sm mb-2" style="color: var(--text-secondary);">Thank you for your interest in our products.</p>
+  <p class="success-desc text-sm" style="color: var(--text-muted);">We'll notify you as soon as early access is available.</p>
+</div>
         </form>
       </div>
     </div>
@@ -403,6 +417,62 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <script>
     // FAQ Accordion
     document.addEventListener('DOMContentLoaded', () => {
+      // Waitlist form handling
+      const waitlistForm = document.getElementById('waitlist-form') as HTMLFormElement;
+      const waitlistSuccess = document.getElementById('waitlist-success');
+
+      waitlistForm?.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const submitBtn = waitlistForm.querySelector('button[type="submit"]') as HTMLButtonElement;
+        const originalBtnHTML = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<svg class="w-5 h-5 animate-spin mx-auto" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg>';
+
+        try {
+          const formData = new FormData(waitlistForm);
+          const json = JSON.stringify(Object.fromEntries(formData));
+          const res = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: json,
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
+          });
+          const data = await res.json();
+
+          if (data.success) {
+            // Hide all form fields and button
+            const formElements = waitlistForm.querySelectorAll('.space-y-6 > div, .grid, button[type="submit"]');
+            formElements.forEach(el => (el as HTMLElement).style.display = 'none');
+            submitBtn.style.display = 'none';
+
+            if (waitlistSuccess) {
+              waitlistSuccess.classList.remove('hidden');
+
+              // Import gsap dynamically or use if available
+              const gsapLib = (window as any).gsap || (await import('gsap')).default;
+              gsapLib.fromTo(waitlistSuccess.querySelector('.success-checkmark'),
+                { scale: 0, rotation: -180 },
+                { scale: 1, rotation: 0, duration: 0.6, ease: 'back.out(1.7)' }
+              );
+              gsapLib.fromTo(waitlistSuccess.querySelector('.success-title'),
+                { opacity: 0, y: 20 },
+                { opacity: 1, y: 0, duration: 0.5, delay: 0.3, ease: 'power2.out' }
+              );
+              gsapLib.fromTo(waitlistSuccess.querySelectorAll('.success-desc'),
+                { opacity: 0, y: 15 },
+                { opacity: 1, y: 0, duration: 0.5, delay: 0.5, stagger: 0.15, ease: 'power2.out' }
+              );
+            }
+          } else {
+            throw new Error('Submission failed');
+          }
+        } catch (err) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnHTML;
+          alert('Something went wrong. Please try again or email us at hello@auraglobalcorp.com');
+        }
+      });
+
       const faqTriggers = document.querySelectorAll('.faq-trigger');
 
       faqTriggers.forEach(trigger => {
